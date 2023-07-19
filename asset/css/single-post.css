@@ -229,7 +229,9 @@ footer {
     background-color: var( --var-color-e);
     border-top: 1px solid var( --var-color-e);
     padding-top: 20px;
-    line-height: 25px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #3b3c4a;
 }
 
 footer div {
@@ -239,6 +241,7 @@ footer div {
 footer div:first-child{
     margin-bottom: 20px;
 }
+
 
 .about{
     width: 289px;
