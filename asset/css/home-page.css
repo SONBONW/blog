@@ -160,6 +160,11 @@ form{
     line-height: 30px;
 }
 
+.infor img {
+    width: 36px;
+    height: 36px;
+}
+
 
 .adver{
     text-align: center;
@@ -204,8 +209,6 @@ form{
 }
 
 .list_data{
-    width: 1216px;
-    height: 1504px;
     gap: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -214,7 +217,7 @@ form{
 
 .item_data{
     border: 1px solid var( --var-color-e);
-    width: 358px;
+    width: 352px;
     height: 435px;
     border-radius: 12px;
     padding: 16px;
@@ -224,6 +227,15 @@ form{
 
 .item_data img:first-child {
     margin-bottom: 10px;
+}
+
+
+
+.item_data h3{
+    font-size: 600;
+    font-style: var(--var-sz);
+    line-height: 50px;
+    color: #181A2A;
 }
 
 .tag{
@@ -238,14 +250,6 @@ form{
     background-color: #dad7d7;
     border-radius: 6px;
 }
-
-.item_data h3{
-    font-size: 600;
-    font-style: var(--var-sz);
-    line-height: 50px;
-    color: #181A2A;
-}
-
 
 .view {
     width: 142px;
