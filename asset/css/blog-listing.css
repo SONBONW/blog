@@ -7,8 +7,12 @@ body{
     --var-color-button: rgba(75, 107, 251, 1);
     --var-color-6: #696A75;
     --var-color-e: #e8e8ea;
+    --var-color-3: #3b3c4a;
+    --var-color-18: #181a2a;
+    --var-color-f4: #f4f4f5;
+    --var-color-d: #dcdddf;
+    --var-color-white: #fff;
 }
-
 .width-1200{
     width: 1200px;
     margin: 0 auto;
@@ -22,7 +26,7 @@ body{
 li, a {
     text-decoration: none;
     list-style: none;
-    color : #3b3c4a;
+    color : var(--var-color-3);
     font-weight: 400;
 }
 
@@ -57,14 +61,14 @@ form{
     border-radius: 5px;
     padding: 8px 8px 8px 16px;
     gap: 12px;
-    background-color: #f4f4f5;
+    background-color: var(--var-color-f4);
     margin-right: 10px;
 }
 
 .item_ipt:first-child input {
     border: none;
     outline: none;
-    background-color: #f4f4f5;
+    background-color: var(--var-color-f4);
 }
 
 .item_ipt i {
@@ -84,7 +88,7 @@ form{
 .switch-toggle{
     width: 38px;
     appearance: none;
-    background-color: #ccc;
+    background-color: var(--var-color-e);
     border-radius: 26px;
     position: relative;
     cursor: pointer;
@@ -98,7 +102,7 @@ form{
     position: absolute;
     top: 2px;
     left: 3px;
-    background-color:white;
+    background-color:var(--var-color-white);
     border-radius: 50%;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, .3);
 
@@ -132,7 +136,7 @@ form{
 }
 
 .pagetitle span:first-child {
-    color: #3b3c4a;
+    color: var(--var-color-3);
 }
 
 .pagetitle span:last-child{
@@ -150,7 +154,7 @@ form{
     border-radius: 12px;
     left: 160px;
     padding: 40px;
-    color: white;
+    color: var(--var-color-white);
 }
 
 .form_introduce span:first-child {
@@ -215,7 +219,7 @@ form{
     font-size: 600;
     font-style: var(--var-sz);
     line-height: 50px;
-    color: #181A2A;
+    color: var(--var-color-18);
 }
 
 
@@ -236,7 +240,7 @@ form{
 
 .adver{
     text-align: center;
-    background-color: #ccc;
+    background-color: var(--var-color-e);
     width: 750px;
     height: 100px;
     border-radius: 12px;
@@ -275,8 +279,8 @@ form{
 
 footer {
     margin-top: 80px;
-    background-color: var( --var-color-e);
-    border-top: 1px solid var( --var-color-e);
+    background-color: var(--var-color-e);
+    border-top: 1px solid var(--var-color-e);
     padding-top: 20px;
     line-height: 25px;
 }
@@ -308,7 +312,7 @@ strong {
 .form-footer{
     width: 392px;
     text-align: center;
-    background-color: white;
+    background-color: var(--var-color-white);
     border-radius: 12px;
     padding: 32px ;
     margin-left: 50px;
@@ -320,7 +324,7 @@ strong {
     width: 290px;
     height: var(--var-sz);
     border-radius: 6px;
-    border: 1px solid #dcdddf;
+    border: 1px solid var(--var-color-d);
     padding: 12px 14px;
     gap: 10px;
     margin: 10px 0;
@@ -341,7 +345,7 @@ strong {
     padding: 12px 20px;
     gap: 12px;
     background-color: var(--var-color-button);
-    color: white;
+    color: var(--var-color-white);
     margin-right: 22px;
     cursor: pointer;
 }
@@ -350,7 +354,7 @@ strong {
 .last {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--var-color-d);
     padding-top: 18px;
 }
 

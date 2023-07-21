@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./asset/Font/Work_Sans/static/WorkSans-Black.ttf">
     <link rel="stylesheet" href="./asset/css/home-page.css">
 </head>
 <body>
@@ -17,39 +15,43 @@
             <a class="logo" href="">
                 <img src="./asset/img/Logo.svg" alt="">
             </a>
-            <a class="item_menu" href="">Home</a>
-            <a class="item_menu" href="./blog-listing.html">Blog</a>
-            <a class="item_menu" href="./single-post.html">Single Post</a>
-            <a class="item_menu" href="./author-page.html">Pages</a>
-            <a class="item_menu" href="">Contact</a>
+            <ul>
+                <li><a class="item-menu" href="">Home</a></li>
+                <li><a class="item-menu" href="./blog-listing.html">Blog</a></li>
+                <li><a class="item-menu" href="./single-post.html">Single Post</a></li>
+                <li><a class="item-menu" href="./author-page.html">Pages</a></li>
+                <li><a class="item-menu" href="">Contact</a></li>
+            </ul>
         </nav>
         <form >
-            <label class="item_ipt">
+            <label class="item-ipt">
                 <input type="text" placeholder="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </label>
-            <label class="item_ipt">
+            <label class="item-ipt">
                 <input type="checkbox" name="" class="switch-toggle" id="light-dark">
             </label>
         </form>
     </header>
     <main class = "width-1200">
         <section>
-            <div class = "logo_header">
-                <img class = "logo_main width-1200" src="./asset/img/Image.svg" alt="">
+            <div class = "baner">
+                <img class = "width-1200" src="./asset/img/Image.svg" alt="">
             </div>
-            <div class="form_introduce width-1130">
-                <span>Technology</span>
+            <div class="form-introduce width-1130">
+                <span class = "tag">Technology</span>
                 <h2>The Impact of Technology on the Workplace: How Technology is Changing</h2>
-                <div class="infor">
-                    <img src="./asset/img/Image (1).svg" alt="">
-                    <span>Jason Francisco</span>
-                    <span>August 20, 2022</span>
+                <div class="infor-user">
+                    <div class = "user">
+                        <img src="./asset/img/img1.svg" alt="">
+                        <span>Jason Francisco</span>
+                    </div>
+                    <time>August 20, 2022</time>
                 </div>
             </div>
         </section>
         
-       <section class="adver">
+       <section class="advertisement">
             <span>Advertisement</span>
             <h4>You can place ads</h4>
             <span>750X100</span>
@@ -57,126 +59,145 @@
 
        <section class="list">
             <h4 class = "title">Latest Post</h4>
-            <div class="list_data">
-                <article class = "item_data">
-                    <img src="./asset/img/Rectangle 38.svg" alt="">
+            <div class="list-data">
+                <article class = "item-data">
+                    <img src="./asset/img/rectangle.svg" alt="">
                     <span class = "tag">Technology</span>
-                    <h3>The Impact of Technologu on the Workplace: How Teachnology is Changing</h3>
-                    <div class="infor">
-                        <img src="./asset/img/Image (2).svg" alt="">
-                        <span>Tracey Wilson</span>
-                        <span>August 20, 2022</span>
+                    <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
+                    <div class="infor-user">
+                        <div class="user">
+                            <img src="./asset/img/img2.svg" alt="">
+                            <span>Tracey Wilson</span>
+                        </div>
+                        <time>August 20, 2022</time>
                     </div>
                 </article>
-                <article class = "item_data">
-                   <img src="./asset/img/Rectangle 38 (1).svg" alt="">
+                <article class = "item-data">
+                   <img src="./asset/img/rectangle1.svg" alt="">
                     <span class = "tag">Technology</span>
-                    <h3>The Impact of Technologu on the Workplace: How Teachnology is Changing</h3>
-                    <div class="infor">
-                        <img src="./asset/img/Image (3).svg" alt="">
-                        <span>Json Francisco</span>
-                        <span>August 20, 2022</span>
+                    <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
+                    <div class="infor-user">
+                        <div class="user">
+                            <img src="./asset/img/img3.svg" alt="">
+                            <span>Json Francisco</span>
+                        </div>
+                        <time>August 20, 2022</time>
                     </div>
                 </article>
-                <article class = "item_data">
-                    <img src="./asset/img/Rectangle 38 (2).svg" alt="">
+                <article class = "item-data">
+                    <img src="./asset/img/rectangle2.svg" alt="">
                     <span class = "tag">Technology</span>
-                    <h3>The Impact of Technologu on the Workplace: How Teachnology is Changing</h3>
-                    <div class="infor">
-                        <img src="./asset/img/img.svg" alt="">
-                        <span>Elizabeth Slavin</span>
-                        <span>August 20, 2022</span>
+                    <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
+                    <div class="infor-user">
+                        <div class="user">
+                            <img src="./asset/img/img.svg" alt="">
+                            <span>Elizabeth Slavin</span>
+                        </div>
+                        <time>August 20, 2022</time>
                     </div>
                 </article>
-                <article class = "item_data">
-                   <img src="./asset/img/Rectangle 38 (3).svg" alt="">
+                <article class = "item-data">
+                   <img src="./asset/img/rectangle3.svg" alt="">
                     <span class = "tag">Technology</span>
-                    <h3>The Impact of Technologu on the Workplace: How Teachnology is Changing</h3>
-                    <div class="infor">
-                        <img src="./asset/img/Image (5).svg" alt="">
-                        <span>Ernie Smith</span>
-                        <span>August 20, 2022</span>
+                    <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
+                    <div class="infor-user">
+                        <div class="user">
+                            <img src="./asset/img/img5.svg" alt="">
+                            <span>Ernie Smith</span>
+                        </div>
+                        <time>August 20, 2022</time>
                     </div>
                 </article>
-                <article class = "item_data">
-                   <img src="./asset/img/Rectangle 38 (4).svg" alt="">
+                <article class = "item-data">
+                   <img src="./asset/img/rectangle4.svg" alt="">
                     <span class = "tag">Technology</span>
-                    <h3>The Impact of Technologu on the Workplace: How Teachnology is Changing</h3>
-                    <div class="infor">
-                        <img src="./asset/img/Image (6).svg" alt="">
-                        <span>Eric Smith</span>
-                        <span>August 20, 2022</span>
+                    <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
+                    <div class="infor-user">
+                        <div class="user">
+                            <img src="./asset/img/img6.svg" alt="">
+                            <span>Eric Smith</span>
+                        </div>
+                        <time>August 20, 2022</time>
                     </div>
                 </article>
-                <article class = "item_data">
-                   <img src="./asset/img/Rectangle 38 (5).svg" alt="">
+                <article class = "item-data">
+                   <img src="./asset/img/rectangle5.svg" alt="">
                     <span class = "tag">Technology</span>
-                    <h3>The Impact of Technologu on the Workplace: How Teachnology is Changing</h3>
-                    <div class="infor">
-                        <img src="./asset/img/Image (7).svg" alt="">
-                        <span>Tracey Wilson</span>
-                        <span>August 20, 2022</span>
+                    <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
+                    <div class="infor-user">
+                        <div class="user">
+                            <img src="./asset/img/img7.svg" alt="">
+                            <span>Tracey Wilson</span>
+                        </div>
+                        <time>August 20, 2022</time>
                     </div>
                 </article>
-                <article class = "item_data">
-                   <img src="./asset/img/Rectangle 38 (6).svg" alt="">
+                <article class = "item-data">
+                   <img src="./asset/img/rectangle6.svg" alt="">
                     <span class = "tag">Technology</span>
-                    <h3>The Impact of Technologu on the Workplace: How Teachnology is Changing</h3>
-                    <div class="infor">
-                        <img src="./asset/img/Image (8).svg" alt="">
-                        <span>Jason Francisco</span>
-                        <span>August 20, 2022</span>
+                    <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
+                    <div class="infor-user">
+                        <div class="user">
+                           <img src="./asset/img/img8.svg" alt="">
+                            <span>Jason Francisco</span> 
+                        </div>
+                        
+                        <time>August 20, 2022</time>
                     </div>
                 </article>
-                <article class = "item_data">
-                    <img src="./asset/img/Rectangle 38 (7).svg" alt="">
+                <article class = "item-data">
+                    <img src="./asset/img/rectangle7.svg" alt="">
                     <span class = "tag">Technology</span>
-                    <h3>The Impact of Technologu on the Workplace: How Teachnology is Changing</h3>
-                    <div class="infor">
-                        <img src="./asset/img/Image (9).svg" alt="">
-                        <span>Elizabeth Slavin</span>
-                        <span>August 20, 2022</span>
+                    <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
+                    <div class="infor-user">
+                        <div class="user">
+                            <img src="./asset/img/img9.svg" alt="">
+                            <span>Elizabeth Slavin</span>
+                        </div>
+                        <time>August 20, 2022</time>
                     </div>
                 </article>
-                <article class = "item_data">
-                    <img src="./asset/img/Rectangle 38 (9).svg" alt="">
+                <article class = "item-data">
+                    <img src="./asset/img/rectangle9.svg" alt="">
                     <span class = "tag">Technology</span>
-                    <h3>The Impact of Technologu on the Workplace: How Teachnology is Changing</h3>
-                    <div class="infor">
-                        <img src="./asset/img/Image (10).svg" alt="">
-                        <span>Ernie Smith</span>
-                        <span>August 20, 2022</span>
+                    <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
+                    <div class="infor-user">
+                        <div class="user">
+                            <img src="./asset/img/img10.svg" alt="">
+                            <span>Ernie Smith</span>
+                        </div>
+                        <time>August 20, 2022</time>
                     </div>
                 </article>
             </div>
             <button class = "view">View All Post</button>
         </section>
-        <section class="adver">
+        <section class="advertisement">
             <span>Advertisement</span>
             <h4>You can place ads</h4>
             <span>750X100</span>
        </section>   
     </main>
     <footer>
-        <div class = "width-1200">
-            <article class = "about">
-                <strong>About</strong>
+        <div class = "width-1200 firt">
+            <div class = "about">
+                <h5>About</h5>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiumod tempor incididunt ut labore et dolore
                     magna aliqua. ut enim ad minim veniam
                 </p>
                 <ul>
-                    <li>
-                        <strong>Email: </strong> infor@jstemplate.net
+                    <li class = "list-footer">
+                        <h5>Email: </h5> infor@jstemplate.net
                     </li>
-                    <li>
-                        <strong>Phone: </strong> 880 123 456 789
+                    <li class = "list-footer">
+                        <h5>Phone: </h5> 880 123 456 789
                     </li>
                 </ul>
-            </article>
-            <article class = "quick-link">
-                <strong>Quick Link</strong>
+            </div>
+            <div class = "quick-link">
+                <h5>Quick Link</h5>
                 <ul>
                     <li><a href = "">Home</a></li>
                     <li><a href = "">About</a></li>
@@ -185,9 +206,9 @@
                     <li><a href = "">Author</a></li>
                     <li><a href = "">Contact</a></li>
                 </ul>
-            </article>
-            <article class = "category">
-                <strong>Category</strong>
+            </div>
+            <div class = "category">
+                <h5>Category</h5>
                 <ul>
                     <li><a href = "">Lifestyle</a></li>
                     <li><a href = "">Technology</a></li>
@@ -197,36 +218,35 @@
                     <li><a href = "">Sports</a></li>
                 </ul>
                 
-            </article>
-            <article class = "form-footer">
-                <h4>Weekly NewSletter</h4>
-                <p>Get blog articles and offers via email</p>
-                <label for="" class = "form_ipt">
+            </div>
+            <div class = "form-footer">
+                <form action="">
+                    <h4>Weekly NewSletter</h4>
+                    <p>Get blog articles and offers via email</p>
                     <label for="">
                         <input type="email" placeholder="Your Email">
                         <i class="fa fa-envelope"></i>
                     </label>
-                    
                     <button class = "btn">Subscribe</button>
-                </label>
-            </article>
+                </form>
+            </div>
         </div>
         <div class="last width-1200">
             <div class="logo-footer">
                 <img src="./asset/img/logofooter.svg" alt="">
                 <span>
-                    <p>Meta<strong>Blog</strong></p>
-                    <p>© JS Template 2023. All Rights Reserved.</p>
+                    <a href="">
+                        <p>Meta<strong>Blog</strong></p>
+                        <p>© JS Template 2023. All Rights Reserved.</p>
+                    </a>
                 </span>
             </div>
             <ul>
                 <li>
                     <a href = "">Terms of Use</a>
-                    <span class="scorball"></span>
                 </li>
                 <li>
                     <a href = "">Privacy Policy</a>
-                    <span class="scorball"></span>
                 </li>
                 <li>
                     <a href = "">Cookie Policy</a>

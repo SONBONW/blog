@@ -8,6 +8,12 @@ body{
     --var-color-button: rgba(75, 107, 251, 1);
     --var-color-6: #696A75;
     --var-color-e: #e8e8ea;
+    --var-color-3: #3b3c4a;
+    --var-color-18: #181a2a;
+    --var-color-f4: #f4f4f5;
+    --var-color-d: #dcdddf;
+    --var-color-white: #fff;
+    --var-color-9: #97989F;
 }
 
 .width-1200{
@@ -18,7 +24,7 @@ body{
 li, a {
     text-decoration: none;
     list-style: none;
-    color : #3b3c4a;
+    color : var(--var-color-3);
     font-weight: 400;
 }
 
@@ -55,14 +61,14 @@ form{
     border-radius: 5px;
     padding: 8px 8px 8px 16px;
     gap: 12px;
-    background-color: #f4f4f5;
+    background-color: var(--var-color-f4);
     margin-right: 10px;
 }
 
 .item_ipt:first-child input {
     border: none;
     outline: none;
-    background-color: #f4f4f5;
+    background-color: var(--var-color-f4);
 }
 
 .item_ipt i {
@@ -82,7 +88,7 @@ form{
 .switch-toggle{
     width: 38px;
     appearance: none;
-    background-color: #ccc;
+    background-color: var(--var-color-e);
     border-radius: 26px;
     position: relative;
     cursor: pointer;
@@ -96,7 +102,7 @@ form{
     position: absolute;
     top: 2px;
     left: 3px;
-    background-color:white;
+    background-color:var(--var-color-white);
     border-radius: 50%;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, .3);
 
@@ -118,7 +124,7 @@ form{
 
 
 .intro-infor{
-    background-color: #F6F6F7;
+    background-color: var(--var-color-f4);
     text-align: center;
     border-radius: 12px;
     padding: 48px;
@@ -169,7 +175,7 @@ article,
     padding: 8px;
     gap: 8px;
     background-color: var(--var-color-6);
-    color: white;
+    color: var(--var-color-white);
 }
 
 .form_introduce{
@@ -179,15 +185,15 @@ article,
     top: 550px;
     border-radius: 12px;
     left: 160px;
-    background-color: white;
+    background-color: var(--var-color-white);
     padding: 40px;
     border: 1px solid var( --var-color-e);
-    box-shadow: 0 12px 24px -6px #181A2A ;
+    box-shadow: 0 12px 24px -6px var(--var-color-18) ;
 }
 
 .form_introduce span:first-child {
     background-color: var(--var-color-button);
-    color: white;
+    color: var(--var-color-white);
     border: none;
     outline: none;
     padding: 4px 10px;
@@ -202,7 +208,7 @@ article,
     font-weight: 600;
     font-size: 36px;
     line-height: 40px;
-    color: rgba(24, 26, 42, 1);
+    color: var(--var-color-18);
     margin: 15px 0;
 }
 
@@ -217,6 +223,7 @@ article,
 
 .infor span {
     line-height: 30px;
+    color: var(--var-color-9);
 }
 
 .infor img {
@@ -227,7 +234,7 @@ article,
 
 .adver{
     text-align: center;
-    background-color: #ccc;
+    background-color: var(--var-color-e);
     width: 750px;
     height: 100px;
     border-radius: 12px;
@@ -272,7 +279,7 @@ article,
 }
 
 .item_data{
-    border: 1px solid var( --var-color-e);
+    border: 1px solid var(--var-color-e);
     width: 352px;
     height: 435px;
     border-radius: 12px;
@@ -291,7 +298,7 @@ article,
     font-size: 600;
     font-style: var(--var-sz);
     line-height: 50px;
-    color: #181A2A;
+    color: var(--var-color-18);
 }
 
 .tag{
@@ -303,7 +310,7 @@ article,
     height: 20px;
     border: none;
     margin: 10px 0;
-    background-color: #dad7d7;
+    background-color: var(--var-color-d);
     border-radius: 6px;
 }
 
@@ -328,8 +335,8 @@ article,
 
 footer {
     margin-top: 80px;
-    background-color: var( --var-color-e);
-    border-top: 1px solid var( --var-color-e);
+    background-color: var(--var-color-e);
+    border-top: 1px solid var(--var-color-e);
     padding-top: 20px;
     line-height: 25px;
 }
@@ -361,7 +368,7 @@ strong {
 .form-footer{
     width: 392px;
     text-align: center;
-    background-color: white;
+    background-color: var(--var-color-white);
     border-radius: 12px;
     padding: 32px ;
     margin-left: 50px;
@@ -373,7 +380,7 @@ strong {
     width: 290px;
     height: var(--var-sz);
     border-radius: 6px;
-    border: 1px solid #dcdddf;
+    border: 1px solid var(--var-color-d);
     padding: 12px 14px;
     gap: 10px;
     margin: 10px 0;
@@ -394,7 +401,7 @@ strong {
     padding: 12px 20px;
     gap: 12px;
     background-color: var(--var-color-button);
-    color: white;
+    color: var(--var-color-white);
     margin-right: 22px;
     cursor: pointer;
 }
@@ -403,7 +410,7 @@ strong {
 .last {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--var-color-d);
     padding-top: 18px;
 }
 
@@ -413,14 +420,28 @@ strong {
 
 
 .scorball {
-    border-right: 1px solid #666;
+    border-right: 1px solid var(--var-color-e);
     margin: 0 6px;
     position: relative;
 }
 
+
+
+/*Dark*/
+
+body.dark{
+    --var-color-button: rgba(75, 107, 251, 1);
+    --var-color-6: #696A75;
+    --var-color-e: #e8e8ea;
+    --var-color-3: #fff;
+    --var-color-18: #fff;
+    --var-color-f4: #242535; /**/
+    --var-color-d: #dcdddf;
+    --var-color-white: ;
+}
+/* 
 header.dark-bground,
 main.dark-bground,
 footer.dark-bgroud{
-    background-color: #111;
-    color: white;
-}
+
+} */
