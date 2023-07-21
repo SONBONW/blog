@@ -1,5 +1,14 @@
+@font-face {
+  font-family: WorkSans;
+  src: url(../font/Work_Sans/WorkSans-VariableFont_wght.ttf);
+  font-family: SourceSerifPro;
+  src: url(../font/source-serif-pro/SourceSerifPro-Regular.otf)
+}
+
 body{
-    font-family: 'Work Sans', sans-serif;
+    font-family: WorkSans;
+    border: none;
+    outline: none;
 }
 
 :root{
@@ -37,11 +46,31 @@ li, a {
 
 header,
 nav,
-form{
+header form{
     display: flex;
     justify-content: space-between;
     padding: 32px 0;
 }
+
+header form {
+    width: 254px;
+    align-items: center;
+}
+
+nav{
+    width: calc(100% - 254px);
+}
+
+.item-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-menu li:last-child {
+    margin-right: 115px;
+}
+
 
 
 .logo{
@@ -49,14 +78,14 @@ form{
 }
 
 
-.item_menu{
+.item-menu li a{
     font-size: 16px;
     line-height: var(--var-sz);
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 
-.item_ipt:first-child {
+.item-ipt:first-child {
     width: 166px;
     height: 18px;
     border-radius: 5px;
@@ -64,23 +93,30 @@ form{
     gap: 12px;
     background-color: var(--var-color-f4);
     margin-right: 10px;
+    display: flex;
 }
 
-.item_ipt:first-child input {
+.item-ipt:first-child input {
+    background-color: var(--var-color-f4);
+    display: flex;
     border: none;
     outline: none;
-    background-color: var(--var-color-f4);
-    color: #A1A1AA;
 }
 
-.item_ipt i {
+.item-ipt button {
     width: 4px;
     height: 4px;
     color: #52525b;
     border-radius: 2px;
+    position: relative;
+    left: -8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
 }
 
-.item_ipt:last-child{
+.item-ipt:last-child{
     display: flex;
     width: 48px;
     height: 28px;
@@ -116,10 +152,11 @@ form{
     left: 16px;
 }
 
-
 /*MAIN*/
-main{
-    font-family: 'Source Serif Pro', sans-serif;
+
+
+main article{
+    font-family: SourceSerifPro;
 
 }
 
@@ -130,7 +167,7 @@ main{
     margin-bottom: 16px;
 }
 
-.form_introduce span:first-child {
+.form_introduce .tag {
     background-color: var(--var-color-button);
     color: var(--var-color-white);
     border: none;
@@ -151,17 +188,24 @@ main{
     margin: 15px 0;
 }
 
-.infor{
+.infor-user{
     display: flex;
-    width: 321px;
-    height: 36px;
     gap: 20px;
     padding: 0;
+    font-size: 16px;
+    line-height: var(--var-sz);
+    font-weight: 500;
+    color: #97989f;
 }
 
+.infor-user time {
+    line-height: 40px;
+    color: #97989f;
+    line-height: 46px;
+}
 
-.infor span {
-    line-height: 30px;
+.infor-user span {
+    line-height: 24px;
 }
 
 

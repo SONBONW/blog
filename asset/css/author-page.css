@@ -1,6 +1,12 @@
+@font-face {
+  font-family: WorkSans;
+  src: url(../font/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
 
 body{
-    font-family: 'Work Sans', sans-serif;
+    font-family: WorkSans;
+    border: none;
+    outline: none;
 }
 
 :root{
