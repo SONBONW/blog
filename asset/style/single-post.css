@@ -224,6 +224,7 @@ img {
 }
 
 main article h4 {
+    font-family: 'WorkSans';
     font-weight: 600;
     font-size: var(--var-sz);
     line-height: 28px;
