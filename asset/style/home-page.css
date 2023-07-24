@@ -2,25 +2,25 @@
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/WorkSans-Bold.ttf);
+    src: url(../font/Work-Sans/WorkSans-Bold.ttf);
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/WorkSans-SemiBold.ttf);
+    src: url(../font/Work-Sans/WorkSans-SemiBold.ttf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/WorkSans-Medium.ttf);
+    src: url(../font/Work-Sans/WorkSans-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/WorkSans-Regular.ttf);
+    src: url(../font/Work-Sans/WorkSans-Regular.ttf);
     font-weight: 400;
 }
 
@@ -28,19 +28,19 @@
 /*Font Plus Jakarta Sans*/
 @font-face {
     font-family: 'PlusJakartaSans';
-    src: url(../font/Plus_Jakarta_Sans/PlusJakartaSans-Regular.ttf);
+    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'PlusJakartaSans';
-    src: url(../font/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.ttf);
+    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-SemiBold.ttf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'PlusJakartaSans';
-    src: url(../font/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.ttf);
+    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-ExtraBold.ttf);
     font-weight: 800;
 }
 
@@ -80,6 +80,10 @@ a {
     color: var(--var-color-3);
 }
 
+input {
+    outline: none;
+}
+
 /*HEADER*/
 
 
@@ -96,7 +100,6 @@ nav {
 }
 
 header form {
-    width: 254px;
     align-items: center;
 }
 
@@ -132,24 +135,13 @@ nav {
 /*Hover*/
 
 .item-menu li a {
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(var(--var-color-white), var(--var-color-14));
     background-size: 0 3px, 100% 3px;
     background-position: 0 100%, 100% 100%;
     background-repeat: no-repeat;
-    transition: background-size 400ms;
+    transition: background-size 200ms;
 }
 
-.quick-link ul:hover li,
-.category ul:hover li,
-.item-menu:hover li {
-    filter: blur(2px);
-}
-
-.quick-link ul li:hover,
-.category ul li:hover,
-.item-menu li:hover {
-    filter: blur(0px);
-}
 
 .item-menu li a:hover {
     background-size: 100% 3px, 0 3px;
@@ -158,7 +150,7 @@ nav {
 
 .item-ipt:first-child {
     background-color: var(--var-color-f4);
-    margin-right: 10px;
+    margin-right: 36px;
     display: flex;
     position: relative;
     border-radius: 5px;
@@ -169,7 +161,7 @@ nav {
     display: flex;
     border: none;
     outline: none;
-    padding: 10px 36px 10px 16px;
+    padding: 10px 26px 10px 10px;
     border-radius: 5px;
 }
 
@@ -544,9 +536,8 @@ footer {
 
 .form-footer form i {
     position: absolute;
-    bottom: 110px;
+    bottom: 98px;
     right: 50px;
-    color: var(--var-color-6);
 }
 
 .form-footer form h4 {
@@ -554,11 +545,13 @@ footer {
     line-height: var(--var-sz);
     font-size: 20px;
     margin-bottom: 8px;
+    color: var(--var-color-14);
 }
 
 .form-footer form p {
     font-weight: 400;
     margin-bottom: 30px;
+    color: var(--var-color-6);
 }
 
 .form-footer form button {

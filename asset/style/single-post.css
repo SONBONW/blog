@@ -2,44 +2,44 @@
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/WorkSans-Bold.ttf);
+    src: url(../font/Work-Sans/WorkSans-Bold.ttf);
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/WorkSans-SemiBold.ttf);
+    src: url(../font/Work-Sans/WorkSans-SemiBold.ttf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/WorkSans-Medium.ttf);
+    src: url(../font/Work-Sans/WorkSans-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/WorkSans-Regular.ttf);
+    src: url(../font/Work-Sans/WorkSans-Regular.ttf);
     font-weight: 400;
 }
 
 /*Font Plus Jakarta Sans*/
 @font-face {
     font-family: 'PlusJakartaSans';
-    src: url(../font/Plus_Jakarta_Sans/PlusJakartaSans-Regular.ttf);
+    src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'PlusJakartaSans';
-    src: url(../font/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.ttf);
+    src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-SemiBold.ttf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'PlusJakartaSans';
-    src: url(../font/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.ttf);
+    src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-ExtraBold.ttf);
     font-weight: 800;
 }
 
