@@ -2,25 +2,25 @@
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/static/WorkSans-Bold.ttf);
+    src: url(../font/Work_Sans/WorkSans-Bold.ttf);
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/static/WorkSans-SemiBold.ttf);
+    src: url(../font/Work_Sans/WorkSans-SemiBold.ttf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/static/WorkSans-Medium.ttf);
+    src: url(../font/Work_Sans/WorkSans-Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'WorkSans';
-    src: url(../font/Work_Sans/static/WorkSans-Regular.ttf);
+    src: url(../font/Work_Sans/WorkSans-Regular.ttf);
     font-weight: 400;
 }
 
@@ -28,19 +28,19 @@
 /*Font Plus Jakarta Sans*/
 @font-face {
     font-family: 'PlusJakartaSans';
-    src: url(../font/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf);
+    src: url(../font/Plus_Jakarta_Sans/PlusJakartaSans-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'PlusJakartaSans';
-    src: url(../font/Plus_Jakarta_Sans/static/PlusJakartaSans-SemiBold.ttf);
+    src: url(../font/Plus_Jakarta_Sans/PlusJakartaSans-SemiBold.ttf);
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'PlusJakartaSans';
-    src: url(../font/Plus_Jakarta_Sans/static/PlusJakartaSans-ExtraBold.ttf);
+    src: url(../font/Plus_Jakarta_Sans/PlusJakartaSans-ExtraBold.ttf);
     font-weight: 800;
 }
 
@@ -61,6 +61,12 @@ body {
     --var-color-f4: #f4f4f5;
     --var-color-d: #dcdddf;
     --var-color-white: #fff;
+    --var-color-f6: #F6F6F7;
+    --var-color-14: #141624;
+}
+
+button {
+    font-family: 'WorkSans';
 }
 
 .width-1200 {
@@ -143,7 +149,7 @@ nav {
     display: flex;
     border: none;
     outline: none;
-    padding: 8px 36px 8px 16px;
+    padding: 10px 36px 10px 16px;
     border-radius: 5px;
 }
 
@@ -159,7 +165,7 @@ nav {
     border-radius: 2px;
     position: absolute;
     right: 17px;
-    bottom: 20px;
+    bottom: 22px;
     cursor: pointer;
     border: none;
     outline: none;
@@ -366,7 +372,7 @@ time {
     color: var(--var-color-button);
     font-size: 15px;
     line-height: 20px;
-    background-color: var(--var-color-d);
+    background-color: #4b6bfb0d;
     border-radius: 6px;
     padding: 4px 10px;
     margin-top: var(--var-sz);
@@ -375,6 +381,7 @@ time {
 
 
 .view {
+    background-color: var(--var-color-white);
     border: 1px solid var(--var-color-6);
     border-radius: 6px;
     color: var(--var-color-6);
@@ -384,7 +391,6 @@ time {
     padding: 12px 20px;
     margin: 22px auto 0 auto;
     align-items: center;
-    border: none;
     font-weight: 500;
 }
 
@@ -425,7 +431,7 @@ time {
 
 footer {
     margin-top: 80px;
-    background-color: var(--var-color-e);
+    background-color: var(--var-color-f6);
     border-top: 1px solid var(--var-color-e);
     padding-top: 20px;
     line-height: 25px;
@@ -440,8 +446,8 @@ footer {
 }
 
 .about li,
-p,
-a {
+.about p,
+.about a {
     color: var(--var-color-6)
 }
 
@@ -564,6 +570,7 @@ a {
     color: var(--var-color-white);
     cursor: pointer;
     margin-top: 8px;
+    border: none;
 }
 
 
@@ -591,6 +598,11 @@ a {
 
 .logo-footer span a p {
     font-weight: 400;
+    color: var(--var-color-14);
+}
+
+.logo-footer span a p span {
+    color: var(--var-color-3);
 }
 
 strong {
