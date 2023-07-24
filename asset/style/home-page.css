@@ -115,6 +115,7 @@ nav {
 
 
 
+
 .logo {
     margin-right: 44px;
 }
@@ -123,8 +124,35 @@ nav {
 .item-menu li a {
     font-size: 16px;
     line-height: var(--var-sz);
-    padding: 0 20px;
-    border-radius: 5px;
+    padding: 3px 0;
+    margin: 0 20px;
+}
+
+
+/*Hover*/
+
+.item-menu li a {
+    background: linear-gradient(#e66465, #9198e5);
+    background-size: 0 3px, 100% 3px;
+    background-position: 0 100%, 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.quick-link ul:hover li,
+.category ul:hover li,
+.item-menu:hover li {
+    filter: blur(2px);
+}
+
+.quick-link ul li:hover,
+.category ul li:hover,
+.item-menu li:hover {
+    filter: blur(0px);
+}
+
+.item-menu li a:hover {
+    background-size: 100% 3px, 0 3px;
 }
 
 
@@ -471,6 +499,12 @@ footer {
 .quick-link ul li,
 .category ul li {
     margin-bottom: 8px;
+}
+
+.quick-link ul li a:hover,
+.category ul li a:hover {
+    color: var(--var-color-button);
+    font-weight: 500;
 }
 
 .list-footer {
