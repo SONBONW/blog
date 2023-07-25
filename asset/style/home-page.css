@@ -27,19 +27,19 @@
 /*Font Plus Jakarta Sans*/
 @font-face {
     font-family: 'PlusJakartaSansRegular';
-    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-Regular.ttf);
+    src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-Regular.ttf);
 
 }
 
 @font-face {
     font-family: 'PlusJakartaSansSemiBold';
-    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-SemiBold.ttf);
+    src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-SemiBold.ttf);
 
 }
 
 @font-face {
     font-family: 'PlusJakartaSansExtraBold';
-    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-ExtraBold.ttf);
+    src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-ExtraBold.ttf);
 
 }
 
@@ -79,10 +79,7 @@
     --font-w8: 800;
 }
 
-body {
-    border: none;
-    outline: none;
-}
+
 
 .width-1200 {
     width: 1200px;
@@ -145,6 +142,8 @@ nav {
 
 .logo {
     margin-right: 44px;
+    align-items: center;
+    display: flex;
 }
 
 
@@ -251,12 +250,12 @@ nav {
 
 
 .switch-toggle:checked+img {
-    left: 29px;
+    left: 31px;
 
 }
 
 .switch-toggle:checked:before {
-    left: 20px;
+    left: 22px;
 }
 
 
@@ -352,7 +351,7 @@ time {
 }
 
 .advertisement h4 {
-    font-family: var(--font-PlusJakartaSansSemiBold);
+    font-family: var(--font-WorkSansSemiBold);
     font-weight: var(--font-w6);
     font-size: 20px;
     line-height: var(--var-sz);
@@ -478,13 +477,15 @@ footer {
     font-family: var(--font-PlusJakartaSansSemiBold);
     font-weight: var(--font-w6);
     color: var(--var-color-18);
+}
+
+.list-footer h5 {
     padding-right: 5px;
 }
 
 
-
 .about {
-    width: 25%;
+    width: 35%;
 }
 
 .about p {
@@ -503,15 +504,15 @@ footer {
 
 .quick-link,
 .category {
-    width: 10%;
+    width: 11%;
 }
 
 .quick-link {
-    margin: 0 40px 0 140px;
+    padding-left: 145px;
 }
 
 .category {
-    margin: 0 140px 0 40px;
+    padding: 0 140px 0 80px;
 }
 
 .quick-link h5,
@@ -547,7 +548,7 @@ footer {
 }
 
 .form-footer {
-    width: 32%;
+    width: 43%;
     text-align: center;
     background-color: var(--var-color-white);
     border-radius: 12px;
@@ -558,7 +559,7 @@ footer {
 
 
 .form-footer form input {
-    width: 290px;
+    width: 77%;
     height: var(--var-sz);
     border-radius: 6px;
     border: 1px solid var(--var-color-d);
@@ -578,7 +579,7 @@ footer {
 .form-footer form i {
     position: absolute;
     bottom: 98px;
-    right: 45px;
+    right: 68px;
 }
 
 .form-footer form h4 {
@@ -598,7 +599,7 @@ footer {
 }
 
 .form-footer form button {
-    width: 320px;
+    width: 85%;
     border-radius: 6px;
     padding: 12px 20px;
     background-color: var(--var-color-button);
@@ -635,7 +636,8 @@ footer {
 }
 
 .logo-footer span a p {
-    font-weight: 400;
+    font-family: var(--font-PlusJakartaSansRegular);
+    font-weight: var(--font-w4);
     color: var(--var-color-14);
 }
 
@@ -659,4 +661,27 @@ strong {
 .last li:last-child a {
     border-right: none;
     padding-right: 0;
+}
+
+
+/**/
+
+.nav {
+    display: none;
+}
+
+
+.icon {
+    font-size: 20px;
+    line-height: 40px;
+    display: none;
+    border: 1px solid var(--var-color-6);
+    background-color: var(--var-color-white);
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+
+.nav .item-menu {
+    display: none;
 }

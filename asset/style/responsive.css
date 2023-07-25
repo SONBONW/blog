@@ -1,84 +1,3 @@
-/*Font Work Sans*/
-
-@font-face {
-    font-family: 'WorkSansBold';
-    src: url(../font/Work-Sans/WorkSans-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'WorkSansSemiBold';
-    src: url(../font/Work-Sans/WorkSans-SemiBold.ttf);
-
-}
-
-@font-face {
-    font-family: 'WorkSansMedium';
-    src: url(../font/Work-Sans/WorkSans-Medium.ttf);
-
-}
-
-@font-face {
-    font-family: 'WorkSansRegular';
-    src: url(../font/Work-Sans/WorkSans-Regular.ttf);
-
-}
-
-
-/*Font Plus Jakarta Sans*/
-@font-face {
-    font-family: 'PlusJakartaSansRegular';
-    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-Regular.ttf);
-
-}
-
-@font-face {
-    font-family: 'PlusJakartaSansSemiBold';
-    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-SemiBold.ttf);
-
-}
-
-@font-face {
-    font-family: 'PlusJakartaSansExtraBold';
-    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-ExtraBold.ttf);
-
-}
-
-/*Font Inter*/
-
-@font-face {
-    font-family: 'InterRegular';
-    src: url(../font/Inter/Inter-Regular.ttf);
-
-}
-
-
-:root {
-    --var-sz: 24px;
-    --var-color-button: rgba(75, 107, 251, 1);
-    --var-color-6: #696A75;
-    --var-color-e: #e8e8ea;
-    --var-color-3: #3b3c4a;
-    --var-color-18: #181a2a;
-    --var-color-f4: #f4f4f5;
-    --var-color-d: #dcdddf;
-    --var-color-white: #fff;
-    --var-color-f6: #F6F6F7;
-    --var-color-14: #141624;
-    --font-WorkSansBold: 'WorkSansBold';
-    --font-WorkSansSemiBold: 'WorkSansSemiBold';
-    --font-WorkSansMedium: 'WorkSansMedium';
-    --font-WorkSansRegular: 'WorkSansRegular';
-    --font-PlusJakartaSansRegular: 'PlusJakartaSansRegular';
-    --font-PlusJakartaSansSemiBold: 'PlusJakartaSansSemiBold';
-    --font-PlusJakartaSansExtraBold: 'PlusJakartaSansExtraBold';
-    --font-InterRegular: 'InterRegular';
-    --font-w4: 400;
-    --font-w5: 500;
-    --font-w6: 600;
-    --font-w7: 700;
-    --font-w8: 800;
-}
-
 /*Responsive*/
 
 .nav {
@@ -159,6 +78,15 @@
         margin: 0 auto 20px auto;
         flex-wrap: wrap;
     }
+
+    time,
+    .user span {
+        font-size: 14px;
+    }
+
+    .form-introduce .tag {
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 825px) and (max-width: 979px) {
@@ -197,8 +125,7 @@
     }
 
     .form-introduce h2 {
-        font-family: var(--font-WorkSansMedium);
-        font-weight: 500;
+        font-size: 26px;
     }
 
 
@@ -273,7 +200,6 @@
     .nav {
         position: relative;
         display: block;
-        padding-bottom: 10px;
     }
 
     .icon {
@@ -286,6 +212,10 @@
         display: none;
     }
 
+    .post {
+        margin-right: 0;
+        margin-left: 0;
+    }
 
 
     .nav form .item-ipt {
@@ -366,15 +296,10 @@
     }
 
     .form-introduce h2 {
-        font-family: var(--font-WorkSansRegular);
-        font-weight: 400;
         margin: 8px 0 12px 0;
-        font-size: 28px;
+        font-size: 26px;
     }
 
-    .form-introduce .tag {
-        font-size: 12px;
-    }
 
     .first {
         flex-direction: column;
@@ -393,7 +318,7 @@
 
     .quick-link,
     .category {
-        margin: 10px 0 0 0;
+        padding: 10px 0 0 0;
     }
 
     .quick-link ul,
@@ -409,13 +334,9 @@
 
     .form-footer form i {
         bottom: 75px;
-        right: 115px;
     }
 
 
-    time,
-    .user span {
-        font-size: 10px;
-    }
+
 
 }
