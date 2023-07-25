@@ -1,0 +1,363 @@
+/*Font Work Sans*/
+
+@font-face {
+    font-family: 'WorkSansBold';
+    src: url(../font/Work-Sans/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'WorkSansSemiBold';
+    src: url(../font/Work-Sans/WorkSans-SemiBold.ttf);
+
+}
+
+@font-face {
+    font-family: 'WorkSansMedium';
+    src: url(../font/Work-Sans/WorkSans-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: 'WorkSansRegular';
+    src: url(../font/Work-Sans/WorkSans-Regular.ttf);
+
+}
+
+
+/*Font Plus Jakarta Sans*/
+@font-face {
+    font-family: 'PlusJakartaSansRegular';
+    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: 'PlusJakartaSansSemiBold';
+    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-SemiBold.ttf);
+
+}
+
+@font-face {
+    font-family: 'PlusJakartaSansExtraBold';
+    src: url(../font/Plus_Jakarta-Sans/PlusJakartaSans-ExtraBold.ttf);
+
+}
+
+/*Font Inter*/
+
+@font-face {
+    font-family: 'InterRegular';
+    src: url(../font/Inter/Inter-Regular.ttf);
+
+}
+
+
+:root {
+    --var-sz: 24px;
+    --var-color-button: rgba(75, 107, 251, 1);
+    --var-color-6: #696A75;
+    --var-color-e: #e8e8ea;
+    --var-color-3: #3b3c4a;
+    --var-color-18: #181a2a;
+    --var-color-f4: #f4f4f5;
+    --var-color-d: #dcdddf;
+    --var-color-white: #fff;
+    --var-color-f6: #F6F6F7;
+    --var-color-14: #141624;
+    --font-WorkSansBold: 'WorkSansBold';
+    --font-WorkSansSemiBold: 'WorkSansSemiBold';
+    --font-WorkSansMedium: 'WorkSansMedium';
+    --font-WorkSansRegular: 'WorkSansRegular';
+    --font-PlusJakartaSansRegular: 'PlusJakartaSansRegular';
+    --font-PlusJakartaSansSemiBold: 'PlusJakartaSansSemiBold';
+    --font-PlusJakartaSansExtraBold: 'PlusJakartaSansExtraBold';
+    --font-InterRegular: 'InterRegular';
+    --font-w4: 400;
+    --font-w5: 500;
+    --font-w6: 600;
+    --font-w7: 700;
+    --font-w8: 800;
+}
+
+/*Responsive*/
+
+.nav {
+    display: none;
+}
+
+
+.icon {
+    font-size: 20px;
+    line-height: 40px;
+    display: none;
+    border: none;
+    background-color: var(--var-color-white);
+    cursor: pointer;
+}
+
+
+.nav .item-menu {
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 825px) and (max-width: 1199px) {
+    .post:nth-child(3n) {
+        margin-right: 10px;
+    }
+
+    .post:nth-child(3n+1) {
+        margin-left: 10px;
+    }
+
+    .post {
+        width: 42%;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+    nav {
+        justify-content: flex-end;
+    }
+
+    .width-1200 {
+        width: 980px;
+    }
+
+    .item-menu {
+        flex: none;
+    }
+
+    .item-menu li:last-child {
+        margin-right: 0;
+    }
+
+    header form {
+        margin: 0 10px;
+    }
+
+    .nav .item-menu {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (min-width: 825px) and (max-width: 979px) {
+    .item-ipt:first-child {
+        display: none;
+    }
+
+    .nav .item-menu {
+        display: none;
+    }
+
+    .width-1200 {
+        width: 825px;
+    }
+
+    .item-menu li a {
+        margin: 0 16px;
+    }
+
+    .item-menu li:last-child {
+        margin-right: 60px;
+    }
+
+    .item-ipt:last-child {
+        margin-right: 20px;
+    }
+
+    nav {
+        margin-left: 20px;
+    }
+
+    .form-introduce {
+        left: 100px;
+        padding: 20px;
+    }
+
+    .form-introduce h2 {
+        font-family: var(--font-WorkSansMedium);
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (max-width: 824px) {
+    nav {
+        flex: none;
+        margin-left: 20px;
+    }
+
+    .item-menu {
+        display: none;
+    }
+
+    .width-1200 {
+        width: 500px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    form .item-ipt:last-child {
+        right: -50px;
+    }
+
+    .nav {
+        position: relative;
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .icon {
+        display: block;
+        margin: 0 20px;
+        border-radius: 6px;
+    }
+
+    form .item-ipt:first-child {
+        display: none;
+    }
+
+
+
+    .nav form .item-ipt {
+        display: none;
+        position: absolute;
+        top: 198px;
+        z-index: 1;
+        right: -16px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .nav .item-menu {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 48px;
+        background: var(--var-color-f4);
+        z-index: 1;
+        line-height: 30px;
+        border-radius: 2px;
+        text-align: start;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+
+
+
+    .nav .item-menu li {
+        padding: 0 50px;
+        margin: 0;
+    }
+
+    .item-menu li:last-child {
+        margin: 0;
+    }
+
+    .nav .item-ipt:first-child input {
+        padding-left: 37px;
+    }
+
+    .nav .item-menu li a {
+        width: 100%;
+        display: inline-block;
+    }
+
+
+
+    .icon:focus .item-menu {
+        display: block;
+    }
+
+    .icon:focus .item-ipt {
+        display: block;
+    }
+
+    .post {
+        width: 100%;
+    }
+
+    .last ul {
+        display: none;
+    }
+
+    .width-750 {
+        width: 450px;
+    }
+
+    .logo-footer {
+        margin-left: 20px;
+    }
+
+    .form-introduce {
+        bottom: -80px;
+        padding: 10px;
+        left: 48px;
+    }
+
+    .form-introduce h2 {
+        font-family: var(--font-WorkSansRegular);
+        font-weight: 400;
+        margin: 8px 0 12px 0;
+        font-size: 28px;
+    }
+
+    .form-introduce .tag {
+        font-size: 12px;
+    }
+
+    .first {
+        margin: 0 auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .about,
+    .quick-link,
+    .category,
+    .form-footer,
+    .list-footer {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quick-link,
+    .category {
+        margin: 10px 0 0 0;
+    }
+
+    .quick-link ul,
+    .category ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .form-footer {
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .form-footer form i {
+        bottom: 75px;
+        right: 115px;
+    }
+
+
+    time,
+    .user span {
+        font-size: 10px;
+    }
+
+}
