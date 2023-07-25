@@ -41,11 +41,11 @@
 	}
 
 	.quick-link {
-		margin: 0 20px 0 70px;
+		padding-left: 75px;
 	}
 
 	.category {
-		margin: 0 70px 0 20px;
+		padding: 0 70px 0 40px;
 	}
 
 }
@@ -61,7 +61,7 @@
 	}
 
 	.width-1200 {
-		width: 825px;
+		width: 880px;
 	}
 
 	.item-menu li a {
@@ -89,7 +89,30 @@
 		font-size: 26px;
 	}
 
+	.post {
+		margin: 5px;
+	}
 
+	.post:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.post:nth-child(2n+1) {
+		margin-left: 0;
+	}
+
+	.post {
+		width: 45%;
+	}
+
+	.first {
+		flex-wrap: wrap;
+	}
+
+	.quick-link,
+	.category {
+		padding: 0;
+	}
 
 	.about,
 	.quick-link,
@@ -108,10 +131,10 @@
 		text-align: center;
 	}
 
-	.quick-link,
+	/* .quick-link,
 	.category {
 		margin: 0;
-	}
+	} */
 
 	.category {
 		margin-top: 23px;
@@ -124,22 +147,253 @@
 
 
 	.form-footer {
-		padding: 10px;
+		padding: 20px;
 		margin: 20px 0;
 		width: 45%;
 	}
 
-	.form-footer form i {
+	/* .form-footer form i {
 		bottom: 75px;
 		right: 115px;
-	}
+	} */
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	nav {
+		flex: none;
+		margin-left: 20px;
+	}
+
+	.item-menu {
+		display: none;
+	}
+
+	.width-1200 {
+		width: 670px;
+	}
+
+	header {
+		justify-content: space-between;
+	}
+
+	form .item-ipt:last-child {
+		right: -50px;
+	}
+
+	.first {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+
+	.nav {
+		position: relative;
+		display: block;
+	}
+
+	.icon {
+		display: block;
+		margin: 0 20px;
+		border-radius: 6px;
+	}
+
+	form .item-ipt:first-child {
+		display: none;
+	}
+
+
+
+	.nav form .item-ipt {
+		display: none;
+		position: absolute;
+		top: 198px;
+		z-index: 1;
+		right: -16px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+
+	.nav .item-menu {
+		display: none;
+		position: absolute;
+		right: 20px;
+		top: 48px;
+		background: var(--var-color-f4);
+		z-index: 1;
+		line-height: 30px;
+		border-radius: 2px;
+		text-align: start;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.nav .item-menu li {
+		padding: 0 50px;
+		margin: 0;
+	}
+
+	.item-menu li:last-child {
+		margin: 0;
+	}
+
+	.nav .item-ipt:first-child input {
+		padding-left: 37px;
+	}
+
+	.nav .item-menu li a {
+		width: 100%;
+		display: inline-block;
+	}
+
+
+
+	.icon:focus .item-menu {
+		display: block;
+	}
+
+	.icon:focus .item-ipt {
+		display: block;
+	}
+
+	.posts {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+
+
+	.post:nth-child(3n+1),
+	.post:nth-child(2n+1) {
+		margin-right: 0;
+	}
+
+	.post:nth-child(3n),
+	.post:nth-child(2n) {
+		margin-left: 0;
+	}
+
+	.post {
+		width: 70%;
+		margin: 10px auto 0 auto;
+	}
+
+	.post:first-child {
+		margin-top: 0;
+	}
+
+
+
+	.last ul {
+		display: none;
+	}
+
+	.width-750 {
+		width: 450px;
+	}
+
+	.logo-footer {
+		margin-left: 20px;
+	}
+
+	.form-introduce {
+		bottom: -80px;
+		padding: 10px;
+		left: 48px;
+	}
+
+	.form-introduce h2 {
+		margin: 8px 0 12px 0;
+		font-size: 26px;
+	}
+
+
+	.first {
+		flex-direction: column;
+	}
+
+	.about,
+	.quick-link,
+	.category,
+	.form-footer,
+	.list-footer {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.quick-link,
+	.category {
+		padding: 10px 0 0 0;
+	}
+
+	.quick-link ul,
+	.category ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	.form-footer {
+		padding: 10px;
+	}
+
+	.form-footer form i {
+		bottom: 75px;
+	}
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+	nav {
+		flex: none;
+		margin-left: 20px;
+	}
+
+	.item-menu {
+		display: none;
+	}
+
+	.width-1200 {
+		width: 300px;
+	}
+
+	header {
+		justify-content: space-between;
+	}
+
+	.item-ipt:first-child {
+		display: none;
+
+	}
+
+	.item-ipt:last-child {
+		right: -60px;
+	}
+
+	.nav {
+		position: relative;
+		display: block;
+	}
+
+	.icon {
+		display: block;
+	}
+
+	.form-introduce {
+		padding: 22px;
+	}
+
+	.form-introduce h2 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.user span,
+	time,
+	.tag {
+		font-size: 14px;
+	}
+}
 
 /* Option follow device */
 @media (min-width: 1500px) {}

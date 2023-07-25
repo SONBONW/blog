@@ -87,7 +87,7 @@
 }
 
 .width-750 {
-    width: 750px;
+    width: 62.5%;
 }
 
 
@@ -673,12 +673,13 @@ strong {
 
 .icon {
     font-size: 20px;
-    line-height: 40px;
+    line-height: 36px;
     display: none;
     border: 1px solid var(--var-color-6);
     background-color: var(--var-color-white);
     cursor: pointer;
     padding: 0 10px;
+    border-radius: 5px;
 }
 
 
