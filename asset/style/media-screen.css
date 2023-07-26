@@ -16,6 +16,10 @@
 		width: 42%;
 	}
 
+	.logo {
+		margin-right: 0;
+	}
+
 	.item-ipt:first-child input {
 		padding-left: 5px;
 	}
@@ -32,16 +36,15 @@
 		width: 100%;
 	}
 
-	.item-menu {
-		flex: none;
-	}
+
 
 	.item-menu li:last-child {
 		margin-right: 0;
 	}
 
-	header form {
-		margin: 0 10px;
+
+	.item-ipt:first-child {
+		margin-right: 30px;
 	}
 
 	.nav .item-menu {
@@ -80,17 +83,19 @@
 		width: 80%;
 	}
 
+	.item-menu {
+		justify-content: center;
+	}
+
 	.item-menu li a {
-		margin: 0 16px;
+
+		margin: 0 5px;
 	}
 
 	.item-menu li:last-child {
-		margin-right: 60px;
+		margin-right: 10px;
 	}
 
-	.item-ipt:last-child {
-		margin-right: 20px;
-	}
 
 	nav {
 		margin-left: 20px;
@@ -126,7 +131,7 @@
 
 
 	.post {
-		width: 43%;
+		width: 42%;
 	}
 
 	.post h4 {
