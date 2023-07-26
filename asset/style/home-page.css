@@ -271,7 +271,7 @@ main section:first-child {
 
 .form-introduce {
     position: absolute;
-    bottom: -64px;
+    bottom: -80px;
     border-radius: 12px;
     left: 64px;
     background-color: var(--var-color-white);
