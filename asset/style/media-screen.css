@@ -16,12 +16,20 @@
 		width: 42%;
 	}
 
-	nav {
-		justify-content: flex-end;
+	.item-ipt:first-child input {
+		padding-left: 5px;
 	}
 
-	.width-1200 {
-		width: 980px;
+	.item-menu li a {
+		margin: 0 10px;
+	}
+
+	.width-1216 {
+		width: 80%;
+	}
+
+	.width-img {
+		width: 100%;
 	}
 
 	.item-menu {
@@ -60,8 +68,16 @@
 		display: none;
 	}
 
-	.width-1200 {
+	.width-1216 {
+		width: 80%;
+	}
+
+	.width-img {
 		width: 100%;
+	}
+
+	.width-750 {
+		width: 80%;
 	}
 
 	.item-menu li a {
@@ -86,19 +102,42 @@
 	}
 
 	.post {
-		margin: 5px;
+		margin: 10px;
+	}
+
+	.post:nth-child(3n+1) {
+		margin-right: 10px;
+	}
+
+	.post:nth-child(3n) {
+		margin-left: 10px;
 	}
 
 	.post:nth-child(2n) {
 		margin-right: 0;
+		margin-left: 10px;
 	}
 
 	.post:nth-child(2n+1) {
 		margin-left: 0;
+		margin-right: 10px;
 	}
 
+
+
 	.post {
-		width: 45%;
+		width: 43%;
+	}
+
+	.post h4 {
+		font-size: 20px;
+		margin: 16px 0;
+	}
+
+	.user span,
+	time,
+	.tag {
+		font-size: 14px;
 	}
 
 	.first {
@@ -130,10 +169,10 @@
 		text-align: center;
 	}
 
-	/* .quick-link,
-	.category {
-		margin: 0;
-	} */
+	.about {
+		padding-left: 30px;
+	}
+
 
 	.category {
 		margin-top: 23px;
@@ -141,7 +180,6 @@
 
 	.list-footer {
 		flex-direction: row;
-		margin: 0 auto;
 	}
 
 
@@ -151,29 +189,26 @@
 		width: 45%;
 	}
 
-	/* .form-footer form i {
-		bottom: 75px;
-		right: 115px;
-	} */
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
 
-	.width-1200 {
-		width: 100%;
+	.width-1216 {
+		width: 80%;
 	}
 
 	.item-ipt:last-child {
-		right: -70px;
+		right: -50px;
 	}
 
 
 	.form-introduce {
 		padding: 20px;
 		bottom: 0;
-		transform: translate3d(30%, 45%, 10px);
+		transform: translate3d(10%, 45%, 10px);
 		left: 0;
 	}
 
@@ -206,6 +241,10 @@
 	}
 
 
+	.form-footer form i {
+		bottom: 75px;
+		right: 50px;
+	}
 
 
 }
@@ -216,16 +255,16 @@
 
 
 
-	.width-1200 {
-		width: 100%;
+	.width-1216 {
+		width: 80%;
 	}
 
 
 
 	.form-introduce {
-		padding: 20px;
+		padding: 10px;
 		bottom: -100px;
-		left: 15px;
+		left: 10px;
 	}
 
 
@@ -233,13 +272,15 @@
 	.form-introduce h2 {
 		font-size: 14px;
 		line-height: 20px;
+		margin: 6px 0 14px 0;
 	}
 
-	.user span,
-	time,
-	.tag {
-		font-size: 14px;
+	.form-footer form i {
+		bottom: 75px;
+		right: 50px;
 	}
+
+
 }
 
 /* Option follow device */
@@ -266,8 +307,13 @@
 		flex: none;
 	}
 
+
 	.item-menu {
 		display: none;
+	}
+
+	.width-img {
+		max-width: 100%;
 	}
 
 	header {
@@ -337,7 +383,8 @@
 	}
 
 	.user span,
-	time {
+	time,
+	.tag {
 		font-size: 12px;
 	}
 
@@ -345,12 +392,10 @@
 		margin-bottom: 0;
 	}
 
-	.list-post {
-		margin-left: 70px;
-	}
 
 	.list-post h4 {
-		font-size: 20px;
+		font-size: 16px;
+		margin: 10px 0;
 
 	}
 
@@ -361,13 +406,13 @@
 	}
 
 
-	.post:nth-child(3n+1),
+	/* .post:nth-child(3n+1),
 	.post:nth-child(2n),
 	.post:nth-child(3n),
 	.post:nth-child(2n+1) {
 		margin-left: 0;
 		margin-left: 0;
-	}
+	} */
 
 	.post {
 		width: 70%;
@@ -423,10 +468,7 @@
 		margin-top: 18px;
 	}
 
-	.form-footer form i {
-		bottom: 75px;
-		right: 50px;
-	}
+
 
 	.last {
 		justify-content: center;
