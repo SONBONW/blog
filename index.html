@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./asset/style/reset-v2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./asset/style/home-page-v2.css">
     <link rel="stylesheet" href="./asset/style/responsive-v2.css">
 </head>
@@ -20,7 +19,10 @@
             <a class="logo" href="#">
                 <img src="./asset/img/Logo.svg" alt="">
             </a>
-            <ul class="item-menu">
+            <a class="logo-mobile" href="#">
+                <img src="./asset/img/logo-black.png" alt="">
+            </a>
+            <ul class="item-menu displayNone">
                 <li><a href="">Home</a></li>
                 <li><a href="./blog-listing.html">Blog</a></li>
                 <li><a href="./single-post.html">Single Post</a></li>
@@ -45,14 +47,15 @@
                     <img src="./asset/img/Vector.svg" alt="">
                 </label>
             </form>
-            <button class="mobile-btn" id="click" class="icon fa-solid fa-bars"></butto>
+            <button class="mobile-btn" id="click" onclick="clickIconNav()">
+                <i class="icon fa-solid fa-bars"></i></button>
         </nav>
     </header>
 
     <!-- main -->
-    <main class="container">
+    <!-- <main class="container">
         <section>
-            <img class="width-img" src="./asset/img/Image.svg" alt="">
+            <img class="width-img img-fluid" src="./asset/img/Image.svg" alt="">
             <div class="form-introduce width-1130">
                 <span class="tag">Technology</span>
                 <h2>The Impact of Technology on <br> the Workplace: How <br> Technology is Changing</h2>
@@ -282,7 +285,21 @@
         </div>
     </footer>
     <script src="./asset/script/index.js"></script>
-    <script src="./asset/script/click.js"></script>
+    <script src="./asset/script/click.js"></script> -->
+    <script type="text/javascript">
+        function clickIconNav() {
+            const element = document.getElementsByClassName("item-menu")[0];
+            console.log(element)
+            const isNavbarOpen = element.classList.contains("displayBlock");
+            if (isNavbarOpen) {
+                element.classList.remove("displayBlock");
+                element.classList.add("displayNone");
+            } else {
+                element.classList.add("displayBlock");
+                element.classList.remove("displayNone");
+            }
+        }
+    </script>
 </body>
 
 </html>
