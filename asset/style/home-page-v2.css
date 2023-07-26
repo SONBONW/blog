@@ -1,0 +1,225 @@
+/*Font Work Sans*/
+
+@font-face {
+    font-family: 'WorkSansBold';
+    src: url(../font/Work-Sans/WorkSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'WorkSansSemiBold';
+    src: url(../font/Work-Sans/WorkSans-SemiBold.ttf);
+
+}
+
+@font-face {
+    font-family: 'WorkSansMedium';
+    src: url(../font/Work-Sans/WorkSans-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: 'WorkSansRegular';
+    src: url(../font/Work-Sans/WorkSans-Regular.ttf);
+
+}
+
+
+/*Font Plus Jakarta Sans*/
+@font-face {
+    font-family: 'PlusJakartaSansRegular';
+    src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: 'PlusJakartaSansSemiBold';
+    src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-SemiBold.ttf);
+
+}
+
+@font-face {
+    font-family: 'PlusJakartaSansExtraBold';
+    src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-ExtraBold.ttf);
+
+}
+
+/*Font Inter*/
+
+@font-face {
+    font-family: 'InterRegular';
+    src: url(../font/Inter/Inter-Regular.ttf);
+
+}
+
+
+:root {
+    --var-sz: 24px;
+    --var-color-button: rgba(75, 107, 251, 1);
+    --var-color-6: #696A75;
+    --secondary-100: #F4F4F5;
+    --secondary-200: #E8E8EA;
+    --secondary-400: #A1A1AA;
+    --secondary-600: #3b3c4a;
+    --var-color-18: #181a2a;
+    --var-color-f4: #f4f4f5;
+    --var-color-d: #dcdddf;
+    --var-color-white: #fff;
+    --var-color-f6: #F6F6F7;
+    --var-color-14: #141624;
+    --var-primary: #4B6BFB;
+    --font-WorkSansBold: 'WorkSansBold';
+    --font-WorkSansSemiBold: 'WorkSansSemiBold';
+    --font-WorkSansMedium: 'WorkSansMedium';
+    --font-WorkSansRegular: 'WorkSansRegular';
+    --font-PlusJakartaSansRegular: 'PlusJakartaSansRegular';
+    --font-PlusJakartaSansSemiBold: 'PlusJakartaSansSemiBold';
+    --font-PlusJakartaSansExtraBold: 'PlusJakartaSansExtraBold';
+    --font-InterRegular: 'InterRegular';
+    --font-w4: 400;
+    --font-w5: 500;
+    --font-w6: 600;
+    --font-w7: 700;
+    --font-w8: 800;
+    --font-16: 16px;
+    --line-height-24: 24px;
+}
+
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.container{
+	width: 1218px;
+	margin: 0 auto;
+}
+
+header{
+	padding: 32px 0;
+	font-family: var(--font-WorkSansRegular);
+	color: var(--secondary-600);
+}
+
+header nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header nav .logo img{
+	max-width: 100%;
+	height: auto;
+}
+
+
+header nav ul li{
+	float: left;
+	margin-right: 32px;
+    list-style: none;
+	
+}
+
+header nav ul li a{
+	color: var(--secondary-600);
+	text-decoration: none;
+	font-family: var(--font-WorkSansRegular);
+	font-size: var(--font-16);
+}
+
+header nav form{
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+header nav .search-input{
+	display: flex;
+}
+header nav .search-input input{
+	padding: 8px 16px;
+    border: 0px;
+    font-size: 14px;
+    font-family: var(--font-InterRegular);
+    line-height: 20px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+header nav .search-input input::placeholder{
+	color: var(--secondary-400);
+}
+
+header nav .search-input button,
+header nav .search-input input{
+	background-color: var(--secondary-100);
+}
+
+header nav .search-input button{
+	padding: 8px 10px 8px 12px;
+    font-size: 16px;
+    border: 0px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+header nav .mobile-btn{
+	display: none;
+}
+
+header nav form .dark-mode-selector{
+	position: relative;
+	margin: 0;
+	margin-left: 40px;
+	display: flex;
+}
+
+
+header nav form .dark-mode-selector input{
+	width: 48px;
+    height: 28px;
+    appearance: none;
+    background-color: var(--secondary-200);
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+header nav .search-input input:focus {
+    outline: transparent;
+}
+
+header nav form .dark-mode-selector input::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    background-color: var(--var-color-white);
+    border-radius: 50%;
+}
+
+header nav form .dark-mode-selector input:checked{
+	background-color: var(--var-primary);
+}
+
+header nav form .dark-mode-selector input:checked+img {
+    left: 27px;
+
+}
+
+header nav form .dark-mode-selector input:checked:before {
+    left: 22px;
+}
+
+
+
+header nav form .dark-mode-selector img{
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    cursor: pointer;
+}
+
