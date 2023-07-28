@@ -70,6 +70,11 @@
 		display: none;
 	}
 
+	/* .item-ipt:first-child {
+		margin-right: 14px;
+	}
+ */
+
 
 	.container {
 		width: 720px;
@@ -97,7 +102,7 @@
 	}
 
 	.logo {
-		margin-right: 28px;
+		margin-right: 0;
 	}
 
 
@@ -148,52 +153,50 @@
 	}
 
 	.first {
-		flex-wrap: wrap;
-	}
-
-	.quick-link {
-		padding-left: 75px;
-	}
-
-	.category {
-		padding: 0 25px;
-	}
-
-	.about,
-	.quick-link,
-	.category,
-	.list-footer {
-		width: 38%;
-	}
-
-	.about,
-	.quick-link,
-	.category,
-	.form-footer,
-	.list-footer {
 		display: flex;
-		flex-direction: column;
-		text-align: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	.about {
-		padding-left: 30px;
+		order: 1;
+		width: 40%;
 	}
-
-
-	.category {
-		margin-top: 23px;
-	}
-
-	.list-footer {
-		flex-direction: row;
-	}
-
 
 	.form-footer {
+		order: 2;
 		padding: 20px;
 		margin: 20px 0;
 		width: 45%;
+	}
+
+	.quick-link {
+		order: 4;
+		padding-left: 75px;
+		width: 40%;
+	}
+
+	.category {
+		order: 3;
+		padding: 0 25px 0 0;
+		width: 40%;
+	}
+
+
+	.quick-link ul,
+	.category ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.quick-link ul li,
+	.category ul li {
+		width: 33%;
+	}
+
+	.list-footer {
+		width: 40%;
+		flex-direction: row;
 	}
 
 
@@ -202,25 +205,25 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
+	.displayFlex {
+		flex-direction: row;
+		top: 85px;
+		margin-left: 45px;
+		border-top: 1px solid #ccc;
+	}
+
+	/* .item-ipt button {
+		background-color: #141414;
+	} */
 
 	.container {
 		width: 540px;
 	}
 
-	.item-ipt:last-child {
-		right: -75px;
-	}
-
-
 	.form-introduce {
-		padding: 20px;
-		position: initial;
-		margin-top: -100px;
+		left: 30px;
 	}
 
-	.form-introduce {
-		transform: translateX(20%);
-	}
 
 	.form-introduce h2 {
 		margin: 8px 0 12px 0;
@@ -231,8 +234,22 @@
 		display: block;
 	}
 
-	.icon:focus .item-ipt {
-		display: block;
+
+	.about {
+
+		width: 80%;
+	}
+
+	.form-footer {
+		width: 80%;
+	}
+
+	.quick-link {
+		width: 45%;
+	}
+
+	.category {
+		width: 45%;
 	}
 
 	.last ul {
@@ -252,10 +269,10 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
-
-
-	header form {
-		display: none;
+	.displayFlex {
+		flex-direction: column;
+		top: 100px;
+		width: 100%;
 	}
 
 	.container {
@@ -268,12 +285,8 @@
 		left: 10px;
 	}
 
-	.form-introduce {
-		transform: translateX(30%);
-	}
-
 	.form-introduce h2 {
-		font-size: 18px;
+		font-size: 17px;
 		line-height: 20px;
 		margin: 6px 0 14px 0;
 	}
@@ -281,6 +294,42 @@
 	.form-introduce .time {
 		margin-left: 10px;
 	}
+
+	.vector {
+		top: 12px;
+		left: 13px;
+
+	}
+
+	.switch-toggle {
+		width: 33px;
+		height: 32px;
+		appearance: none;
+		background-color: var(--secondary-100);
+		border-radius: 100px;
+		position: relative;
+		cursor: pointer;
+
+	}
+
+	.switch-toggle::before {
+		content: none;
+		width: 0;
+		height: 0;
+		position: initial;
+
+	}
+
+	.switch-toggle:checked {
+		background-color: var(--secondary-600);
+	}
+
+	.switch-toggle:checked+.vector {
+		left: 13px;
+		filter: brightness(0) invert(1);
+		-webkit-filter: brightness(0) invert(1);
+	}
+
 
 	.form-footer form i {
 		bottom: 75px;
@@ -290,6 +339,23 @@
 	.user img {
 		width: 26px;
 		height: 26px;
+	}
+
+	.about {
+
+		width: 80%;
+	}
+
+	.form-footer {
+		width: 80%;
+	}
+
+	.quick-link {
+		width: 80%;
+	}
+
+	.category {
+		width: 80%;
 	}
 
 
@@ -316,21 +382,92 @@
 
 @media (max-width: 767px) {
 
+	.item-ipt:first-child {
+		display: none;
+	}
+
+	.item-ipt:first-child {
+		margin-right: 14px;
+	}
+
+	.item-ipt button svg {
+		background-color: #e8e8ea;
+		padding: 5px;
+		position: initial;
+		border-radius: 5px;
+		transform: translateY(50%);
+	}
+
+	header {
+		background-color: #141414;
+		color: white;
+		justify-content: space-between;
+	}
+
+	.container {
+		flex-wrap: wrap;
+	}
+
+	.item-ipt button {
+		margin-right: 20px;
+	}
+
+	.container form {
+		order: 2;
+	}
+
+	.item-ipt:last-child {
+		right: 25px;
+	}
+
+	.logo {
+		order: 1;
+		margin-right: auto;
+		margin-left: 10px;
+		filter: brightness(0) invert(1);
+		-webkit-filter: brightness(0) invert(1);
+	}
+
+
+	.icon {
+		order: 3;
+		display: block;
+		border-radius: 6px;
+		margin-right: 10px;
+	}
+
 	.item-menu {
 		display: none;
+	}
+
+	.displayFlex {
+		order: 4;
+	}
+
+
+	.displayFlex {
+		display: flex;
+		position: absolute;
+		z-index: 1;
+		background-color: #141414;
+	}
+
+	.displayFlex li a {
+		line-height: 40px;
+		color: white
+	}
+
+	.displayFlex li:active {
+		background-color: #232323;
 	}
 
 	.width-img {
 		max-width: 100%;
 	}
 
-	header {
-		justify-content: space-between;
-	}
-
-	.item-ipt:first-child {
+	/* .item-ipt:first-child {
 		display: none;
-	}
+	} */
 
 	.width-750 {
 		width: 80%;
@@ -338,18 +475,18 @@
 
 	.form-introduce {
 		padding: 20px;
-		position: initial;
-		margin-top: -100px;
+		position: relative;
+		display: block;
+		width: 55%;
+		margin: -190px auto 0 auto;
+		background-color: white;
 	}
 
 	.item-menu li:last-child {
 		margin: 0;
 	}
 
-	.icon {
-		display: block;
-		border-radius: 6px;
-	}
+
 
 	.form-introduce .tag,
 	.user span,
@@ -384,49 +521,49 @@
 	.first {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 auto;
-		justify-content: center;
+		justify-content: space-between;
+		padding-left: 15px;
 	}
 
-	.about,
+	.about {
+		order: 1;
+	}
+
 	.form-footer {
-		margin: 0 auto;
-		width: 80%;
+		order: 2;
+		padding: 20px;
+		margin: 24px 0;
 	}
 
-	.quick-link,
+	.quick-link {
+		order: 4;
+		padding-left: 0;
+	}
+
 	.category {
-		width: 40%;
-		text-align: center;
+		order: 3;
+		padding: 0;
 	}
 
 
-	.quick-link,
-	.category {
-		padding: 10px 0 0 0;
-	}
-
-	/* .quick-link ul,
+	.quick-link ul,
 	.category ul {
 		display: flex;
-		justify-content: space-between;
 		flex-wrap: wrap;
 	}
 
 	.quick-link ul li,
 	.category ul li {
-		width: 30%;
-	} */
-
-	.form-footer {
-		padding: 10px;
-		margin-top: 18px;
+		width: 50%;
 	}
 
+	.list-footer {
+		width: 40%;
+		flex-direction: row;
+	}
 
-
-	.last {
-		justify-content: center;
+	.logo-footer {
+		padding-left: 15px;
 	}
 
 	.last ul {
