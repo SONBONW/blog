@@ -82,7 +82,7 @@
 
 
 .width-img,
-.width-1216 {
+.container {
     width: 1216px;
     margin: 0 auto;
 }
@@ -375,6 +375,7 @@ time {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    justify-content: space-between;
 }
 
 .post {
