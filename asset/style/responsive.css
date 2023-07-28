@@ -1,8 +1,5 @@
 /*Responsive*/
 
-.nav {
-    display: none;
-}
 
 
 .icon {
@@ -15,9 +12,6 @@
 }
 
 
-.nav .item-menu {
-    display: none;
-}
 
 
 
@@ -57,10 +51,6 @@
         margin: 0 10px;
     }
 
-    .nav .item-menu {
-        display: none;
-    }
-
     .quick-link {
         margin: 0 20px 0 70px;
     }
@@ -95,9 +85,6 @@
         display: none;
     }
 
-    .nav .item-menu {
-        display: none;
-    }
 
     .width-1200 {
         width: 825px;
@@ -197,10 +184,6 @@
         right: -50px;
     }
 
-    .nav {
-        position: relative;
-        display: block;
-    }
 
     .icon {
         display: block;

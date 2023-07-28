@@ -44,11 +44,8 @@
 
 
 	.item-ipt:first-child {
-		margin-right: 30px;
-	}
-
-	.nav .item-menu {
-		display: none;
+		margin-right: 20px;
+		margin-left: 10px;
 	}
 
 	.quick-link {
@@ -67,9 +64,6 @@
 		display: none;
 	}
 
-	.nav .item-menu {
-		display: none;
-	}
 
 	.width-1216 {
 		width: 80%;
@@ -89,11 +83,15 @@
 
 	.item-menu li a {
 
-		margin: 0 5px;
+		margin: 0 7px;
 	}
 
 	.item-menu li:last-child {
 		margin-right: 10px;
+	}
+
+	.logo {
+		margin-right: 28px;
 	}
 
 
@@ -206,7 +204,7 @@
 	}
 
 	.item-ipt:last-child {
-		right: -50px;
+		right: -75px;
 	}
 
 
@@ -258,7 +256,9 @@
 @media (max-width: 575.98px) {
 
 
-
+	header form {
+		display: none;
+	}
 
 	.width-1216 {
 		width: 80%;
@@ -280,9 +280,18 @@
 		margin: 6px 0 14px 0;
 	}
 
+	.form-introduce time {
+		margin-left: 10px;
+	}
+
 	.form-footer form i {
 		bottom: 75px;
 		right: 50px;
+	}
+
+	.user img {
+		width: 26px;
+		height: 26px;
 	}
 
 
@@ -334,59 +343,21 @@
 		width: 80%;
 	}
 
-	.nav {
-		position: relative;
-		display: block;
-	}
 
-	.nav form .item-ipt {
-		display: none;
-		position: absolute;
-		top: 198px;
-		z-index: 1;
-		right: -16px;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-	}
 
-	.nav .item-menu {
-		display: none;
-		position: absolute;
-		right: 20px;
-		top: 48px;
-		background: var(--var-color-f4);
-		z-index: 1;
-		line-height: 30px;
-		border-radius: 2px;
-		text-align: start;
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-
-	.nav .item-menu li {
-		padding: 0 50px;
-		margin: 0;
-	}
 
 	.item-menu li:last-child {
 		margin: 0;
 	}
 
-	.nav .item-ipt:first-child input {
-		padding-left: 37px;
-	}
-
-	.nav .item-menu li a {
-		width: 100%;
-		display: inline-block;
-	}
 
 	.icon {
 		display: block;
-		margin: 0 20px;
+
 		border-radius: 6px;
 	}
 
+	.form-introduce .tag,
 	.user span,
 	time,
 	.tag {
