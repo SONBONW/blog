@@ -1,9 +1,29 @@
 ﻿/* -------------------- Config Website -------------------- */
+@media (min-width: 1400px) {
+	.container {
+		width: 1320px;
+	}
+}
+
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+	.container {
+		width: 1140px;
+	}
+
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	.container {
+		width: 960px;
+	}
+
+	.width-img {
+		width: 100%;
+	}
+
 	.post:nth-child(3n) {
 		margin-right: 10px;
 	}
@@ -16,25 +36,11 @@
 		width: 42%;
 	}
 
-	.logo {
-		margin-right: 0;
-	}
-
 	.item-ipt:first-child input {
 		padding-left: 5px;
 	}
 
-	.item-menu li a {
-		margin: 0 10px;
-	}
 
-	.width-1216 {
-		width: 80%;
-	}
-
-	.width-img {
-		width: 100%;
-	}
 
 
 
@@ -65,8 +71,8 @@
 	}
 
 
-	.width-1216 {
-		width: 80%;
+	.container {
+		width: 720px;
 	}
 
 	.width-img {
@@ -83,7 +89,7 @@
 
 	.item-menu li a {
 
-		margin: 0 7px;
+		margin: 0 16px;
 	}
 
 	.item-menu li:last-child {
@@ -101,7 +107,7 @@
 
 
 	.form-introduce h2 {
-		font-size: 26px;
+		font-size: 28px;
 	}
 
 	.post {
@@ -126,8 +132,6 @@
 		margin-right: 10px;
 	}
 
-
-
 	.post {
 		width: 42%;
 	}
@@ -138,7 +142,7 @@
 	}
 
 	.user span,
-	time,
+	.time,
 	.tag {
 		font-size: 14px;
 	}
@@ -199,8 +203,8 @@
 @media (min-width: 576px) and (max-width: 767.98px) {
 
 
-	.width-1216 {
-		width: 80%;
+	.container {
+		width: 540px;
 	}
 
 	.item-ipt:last-child {
@@ -210,13 +214,18 @@
 
 	.form-introduce {
 		padding: 20px;
-		bottom: 0;
-		transform: translate3d(10%, 45%, 10px);
-		left: 0;
+		position: initial;
+		margin-top: -100px;
 	}
 
+	.form-introduce {
+		transform: translateX(20%);
+	}
 
-
+	.form-introduce h2 {
+		margin: 8px 0 12px 0;
+		font-size: 24px;
+	}
 
 	.icon:focus .item-menu {
 		display: block;
@@ -226,9 +235,6 @@
 		display: block;
 	}
 
-
-
-
 	.last ul {
 		display: none;
 	}
@@ -237,34 +243,24 @@
 		margin-left: 20px;
 	}
 
-
-	.form-introduce h2 {
-		margin: 8px 0 12px 0;
-		font-size: 26px;
-	}
-
-
 	.form-footer form i {
 		bottom: 75px;
 		right: 50px;
 	}
-
-
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
 
+
 	header form {
 		display: none;
 	}
 
-	.width-1216 {
-		width: 80%;
+	.container {
+		width: 100%;
 	}
-
-
 
 	.form-introduce {
 		padding: 10px;
@@ -272,15 +268,17 @@
 		left: 10px;
 	}
 
-
+	.form-introduce {
+		transform: translateX(30%);
+	}
 
 	.form-introduce h2 {
-		font-size: 14px;
+		font-size: 18px;
 		line-height: 20px;
 		margin: 6px 0 14px 0;
 	}
 
-	.form-introduce time {
+	.form-introduce .time {
 		margin-left: 10px;
 	}
 
@@ -317,10 +315,6 @@
 }
 
 @media (max-width: 767px) {
-	nav {
-		flex: none;
-	}
-
 
 	.item-menu {
 		display: none;
@@ -336,32 +330,32 @@
 
 	.item-ipt:first-child {
 		display: none;
-
 	}
 
 	.width-750 {
 		width: 80%;
 	}
 
-
-
+	.form-introduce {
+		padding: 20px;
+		position: initial;
+		margin-top: -100px;
+	}
 
 	.item-menu li:last-child {
 		margin: 0;
 	}
 
-
 	.icon {
 		display: block;
-
 		border-radius: 6px;
 	}
 
 	.form-introduce .tag,
 	.user span,
-	time,
+	.time,
 	.tag {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.infor-user {
@@ -371,24 +365,12 @@
 
 	.list-post h4 {
 		font-size: 16px;
-		margin: 10px 0;
-
+		margin: 10px;
 	}
-
 
 	.posts {
-
-		flex-direction: column;
+		justify-content: center;
 	}
-
-
-	/* .post:nth-child(3n+1),
-	.post:nth-child(2n),
-	.post:nth-child(3n),
-	.post:nth-child(2n+1) {
-		margin-left: 0;
-		margin-left: 0;
-	} */
 
 	.post {
 		width: 70%;
@@ -400,34 +382,31 @@
 	}
 
 	.first {
-		flex-wrap: nowrap;
-		flex-direction: column;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		justify-content: center;
 	}
 
-
-
 	.about,
-	.quick-link,
-	.category,
-	.form-footer,
-	.list-footer {
-		display: flex;
-		width: 80%;
-		flex-direction: column;
+	.form-footer {
 		margin: 0 auto;
+		width: 80%;
+	}
+
+	.quick-link,
+	.category {
+		width: 40%;
 		text-align: center;
 	}
 
-	.list-footer {
-		flex-direction: row;
-	}
 
 	.quick-link,
 	.category {
 		padding: 10px 0 0 0;
 	}
 
-	.quick-link ul,
+	/* .quick-link ul,
 	.category ul {
 		display: flex;
 		justify-content: space-between;
@@ -437,7 +416,7 @@
 	.quick-link ul li,
 	.category ul li {
 		width: 30%;
-	}
+	} */
 
 	.form-footer {
 		padding: 10px;

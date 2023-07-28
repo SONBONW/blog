@@ -81,7 +81,11 @@
 }
 
 
-.width-img,
+.width-img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .container {
     width: 1216px;
     margin: 0 auto;
@@ -108,6 +112,8 @@ input {
 
 header {
     padding: 32px 0 56px 0;
+    color: var(--secondary-600);
+    font-family: var(--font-WorkSansRegular);
 
 }
 
@@ -122,15 +128,10 @@ header form {
     align-items: center;
 }
 
-nav {
-    flex: auto;
-
-}
 
 
 .item-menu {
     align-items: center;
-    font-family: var(--font-WorkSansRegular);
     font-weight: var(--font-w4);
     justify-content: flex-end;
     flex: auto;
@@ -195,18 +196,7 @@ nav {
     font-weight: var(--font-w4);
 }
 
-.item-ipt button {
-    width: 4px;
-    height: 4px;
-    color: #52525b;
-    border-radius: 2px;
-    position: absolute;
-    right: 17px;
-    bottom: 22px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
+
 
 .item-ipt:last-child {
     display: flex;
@@ -215,12 +205,25 @@ nav {
 }
 
 
-.item-ipt i {
+.vector {
     position: absolute;
     top: 10px;
     left: 12px;
     cursor: pointer;
 }
+
+.item-ipt button {
+    width: 4px;
+    height: 4px;
+    color: #52525b;
+    border-radius: 2px;
+    position: absolute;
+    right: 24px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
 
 .switch-toggle {
     width: 48px;
@@ -250,7 +253,7 @@ nav {
 }
 
 
-.switch-toggle:checked+img {
+.switch-toggle:checked+.vector {
     left: 31px;
 
 }
@@ -317,7 +320,7 @@ main section:first-child {
     font-size: 16px;
 }
 
-time {
+.time {
     color: #97989f;
     line-height: var(--fz-24);
     margin-left: 20px;
@@ -383,7 +386,7 @@ time {
     border-radius: 12px;
     padding: 16px;
     cursor: pointer;
-    width: calc(30% - 8px);
+    width: calc(30% - 12px);
     margin: 10px;
 }
 
@@ -506,7 +509,7 @@ footer {
 
 .quick-link,
 .category {
-    width: 11%;
+    width: 12%;
 }
 
 .quick-link {
@@ -624,6 +627,8 @@ footer {
 
 .logo-footer img {
     margin-right: 10px;
+    width: 48px;
+    height: 48px;
 }
 
 .logo-footer,
@@ -632,7 +637,11 @@ footer {
     align-items: center;
 }
 
-.logo-footer span a p:first-child {
+.logo-footer a {
+    display: flex;
+}
+
+.logo-footer div p:first-child {
     margin-bottom: 2px;
 
 }
