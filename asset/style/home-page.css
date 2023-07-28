@@ -53,17 +53,18 @@
 
 
 :root {
-    --var-sz: 24px;
-    --var-color-button: rgba(75, 107, 251, 1);
-    --var-color-6: #696A75;
-    --var-color-e: #e8e8ea;
-    --var-color-3: #3b3c4a;
-    --var-color-18: #181a2a;
-    --var-color-f4: #f4f4f5;
-    --var-color-d: #dcdddf;
+    --fz-24: 24px;
+    --btn-primary: rgba(75, 107, 251, 1);
+    --secondary-500: #696A75;
+    --secondary-100: #e8e8ea;
+    --secondary-600: #3b3c4a;
+    --secondary-800: #181a2a;
+    --secondary-100-f: #f4f4f5;
+    --secondary-200: #dcdddf;
     --var-color-white: #fff;
-    --var-color-f6: #F6F6F7;
-    --var-color-14: #141624;
+    --secondary-50: #F6F6F7;
+    --secondary-900: #141624;
+    --secondary-400: #97989f;
     --font-WorkSansBold: 'WorkSansBold';
     --font-WorkSansSemiBold: 'WorkSansSemiBold';
     --font-WorkSansMedium: 'WorkSansMedium';
@@ -95,7 +96,7 @@ li,
 a {
     text-decoration: none;
     list-style: none;
-    color: var(--var-color-3);
+    color: var(--secondary-600);
 }
 
 input {
@@ -149,7 +150,7 @@ nav {
 
 .item-menu li a {
     font-size: 16px;
-    line-height: var(--var-sz);
+    line-height: var(--fz-24);
     padding: 3px 0;
     margin: 0 20px;
 }
@@ -158,7 +159,7 @@ nav {
 /*Hover*/
 
 .item-menu li a {
-    background: linear-gradient(var(--var-color-white), var(--var-color-14));
+    background: linear-gradient(var(--var-color-white), var(--secondary-900));
     background-size: 0 3px, 100% 3px;
     background-position: 0 100%, 100% 100%;
     background-repeat: no-repeat;
@@ -172,7 +173,7 @@ nav {
 
 
 .item-ipt:first-child {
-    background-color: var(--var-color-f4);
+    background-color: var(--secondary-100-f);
     margin-right: 36px;
     display: flex;
     position: relative;
@@ -180,7 +181,7 @@ nav {
 }
 
 .item-ipt:first-child input {
-    background-color: var(--var-color-f4);
+    background-color: var(--secondary-100-f);
     display: flex;
     border: none;
     outline: none;
@@ -225,7 +226,7 @@ nav {
     width: 48px;
     height: 28px;
     appearance: none;
-    background-color: var(--var-color-e);
+    background-color: var(--secondary-100);
     border-radius: 100px;
     position: relative;
     cursor: pointer;
@@ -245,7 +246,7 @@ nav {
 }
 
 .switch-toggle:checked {
-    background-color: var(--var-color-button);
+    background-color: var(--btn-primary);
 }
 
 
@@ -276,13 +277,13 @@ main section:first-child {
     left: 64px;
     background-color: var(--var-color-white);
     padding: 40px;
-    border: 1px solid var(--var-color-e);
+    border: 1px solid var(--secondary-100);
     display: inline-block;
     box-shadow: 0px 12px 24px -6px #181a2a1f;
 }
 
 .form-introduce .tag {
-    background-color: var(--var-color-button);
+    background-color: var(--btn-primary);
     color: var(--var-color-white);
     font-size: 14px;
     font-family: var(--font-WorkSansMedium);
@@ -294,7 +295,7 @@ main section:first-child {
     font-weight: var(--font-w6);
     font-size: 36px;
     line-height: 40px;
-    color: var(--var-color-18);
+    color: var(--secondary-800);
     margin: 16px 0 24px 0;
 }
 
@@ -302,14 +303,14 @@ main section:first-child {
     display: flex;
     padding: 0;
     font-size: 16px;
-    line-height: var(--var-sz);
+    line-height: var(--fz-24);
     color: #97989f;
     margin-bottom: 8px;
 
 }
 
 .user span {
-    line-height: var(--var-sz);
+    line-height: var(--fz-24);
     padding-left: 12px;
     font-family: var(--font-WorkSansMedium);
     font-weight: var(--font-w5);
@@ -318,7 +319,7 @@ main section:first-child {
 
 time {
     color: #97989f;
-    line-height: var(--var-sz);
+    line-height: var(--fz-24);
     margin-left: 20px;
     font-size: 16px;
     align-items: center;
@@ -329,9 +330,9 @@ time {
 
 .advertisement {
     text-align: center;
-    background-color: var(--var-color-e);
+    background-color: var(--secondary-100);
     border-radius: 12px;
-    color: var(--var-color-e);
+    color: var(--secondary-100);
     margin: 145px auto 80px auto;
     line-height: 40px;
     padding: 15px 0;
@@ -340,7 +341,7 @@ time {
 .advertisement p {
     font-size: 14px;
     line-height: 20px;
-    color: var(--var-color-6);
+    color: var(--secondary-500);
     font-family: var(--font-WorkSansRegular);
     font-weight: var(--font-w4);
 }
@@ -354,8 +355,8 @@ time {
     font-family: var(--font-WorkSansSemiBold);
     font-weight: var(--font-w6);
     font-size: 20px;
-    line-height: var(--var-sz);
-    color: var(--var-color-6);
+    line-height: var(--fz-24);
+    color: var(--secondary-500);
 }
 
 .advertisement:last-child {
@@ -365,7 +366,7 @@ time {
 .list-post h4 {
     font-family: var(--font-WorkSansBold);
     font-weight: var(--font-w7);
-    font-size: var(--var-sz);
+    font-size: var(--fz-24);
     line-height: 28px;
     margin-bottom: 22px;
 }
@@ -377,7 +378,7 @@ time {
 }
 
 .post {
-    border: 1px solid var(--var-color-e);
+    border: 1px solid var(--secondary-100);
     border-radius: 12px;
     padding: 16px;
     cursor: pointer;
@@ -386,7 +387,7 @@ time {
 }
 
 .post img {
-    margin-bottom: var(--var-sz);
+    margin-bottom: var(--fz-24);
     width: 100%;
 }
 
@@ -394,7 +395,7 @@ time {
 .post h4 {
     font-family: var(--font-WorkSansSemiBold);
     font-weight: var(--font-w6);
-    color: var(--var-color-18);
+    color: var(--secondary-800);
     margin: 20px 0;
 }
 
@@ -423,20 +424,20 @@ time {
 .tag {
     font-family: var(--font-WorkSansMedium);
     font-weight: var(--font-w5);
-    color: var(--var-color-button);
+    color: var(--btn-primary);
     font-size: 15px;
     line-height: 20px;
     background-color: #4b6bfb0d;
     border-radius: 6px;
     padding: 4px 10px;
-    margin-top: var(--var-sz);
+    margin-top: var(--fz-24);
 }
 
 .view {
     border: 1px solid #696a754d;
     background-color: var(--var-color-white);
     border-radius: 6px;
-    color: var(--var-color-6);
+    color: var(--secondary-500);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -452,8 +453,8 @@ time {
 
 footer {
     margin-top: 80px;
-    background-color: var(--var-color-f6);
-    border-top: 1px solid var(--var-color-e);
+    background-color: var(--secondary-50);
+    border-top: 1px solid var(--secondary-100);
     padding-top: 20px;
     line-height: 25px;
 }
@@ -468,7 +469,7 @@ footer {
 .about li,
 .about p,
 .about a {
-    color: var(--var-color-6)
+    color: var(--secondary-500)
 }
 
 .first h5 {
@@ -476,7 +477,7 @@ footer {
     font-size: 16px;
     font-family: var(--font-PlusJakartaSansSemiBold);
     font-weight: var(--font-w6);
-    color: var(--var-color-18);
+    color: var(--secondary-800);
 }
 
 .list-footer h5 {
@@ -535,7 +536,7 @@ footer {
 
 .quick-link ul li a:hover,
 .category ul li a:hover {
-    color: var(--var-color-button);
+    color: var(--btn-primary);
     font-family: var(--font-PlusJakartaSansSemiBold);
     font-weight: var(--font-w5);
 }
@@ -560,9 +561,9 @@ footer {
 
 .form-footer form input {
     width: 77%;
-    height: var(--var-sz);
+    height: var(--fz-24);
     border-radius: 6px;
-    border: 1px solid var(--var-color-d);
+    border: 1px solid var(--secondary-200);
     padding: 12px 14px;
     margin: 10px 0;
 
@@ -585,24 +586,24 @@ footer {
 .form-footer form h4 {
     font-family: var(--font-WorkSansSemiBold);
     font-weight: var(--font-w6);
-    line-height: var(--var-sz);
+    line-height: var(--fz-24);
     font-size: 20px;
     margin-bottom: 8px;
-    color: var(--var-color-14);
+    color: var(--secondary-900);
 }
 
 .form-footer form p {
     font-family: var(--font-WorkSansRegular);
     font-weight: var(--font-w4);
     margin-bottom: 30px;
-    color: var(--var-color-6);
+    color: var(--secondary-500);
 }
 
 .form-footer form button {
     width: 85%;
     border-radius: 6px;
     padding: 12px 20px;
-    background-color: var(--var-color-button);
+    background-color: var(--btn-primary);
     color: var(--var-color-white);
     cursor: pointer;
     margin-top: 8px;
@@ -615,7 +616,7 @@ footer {
 .last {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid var(--var-color-d);
+    border-top: 1px solid var(--secondary-200);
     padding: 32px 0;
 }
 
@@ -638,11 +639,11 @@ footer {
 .logo-footer span a p {
     font-family: var(--font-PlusJakartaSansRegular);
     font-weight: var(--font-w4);
-    color: var(--var-color-14);
+    color: var(--secondary-900);
 }
 
 .logo-footer span a p span {
-    color: var(--var-color-3);
+    color: var(--secondary-600);
 }
 
 strong {
@@ -652,7 +653,7 @@ strong {
 
 
 .last li a {
-    border-right: 1px solid var(--var-color-d);
+    border-right: 1px solid var(--secondary-200);
     padding: 0 16px;
     font-family: var(--font-PlusJakartaSansRegular);
     font-weight: var(--font-w4);
@@ -675,7 +676,7 @@ strong {
     font-size: 20px;
     line-height: 36px;
     display: none;
-    border: 1px solid var(--var-color-6);
+    border: 1px solid var(--secondary-500);
     background-color: var(--var-color-white);
     cursor: pointer;
     padding: 0 10px;
