@@ -94,7 +94,6 @@
     width: 62.5%;
 }
 
-
 li,
 a {
     text-decoration: none;
@@ -113,7 +112,6 @@ header {
     display: flex;
 }
 
-
 nav {
     display: flex;
 }
@@ -122,8 +120,6 @@ header form {
     display: flex;
     align-items: center;
 }
-
-
 
 .item-menu {
     display: flex;
@@ -137,11 +133,9 @@ header form {
     margin-right: 115px;
 }
 
-
 .logo {
     display: flex;
 }
-
 
 .item-menu li a {
     font-size: 16px;
@@ -161,11 +155,9 @@ header form {
     transition: background-size 200ms;
 }
 
-
 .item-menu li a:hover {
     background-size: 100% 3px, 0 3px;
 }
-
 
 .item-ipt:first-child {
     background-color: var(--secondary-100-f);
@@ -190,14 +182,11 @@ header form {
     font-weight: var(--font-w4);
 }
 
-
-
 .item-ipt:last-child {
     display: flex;
     border-radius: 100px;
     position: relative;
 }
-
 
 .vector {
     position: absolute;
@@ -214,7 +203,6 @@ header form {
     background-color: var(--secondary-100-f);
 }
 
-
 .switch-toggle {
     width: 48px;
     height: 28px;
@@ -223,7 +211,6 @@ header form {
     border-radius: 100px;
     position: relative;
     cursor: pointer;
-
 }
 
 .switch-toggle::before {
@@ -235,17 +222,14 @@ header form {
     left: 3px;
     background-color: var(--var-color-white);
     border-radius: 50%;
-
 }
 
 .switch-toggle:checked {
     background-color: var(--btn-primary);
 }
 
-
 .switch-toggle:checked+.vector {
     left: 31px;
-
 }
 
 .switch-toggle:checked:before {
@@ -380,7 +364,6 @@ main section:first-child {
     width: 100%;
 }
 
-
 .post h4 {
     font-family: var(--font-WorkSansSemiBold);
     font-weight: var(--font-w6);
@@ -406,9 +389,6 @@ main section:first-child {
     display: flex;
     align-items: center;
 }
-
-
-
 
 .tag {
     font-family: var(--font-WorkSansMedium);
@@ -448,8 +428,6 @@ footer {
     line-height: 25px;
 }
 
-
-
 .first {
     display: flex;
     margin: 64px auto;
@@ -473,7 +451,6 @@ footer {
     padding-right: 5px;
 }
 
-
 .about {
     width: 40%;
     padding-right: 145px;
@@ -490,8 +467,6 @@ footer {
 .about ul li {
     display: flex;
 }
-
-
 
 .quick-link,
 .category {
@@ -545,8 +520,6 @@ footer {
     position: relative;
 }
 
-
-
 .form-footer form input {
     width: 77%;
     height: var(--fz-24);
@@ -554,7 +527,6 @@ footer {
     border: 1px solid var(--secondary-200);
     padding: 12px 14px;
     margin: 10px 0;
-
 }
 
 .form-footer form input::placeholder {
@@ -600,14 +572,12 @@ footer {
     font-weight: var(--font-w5);
 }
 
-
 .last {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid var(--secondary-200);
     padding: 32px 0;
 }
-
 
 .logo-footer img {
     margin-right: 10px;
@@ -627,7 +597,6 @@ footer {
 
 .logo-footer div p:first-child {
     margin-bottom: 2px;
-
 }
 
 .logo-footer a span,
@@ -645,7 +614,6 @@ strong {
     font-family: var(--font-PlusJakartaSansExtraBold);
     font-weight: var(--font-w8);
 }
-
 
 .last li a {
     border-right: 1px solid var(--secondary-200);
@@ -666,7 +634,6 @@ strong {
     display: none;
 }
 
-
 .icon {
     font-size: 20px;
     line-height: 36px;
@@ -677,7 +644,6 @@ strong {
     padding: 0 10px;
     border-radius: 5px;
 }
-
 
 .nav .item-menu {
     display: none;

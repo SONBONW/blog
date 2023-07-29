@@ -106,7 +106,6 @@
 		margin-right: 0;
 	}
 
-
 	nav {
 		margin-left: 20px;
 	}
@@ -209,12 +208,9 @@
 		flex-direction: row;
 	}
 
-
 	.last li a {
 		padding: 0 10px;
 	}
-
-
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -325,7 +321,6 @@
 		width: 0;
 		height: 0;
 		position: initial;
-
 	}
 
 	.switch-toggle:checked {
@@ -442,7 +437,6 @@
 		order: 4;
 	}
 
-
 	.displayFlex {
 		display: flex;
 		justify-content: center;
@@ -544,7 +538,6 @@
 		order: 3;
 		padding: 0;
 	}
-
 
 	.quick-link ul,
 	.category ul {
