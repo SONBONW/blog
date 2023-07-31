@@ -130,7 +130,7 @@ header form {
 }
 
 .item-menu li:last-child {
-    margin-right: 115px;
+    margin-right: 95px;
 }
 
 .logo {
@@ -141,7 +141,7 @@ header form {
     font-size: 16px;
     line-height: var(--fz-24);
     padding: 3px 0;
-    margin: 0 20px;
+    margin-right: 40px;
 }
 
 
@@ -161,13 +161,15 @@ header form {
 
 .item-ipt:first-child {
     background-color: var(--secondary-100-f);
-    margin-right: 36px;
+    margin-right: 40px;
     display: flex;
     position: relative;
     border-radius: 5px;
+
 }
 
 .item-ipt:first-child input {
+    width: 100px;
     background-color: var(--secondary-100-f);
     display: flex;
     border: none;
@@ -190,8 +192,8 @@ header form {
 
 .vector {
     position: absolute;
-    top: 10px;
-    left: 12px;
+    top: 7px;
+    left: 8px;
     cursor: pointer;
 }
 
@@ -201,6 +203,7 @@ header form {
     border: none;
     border-radius: 5px;
     background-color: var(--secondary-100-f);
+    padding-right: 8px;
 }
 
 .switch-toggle {
@@ -211,6 +214,7 @@ header form {
     border-radius: 100px;
     position: relative;
     cursor: pointer;
+    margin: 0;
 }
 
 .switch-toggle::before {
@@ -356,7 +360,7 @@ main section:first-child {
     padding: 16px;
     cursor: pointer;
     width: calc(30% - 12px);
-    margin: 10px;
+    margin: 10px 0 10px 10px;
 }
 
 .post img {
@@ -452,12 +456,11 @@ footer {
 }
 
 .about {
-    width: 40%;
-    padding-right: 145px;
+    width: 35%;
 }
 
 .about p {
-    margin: 12px 0 24px 0;
+    margin: 12px 140px 24px 0;
     font-size: 16px;
     line-height: 24px;
     font-family: var(--font-PlusJakartaSansRegular);
@@ -468,18 +471,15 @@ footer {
     display: flex;
 }
 
-.quick-link,
-.category {
-    width: 13%;
-}
-
 .quick-link {
-    padding-right: 80px;
+    width: 14%;
 }
 
 .category {
-    padding-right: 140px;
+    width: 19%;
 }
+
+
 
 .quick-link h5,
 .category h5 {
@@ -512,7 +512,7 @@ footer {
 }
 
 .form-footer {
-    width: 44%;
+    width: 32%;
     text-align: center;
     background-color: var(--var-color-white);
     border-radius: 12px;

@@ -9,7 +9,7 @@
 /* -------------------- Config Website -------------------- */
 @media (min-width: 1400px) {
 	.container {
-		width: 1320px;
+		width: 1218px;
 	}
 }
 
@@ -21,10 +21,6 @@
 
 	.width-img {
 		width: 100%;
-	}
-
-	.post:nth-child(3n) {
-		margin-right: 10px;
 	}
 
 	.post:nth-child(3n+1) {
@@ -48,16 +44,8 @@
 		margin-left: 10px;
 	}
 
-	.about {
-		padding-right: 75px;
-	}
-
-	.quick-link {
-		padding-right: 40px;
-	}
-
-	.category {
-		padding-right: 70px;
+	.form-footer form i {
+		bottom: 140px;
 	}
 
 }
@@ -164,26 +152,29 @@
 
 	.about {
 		order: 1;
-		width: 43%;
-		padding-right: 36px;
+		width: 46%;
+	}
+
+	.about p {
+		margin-right: 20px;
 	}
 
 	.form-footer {
 		order: 2;
-		width: 43%;
+		width: 45%;
 	}
+
 
 	.quick-link {
 		order: 4;
-		width: 48%;
+		width: 49%;
 		padding: 0;
 		padding-left: 10px;
 	}
 
 	.category {
 		order: 3;
-		padding-right: 16px;
-		width: 48%;
+		width: 49%;
 		border-right: 1px solid #ccc;
 	}
 
@@ -209,7 +200,7 @@
 	}
 
 	.last li a {
-		padding: 0 10px;
+		padding: 0 8px;
 	}
 }
 
@@ -221,7 +212,9 @@
 		top: 85px;
 		margin-left: 45px;
 		border-top: 1px solid #ccc;
+		justify-content: space-between;
 	}
+
 
 
 	.container {
@@ -235,7 +228,7 @@
 
 	.form-introduce h2 {
 		margin: 8px 0 12px 0;
-		font-size: 24px;
+		font-size: 22px;
 		line-height: 30px;
 	}
 
@@ -243,26 +236,10 @@
 		display: block;
 	}
 
-
-	.about {
-
-		width: 80%;
-	}
-
-	.form-footer {
-		width: 80%;
-	}
-
-	.quick-link {
-		width: 45%;
-	}
-
-	.category {
-		width: 45%;
-	}
-
-	.last ul {
-		display: none;
+	.quick-link ul,
+	.category ul {
+		display: flex;
+		flex-wrap: wrap;
 	}
 
 	.logo-footer {
@@ -271,6 +248,10 @@
 
 	.form-footer form i {
 		bottom: 85px;
+	}
+
+	.first {
+		justify-content: center;
 	}
 }
 
@@ -283,8 +264,15 @@
 
 	.displayFlex {
 		flex-direction: column;
-		top: 100px;
 		width: 100%;
+	}
+
+	.displayFlex li {
+		margin-top: 10px;
+		border-top: 2px solid #ccc;
+		width: 80%;
+		text-align: center;
+
 	}
 
 	.container {
@@ -302,8 +290,8 @@
 	}
 
 	.vector {
-		top: 12px;
-		left: 13px;
+		top: 9px;
+		left: 10px;
 	}
 
 	.switch-toggle {
@@ -342,22 +330,29 @@
 		height: 26px;
 	}
 
-	.about {
 
-		width: 80%;
+	.time {
+		margin-left: 15px;
 	}
 
-	.form-footer {
-		width: 80%;
+	.last ul {
+		flex-direction: column;
+		width: 100%;
 	}
 
-	.quick-link {
-		width: 80%;
+	.last ul li {
+		margin-top: 10px;
 	}
 
-	.category {
-		width: 80%;
+	.last ul li:first-child {
+		margin-top: 0;
 	}
+
+	.last ul li a {
+		border: none;
+		padding: 0;
+	}
+
 }
 
 /* Option follow device */
@@ -381,12 +376,16 @@
 
 @media (max-width: 767px) {
 
+	.item-menu li a {
+		margin-right: 0;
+	}
+
 	.item-ipt:first-child input {
 		display: none;
 	}
 
 	.item-ipt:first-child {
-		margin-right: 30px;
+		margin-right: 35px;
 	}
 
 	.item-ipt button {
@@ -396,7 +395,7 @@
 
 	header {
 		padding: 10px 0;
-		margin-bottom: 10px;
+		margin-bottom: 12px;
 		background-color: #141414;
 		color: white;
 		justify-content: space-between;
@@ -439,7 +438,6 @@
 
 	.displayFlex {
 		display: flex;
-		justify-content: center;
 		margin-left: 0;
 		margin-top: 10px;
 		text-transform: uppercase;
@@ -463,12 +461,20 @@
 		width: 80%;
 	}
 
+	.advertisement {
+		margin: 75px auto 40px auto;
+	}
+
+	.advertisement:last-child {
+		margin: 40px auto 50px auto;
+	}
+
 	.form-introduce {
 		padding: 20px;
 		position: relative;
 		display: block;
 		width: 65%;
-		margin: -130px auto 0 auto;
+		margin: -80px auto 0 auto;
 		background-color: white;
 		bottom: 0;
 		left: 0;
@@ -501,6 +507,7 @@
 
 	.post h4 {
 		text-align: start;
+		font-size: 18px;
 	}
 
 	.post:first-child {
@@ -511,43 +518,50 @@
 		margin-left: 10px;
 	}
 
+	footer {
+		margin-top: 50px;
+	}
+
 	.first {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		padding-left: 15px;
+		margin: 32px auto;
 	}
 
 	.about {
 		order: 1;
+		width: 95%;
+	}
+
+	.about p {
+		margin-right: 0;
 	}
 
 	.form-footer {
 		order: 2;
 		padding: 20px;
 		margin: 24px 0;
+		width: 80%;
 	}
-
 
 	.quick-link {
 		order: 4;
 		padding-left: 0;
+		width: 50%;
 	}
 
 	.category {
 		order: 3;
 		padding: 0;
+		width: 50%;
 	}
 
-	.quick-link ul,
-	.category ul {
-		display: flex;
-		flex-wrap: wrap;
-	}
+
 
 	.quick-link ul li,
 	.category ul li {
-		width: 50%;
+		width: 47%;
 	}
 
 	.list-footer {
@@ -555,11 +569,13 @@
 		flex-direction: row;
 	}
 
-	.logo-footer {
-		padding-left: 15px;
+	.last {
+		padding: 16px 0;
 	}
 
+	.logo-footer,
 	.last ul {
-		display: none;
+		margin: 10px auto;
 	}
+
 }
