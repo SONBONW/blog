@@ -265,7 +265,7 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 	.width-img {
-		width: 95%;
+		width: 96%;
 		margin: 0 10px;
 	}
 
@@ -284,6 +284,9 @@
 		margin-right: 5px;
 	}
 
+	.posts {
+		margin-right: 10px;
+	}
 
 	.form-introduce h2 {
 		font-size: 18px;
