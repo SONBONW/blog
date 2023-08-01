@@ -264,6 +264,39 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+	/*BOOTSTRAP*/
+
+	.switch-toggle {
+		width: 38px !important;
+		height: 37px !important;
+	}
+
+
+	.switch-toggle:checked {
+		background-color: var(--secondary-600);
+	}
+
+	.switch-toggle::before {
+		content: none !important;
+	}
+
+	.switch-toggle:checked+.vector {
+		left: 10px;
+		filter: brightness(0) invert(1);
+		-webkit-filter: brightness(0) invert(1);
+	}
+
+	.vector {
+		top: 11px !important;
+		left: 12px !important;
+	}
+
+	/**/
+
+
+
+
 	nav form div {
 		display: none;
 	}
@@ -420,7 +453,7 @@
 		right: 15px;
 	}
 
-
+	/* 
 	.logo {
 		order: 1;
 		margin-right: auto;
@@ -448,19 +481,19 @@
 
 	.switch-toggle:checked {
 		background-color: var(--secondary-600);
-	}
+	} */
 
-	.switch-toggle:checked+.vector {
+	/* .switch-toggle:checked+.vector {
 		left: 10px;
 		filter: brightness(0) invert(1);
 		-webkit-filter: brightness(0) invert(1);
-	}
+	} 
 
 	.vector {
 		top: 9px;
 		left: 10px;
 	}
-
+*/
 	.icon {
 		order: 3;
 		display: block;
