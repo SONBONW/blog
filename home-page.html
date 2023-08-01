@@ -10,7 +10,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./asset/style/reset.css">
     <link rel="stylesheet" href="./asset/style/vendor.min.css">
-
     <link rel="stylesheet" href="./asset/style/home-page.css">
     <link rel="stylesheet" href="./asset/style/media-screen.css">
     <!-- <link rel="stylesheet" href="./asset/style/responsive.css"> -->
@@ -18,13 +17,13 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary container mt-md-4 mb-md-5">
             <div class="container-fluid">
                 <a class="navbar-brand me-auto order-0" href="">
                     <img src="./asset/img/logo-header.png" alt="Logo" class="d-inline-block align-text-top">
                 </a>
-                <button class="navbar-toggler order-3 bg-light p-2" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler order-3 bg-light p-2 d-md-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,9 +46,10 @@
                     </li>
                 </ul>
                 <form class="d-flex order-2 me-3 align-items-center" action="#">
-                    <div class="item-ipt d-lg-flex d-none">
-                        <input type="text" name="search" class="form-control me-2 playNone" placeholder="Search">
-                        <button onclick="showSearch()">
+                    <div class="item-ipt d-md-flex d-none">
+                        <input type="text" name="search" class="form-control me-2 d-lg-flex d-none border-0 playNone"
+                            placeholder="Search">
+                        <button onclick="showSearch()" class="border-0 p-2">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -82,11 +82,11 @@
 
         </nav>
 
-    </header>
-    <!-- <main class="container">
-        <section>
-            <img class="width-img" src="./asset/img/img.png" alt="">
-            <div class="form-introduce">
+    </header> -->
+    <main class="container">
+        <!-- <section class="position-relative">
+            <img class="container" src="./asset/img/img.png" alt="">
+            <div class="form-introduce position-absolute d-inline-block border-1 bg-light">
                 <span class="tag">Technology</span>
                 <h2>The Impact of Technology on <br> the Workplace: How <br> Technology is Changing</h2>
                 <div class="infor-user">
@@ -103,14 +103,14 @@
             <p>Advertisement</p>
             <h4>You can place ads</h4>
             <p>750x100</p>
-        </section>
+        </section> -->
 
         <section class="list-post">
             <h4>Latest Post</h4>
-            <div class="posts">
-                <article class="post">
+            <div class="posts row flex-row flex-wrap">
+                <article class="col-4">
                     <img src="./asset/img/img-post1.png" alt="">
-                    <span class="tag">Technology</span>
+                    <span class="tag rounded">Technology</span>
                     <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
                     <div class="infor-user">
                         <div class="user">
@@ -120,9 +120,9 @@
                         <span class="time">August 20, 2022</span>
                     </div>
                 </article>
-                <article class="post">
+                <article class="col-4">
                     <img src="./asset/img/img-post2.png" alt="">
-                    <span class="tag">Technology</span>
+                    <span class="tag rounded">Technology</span>
                     <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
                     <div class="infor-user">
                         <div class="user">
@@ -132,9 +132,9 @@
                         <span class="time">August 20, 2022</span>
                     </div>
                 </article>
-                <article class="post">
+                <article class="col-4">
                     <img src="./asset/img/img-post3.png" alt="">
-                    <span class="tag">Technology</span>
+                    <span class="tag rounded">Technology</span>
                     <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
                     <div class="infor-user">
                         <div class="user">
@@ -144,9 +144,9 @@
                         <span class="time">August 20, 2022</span>
                     </div>
                 </article>
-                <article class="post">
+                <article class="col-4">
                     <img src="./asset/img/img-post4.png" alt="">
-                    <span class="tag">Technology</span>
+                    <span class="tag rounded">Technology</span>
                     <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
                     <div class="infor-user">
                         <div class="user">
@@ -156,9 +156,9 @@
                         <span class="time">August 20, 2022</span>
                     </div>
                 </article>
-                <article class="post">
+                <article class="col-4">
                     <img src="./asset/img/img-post5.png" alt="">
-                    <span class="tag">Technology</span>
+                    <span class="tag rounded">Technology</span>
                     <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
                     <div class="infor-user">
                         <div class="user">
@@ -168,9 +168,9 @@
                         <span class="time">August 20, 2022</span>
                     </div>
                 </article>
-                <article class="post">
+                <article class="col-4">
                     <img src="./asset/img/img-post6.png" alt="">
-                    <span class="tag">Technology</span>
+                    <span class="tag rounded">Technology</span>
                     <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
                     <div class="infor-user">
                         <div class="user">
@@ -180,9 +180,9 @@
                         <span class="time">August 20, 2022</span>
                     </div>
                 </article>
-                <article class="post">
+                <article class="col-4">
                     <img src="./asset/img/img-post7.png" alt="">
-                    <span class="tag">Technology</span>
+                    <span class="tag rounded">Technology</span>
                     <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
                     <div class="infor-user">
                         <div class="user">
@@ -193,9 +193,9 @@
                         <span class="time">August 20, 2022</span>
                     </div>
                 </article>
-                <article class="post">
+                <article class="col-4">
                     <img src="./asset/img/img-post8.png" alt="">
-                    <span class="tag">Technology</span>
+                    <span class="tag rounded">Technology</span>
                     <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
                     <div class="infor-user">
                         <div class="user">
@@ -205,9 +205,9 @@
                         <span class="time">August 20, 2022</span>
                     </div>
                 </article>
-                <article class="post">
+                <article class="col-4">
                     <img src="./asset/img/img-post9.png" alt="">
-                    <span class="tag">Technology</span>
+                    <span class="tag rounded">Technology</span>
                     <h4>The Impact of Technologu on the Workplace: How Teachnology is Changing</h4>
                     <div class="infor-user">
                         <div class="user">
@@ -218,7 +218,8 @@
                     </div>
                 </article>
             </div>
-            <button class="view">View All Post</button>
+            <button class="border-1 view rounded d-flex justify-content-center align-items-center">View All
+                Post</button>
         </section>
         <section class="advertisement width-750">
             <p>Advertisement</p>
@@ -226,7 +227,7 @@
             <p>750x100</p>
         </section>
     </main>
-    <footer>
+    <!-- <footer>
         <div class="container first">
             <div class="about">
                 <h5>About</h5>

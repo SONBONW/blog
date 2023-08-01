@@ -145,9 +145,8 @@ nav ul li a:hover {
 }
 
 .item-ipt:first-child input {
-    width: 140px;
+    width: 126px;
     background-color: var(--secondary-100-f);
-    border: none;
     padding: 6px 26px 6px 10px;
     border-radius: 5px;
 }
@@ -174,10 +173,12 @@ nav ul li a:hover {
 .item-ipt button {
     color: #52525b;
     cursor: pointer;
-    border: none;
     border-radius: 5px;
     background-color: var(--secondary-100-f);
-    padding-right: 8px;
+}
+
+.item-ipt:first-child input {
+    outline: none !important;
 }
 
 .switch-toggle {
@@ -216,19 +217,11 @@ nav ul li a:hover {
 
 /*Main*/
 
-main section:first-child {
-    position: relative;
-}
-
 .form-introduce {
-    position: absolute;
     bottom: -80px;
     border-radius: 12px;
     left: 64px;
-    background-color: var(--var-color-white);
     padding: 40px;
-    border: 1px solid var(--secondary-100);
-    display: inline-block;
     box-shadow: 0px 12px 24px -6px #181a2a1f;
 }
 
@@ -324,7 +317,6 @@ main section:first-child {
 .posts {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     justify-content: space-between;
 }
 
@@ -372,25 +364,19 @@ main section:first-child {
     font-family: var(--font-WorkSansMedium);
     font-weight: var(--font-w5);
     color: var(--btn-primary);
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
     background-color: #4b6bfb0d;
-    border-radius: 6px;
     padding: 4px 10px;
     margin-top: var(--fz-24);
 }
 
 .view {
-    border: 1px solid #696a754d;
+    border-color: #696a754d;
     background-color: var(--var-color-white);
-    border-radius: 6px;
     color: var(--secondary-500);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
     padding: 12px 20px;
     margin: 22px auto 0 auto;
-    align-items: center;
     font-family: var(--font-WorkSansMedium);
     font-weight: var(--font-w5);
 }
