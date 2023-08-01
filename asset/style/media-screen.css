@@ -1,10 +1,6 @@
 ﻿/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-	.container {
-		width: 1028px;
-	}
-
 	.nav-header {
 		flex: auto;
 	}
@@ -18,7 +14,7 @@
 
 /* -------------------- Config Website -------------------- */
 @media (min-width: 1400px) {
-	.container {
+	.custorm-container {
 		width: 1218px;
 	}
 
@@ -31,10 +27,6 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	.container {
-		width: 848px;
-	}
-
 	.nav-header ul li {
 		margin-right: 12px !important;
 	}
@@ -42,18 +34,6 @@
 	.item-ipt:first-child {
 		margin-right: 20px !important;
 	}
-
-	/* .nav-header ul {
-		display: none;
-	} */
-
-	/* .container {
-		width: 960px;
-	}
-
-	.width-img {
-		width: 100%;
-	} */
 
 	.post:nth-child(3n+1) {
 		margin-left: 10px;
