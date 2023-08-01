@@ -116,39 +116,16 @@ a {
 /*HEADER*/
 
 
-header {
+nav {
     color: var(--secondary-600);
     font-family: var(--font-WorkSansRegular);
 }
 
 
-.item-menu {
-    display: flex;
-    align-items: center;
-    font-weight: var(--font-w4);
-    justify-content: flex-end;
-    flex: auto;
-}
-
-.item-menu li:last-child {
-    margin-right: 95px;
-}
-
-.logo {
-    display: flex;
-}
-
-.item-menu li a {
-    font-size: 16px;
-    line-height: var(--fz-24);
-    padding: 3px 0;
-    margin-right: 40px;
-}
-
 
 /*Hover*/
 
-.item-menu li a {
+nav ul li a {
     background: linear-gradient(var(--var-color-white), var(--secondary-900));
     background-size: 0 3px, 100% 3px;
     background-position: 0 100%, 100% 100%;
@@ -156,14 +133,13 @@ header {
     transition: background-size 200ms;
 }
 
-.item-menu li a:hover {
+nav ul li a:hover {
     background-size: 100% 3px, 0 3px;
 }
 
 .item-ipt:first-child {
     background-color: var(--secondary-100-f);
     margin-right: 40px;
-    display: flex;
     border-radius: 5px;
 
 }
@@ -171,9 +147,7 @@ header {
 .item-ipt:first-child input {
     width: 140px;
     background-color: var(--secondary-100-f);
-    display: flex;
     border: none;
-    outline: none;
     padding: 6px 26px 6px 10px;
     border-radius: 5px;
 }

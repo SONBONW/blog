@@ -13,13 +13,13 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	.container {
+	/* .container {
 		width: 960px;
 	}
 
 	.width-img {
 		width: 100%;
-	}
+	} */
 
 	.post:nth-child(3n+1) {
 		margin-left: 10px;
@@ -51,7 +51,7 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-	.item-ipt:first-child input {
+	/* .item-ipt:first-child input {
 		display: none;
 	}
 
@@ -65,13 +65,13 @@
 
 	.width-img {
 		width: 100%;
-	}
+	} */
 
 	.width-750 {
 		width: 80%;
 	}
 
-	.item-menu {
+	/* .item-menu {
 		justify-content: center;
 	}
 
@@ -86,11 +86,11 @@
 
 	.logo {
 		margin-right: 0;
-	}
+	} 
 
 	nav {
 		margin-left: 20px;
-	}
+	}*/
 
 	.form-introduce {
 		padding: 30px;
@@ -207,7 +207,7 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-	.displayFlex {
+	/* .displayFlex {
 		flex-direction: row;
 		top: 85px;
 		margin-left: 45px;
@@ -217,11 +217,11 @@
 
 	.icon {
 		margin-right: 10px;
-	}
+	} 
 
-	.container {
+	 .container {
 		width: 540px;
-	}
+	} */
 
 	.form-introduce {
 		left: 30px;
@@ -296,10 +296,10 @@
 
 
 
-
+	/* 
 	nav form div {
 		display: none;
-	}
+	} */
 
 
 	.width-img {
@@ -307,6 +307,7 @@
 		margin: 0 10px;
 	}
 
+	/* 
 	.displayFlex {
 		flex-direction: column;
 		width: 100%;
@@ -317,15 +318,15 @@
 		border-top: 2px solid #ccc;
 		width: 80%;
 		text-align: center;
-	}
-
+	} 
+	
 	.icon {
 		margin-right: 5px;
-	}
+	} 
 
 	.container {
 		width: 100%;
-	}
+	} */
 
 	.form-introduce h2 {
 		font-size: 18px;
@@ -421,7 +422,11 @@
 
 	/**/
 
-	.item-menu li a {
+	header {
+		background-color: #141414;
+	}
+
+	/* .item-menu li a {
 		margin-right: 0;
 	}
 
@@ -451,7 +456,7 @@
 
 	.item-ipt:last-child {
 		right: 15px;
-	}
+	} */
 
 	/* 
 	.logo {
@@ -493,7 +498,7 @@
 		top: 9px;
 		left: 10px;
 	}
-*/
+	
 	.icon {
 		order: 3;
 		display: block;
@@ -502,7 +507,7 @@
 
 	.item-menu {
 		display: none;
-	}
+	} 
 
 	.displayFlex {
 		order: 4;
@@ -526,7 +531,7 @@
 
 	.width-img {
 		max-width: 100%;
-	}
+	} */
 
 
 	.width-750 {
