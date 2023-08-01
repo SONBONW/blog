@@ -216,6 +216,13 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
+	/*BOOTSTRAP*/
+	.item-ipt:first-child {
+		margin-right: 20px;
+	}
+
+	/**/
+
 	/* .displayFlex {
 		flex-direction: row;
 		top: 85px;
@@ -432,7 +439,7 @@
 		color: white;
 	}
 
-	.nav-item:last-child .nav-link {
+	.nav-item .nav-link {
 		margin-right: 0 !important;
 	}
 
@@ -567,7 +574,6 @@
 		padding: 20px;
 		position: relative;
 		display: block;
-
 		margin: -80px auto 0 auto;
 		background-color: white;
 		bottom: 0;
