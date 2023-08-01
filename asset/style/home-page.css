@@ -91,15 +91,7 @@
 
 
 /**/
-.width-img {
-    max-width: 100%;
-    margin: 0 auto;
-}
 
-
-.container {
-    margin: 0 auto;
-}
 
 .width-750 {
     width: 62.5%;
@@ -272,7 +264,6 @@ nav ul li a:hover {
 
 
 .advertisement {
-    text-align: center;
     background-color: var(--secondary-100);
     border-radius: 12px;
     color: var(--secondary-100);
@@ -314,6 +305,7 @@ nav ul li a:hover {
     margin-bottom: 22px;
 }
 
+/* 
 .posts {
     display: flex;
     flex-wrap: wrap;
@@ -358,7 +350,7 @@ nav ul li a:hover {
 .user {
     display: flex;
     align-items: center;
-}
+} */
 
 .tag {
     font-family: var(--font-WorkSansMedium);

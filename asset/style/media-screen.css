@@ -301,6 +301,8 @@
 		left: 12px !important;
 	}
 
+
+
 	/**/
 
 
@@ -309,12 +311,6 @@
 	nav form div {
 		display: none;
 	} */
-
-
-	.width-img {
-		width: 95%;
-		margin: 0 10px;
-	}
 
 	/* 
 	.displayFlex {
@@ -424,6 +420,22 @@
 
 
 	/*BOOTSTRAP*/
+	nav div ul {
+		width: 100%;
+		margin-top: 10px;
+		text-transform: uppercase;
+		border-top: 1px solid #ccc;
+
+	}
+
+	.nav-link {
+		color: white;
+	}
+
+	.nav-item:last-child .nav-link {
+		margin-right: 0 !important;
+	}
+
 	nav div a img {
 		filter: brightness(0) invert(1);
 		-webkit-filter: brightness(0) invert(1);
@@ -542,10 +554,6 @@
 		max-width: 100%;
 	} */
 
-
-	.width-750 {
-		width: 80%;
-	}
 
 	.advertisement {
 		margin: 75px auto 40px auto;
