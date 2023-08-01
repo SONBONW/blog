@@ -565,12 +565,12 @@
 	.form-footer {
 		order: 2;
 		padding: 20px;
-		margin: 24px 0;
+		margin: 24px auto;
 		width: 80%;
 	}
 
 	.form-footer form p {
-		margin-bottom: 20px;
+		margin-bottom: 18px;
 	}
 
 	.quick-link {
