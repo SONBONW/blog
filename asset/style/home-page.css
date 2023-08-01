@@ -81,6 +81,16 @@
 }
 
 
+/*BOOTSTRAP*/
+
+
+
+
+
+
+
+
+/**/
 .width-img {
     max-width: 100%;
     margin: 0 auto;
@@ -106,18 +116,11 @@ a {
 /*HEADER*/
 
 
-nav {
-    padding: 32px 0 56px 0;
+header {
     color: var(--secondary-600);
     font-family: var(--font-WorkSansRegular);
-    display: flex;
 }
 
-
-nav form {
-    display: flex;
-    align-items: center;
-}
 
 .item-menu {
     display: flex;
@@ -161,18 +164,17 @@ nav form {
     background-color: var(--secondary-100-f);
     margin-right: 40px;
     display: flex;
-    position: relative;
     border-radius: 5px;
 
 }
 
 .item-ipt:first-child input {
-    width: 100px;
+    width: 140px;
     background-color: var(--secondary-100-f);
     display: flex;
     border: none;
     outline: none;
-    padding: 10px 26px 10px 10px;
+    padding: 6px 26px 6px 10px;
     border-radius: 5px;
 }
 
@@ -231,7 +233,7 @@ nav form {
 }
 
 .switch-toggle:checked+.vector {
-    left: 31px;
+    left: 28px;
 }
 
 .switch-toggle:checked:before {

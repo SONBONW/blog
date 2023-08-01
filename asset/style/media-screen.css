@@ -1,17 +1,15 @@
 ﻿/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	.container {
-		width: 1140px;
+
+	header nav ul {
+		flex: auto;
+		margin-right: 105px;
 	}
 
 }
 
 /* -------------------- Config Website -------------------- */
-@media (min-width: 1400px) {
-	.container {
-		width: 1218px;
-	}
-}
+@media (min-width: 1400px) {}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -266,6 +264,11 @@
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+	nav form div {
+		display: none;
+	}
+
+
 	.width-img {
 		width: 95%;
 		margin: 0 10px;
@@ -376,6 +379,15 @@
 
 @media (max-width: 767px) {
 
+
+	/*BOOTSTRAP*/
+	nav div a img {
+		filter: brightness(0) invert(1);
+		-webkit-filter: brightness(0) invert(1);
+	}
+
+	/**/
+
 	.item-menu li a {
 		margin-right: 0;
 	}
@@ -407,6 +419,7 @@
 	.item-ipt:last-child {
 		right: 15px;
 	}
+
 
 	.logo {
 		order: 1;

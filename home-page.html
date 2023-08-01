@@ -19,35 +19,35 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary container mt-md-4 mb-md-5">
             <div class="container-fluid">
-                <a class="navbar-brand" href="">
+                <a class="navbar-brand me-auto order-0" href="">
                     <img src="./asset/img/logo-header.png" alt="Logo" class="d-inline-block align-text-top">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler order-3 bg-light p-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end"> <!-- displayNone -->
+                <ul class="navbar-nav mb-2 mb-lg-0 justify-content-end d-lg-flex d-none">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Home</a>
+                        <a class="nav-link me-4" href="">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./blog-listing.html">Blog</a>
+                        <a class="nav-link me-4" href="./blog-listing.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./single-post.html">Single Post</a>
+                        <a class="nav-link me-4" href="./single-post.html">Single Post</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./author-page.html">Pages</a>
+                        <a class="nav-link me-4" href="./author-page.html">Pages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Contact</a>
+                        <a class="nav-link me-4" href="">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" action="#">
-                    <div class="item-ipt">
+                <form class="d-flex order-2 me-3 align-items-center" action="#">
+                    <div class="item-ipt d-md-flex d-none">
                         <input type="text" name="search" class="form-control me-2 playNone" placeholder="Search">
                         <button onclick="showSearch()">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -83,7 +83,7 @@
         </nav>
 
     </header>
-    <main class="container">
+    <!-- <main class="container">
         <section>
             <img class="width-img" src="./asset/img/img.png" alt="">
             <div class="form-introduce">
@@ -317,9 +317,10 @@
                 </li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
     <script src="./asset/script/index.js"></script>
     <script src="./asset/script/click.js"></script>
+    <script src="./asset/script/vendor.min.js"></script>
 </body>
 
 </html>
