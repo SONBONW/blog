@@ -108,9 +108,19 @@ a {
 /*HEADER*/
 
 
-nav {
+.nav-header {
     color: var(--secondary-600);
     font-family: var(--font-WorkSansRegular);
+    margin: 24px auto 48px auto;
+}
+
+.nav-header div ul {
+    justify-content: flex-end;
+    flex: auto;
+}
+
+.nav-header div ul li {
+    margin-right: 24px;
 }
 
 
@@ -137,7 +147,7 @@ nav ul li a:hover {
 }
 
 .item-ipt:first-child input {
-    width: 126px;
+    width: 134px;
     background-color: var(--secondary-100-f);
     padding: 6px 26px 6px 10px;
     border-radius: 5px;
