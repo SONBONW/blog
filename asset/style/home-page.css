@@ -92,7 +92,8 @@ a {
     color: var(--secondary-600);
 }
 
-.custorm-row {
+.custorm-row,
+.custorm-col {
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
@@ -360,7 +361,6 @@ article h4 {
     border: 1px solid rgba(105, 106, 117, 0.30);
 }
 
-
 /*Footer*/
 
 footer {
@@ -393,6 +393,7 @@ footer ul {
 
 .list-footer h5 {
     padding-right: 5px;
+    margin: 0;
 }
 
 .about {
@@ -400,7 +401,7 @@ footer ul {
 }
 
 .about p {
-    margin: 12px 0 24px 0;
+    margin: 12px 80px 24px 0;
     font-size: 16px;
     line-height: 24px;
     font-family: var(--font-PlusJakartaSansRegular);
@@ -421,19 +422,9 @@ footer ul {
     width: 14%;
 }
 
-.quick-link div {
-    padding-left: 80px;
-}
-
 .category {
     width: 19%;
 }
-
-.category div {
-    padding: 0 140px 0 80px;
-}
-
-
 
 .quick-link h5,
 .category h5 {
@@ -474,9 +465,7 @@ footer ul {
     position: relative;
 }
 
-.form-footer form label {
-    margin-right: 65px;
-}
+
 
 .form-footer form input::placeholder {
     color: #97989F;
@@ -487,7 +476,6 @@ footer ul {
 }
 
 .form-footer form input {
-    width: 130% !important;
     border-radius: 6px;
     border: 1px solid var(--secondary-200);
     padding: 12px 14px;
@@ -499,8 +487,6 @@ footer ul {
     bottom: 110px;
     right: 55px;
 }
-
-/**/
 
 .form-footer form h4 {
     font-family: var(--font-WorkSansSemiBold);
@@ -581,6 +567,7 @@ strong {
     padding: 0 16px;
     font-family: var(--font-PlusJakartaSansRegular);
     font-weight: var(--font-w4);
+    color: var(--secondary-600);
 }
 
 .last li:last-child a {

@@ -46,21 +46,15 @@
 		margin-left: 7px !important;
 	}
 
-
-	/* 
-	.item-menu li:last-child {
-		margin-right: 0;
+	.about {
+		width: 32% !important;
 	}
 
-	.item-ipt:first-child {
-		margin-right: 20px;
-		margin-left: 10px;
+	.form-footer {
+		width: 35% !important;
 	}
 
 
-	.form-footer form p {
-		font-size: 15px;
-	} */
 
 }
 
@@ -73,7 +67,6 @@
 	.width-750 {
 		width: 80%;
 	}
-
 
 	.form-introduce {
 		padding: 30px !important;
@@ -94,70 +87,36 @@
 		margin-left: 8px !important;
 	}
 
-	/* 
-	.first {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
 	.about {
+		width: 50% !important;
 		order: 1;
-		width: 46%;
-	}
-
-	.about p {
-		margin-right: 20px;
 	}
 
 	.form-footer {
+		width: 50% !important;
 		order: 2;
-		width: 45%;
 	}
 
+	.category {
+		width: 50% !important;
+		order: 3;
+		text-align: center;
+	}
 
 	.quick-link {
+		width: 50% !important;
 		order: 4;
-		width: 49%;
-		padding: 0;
-		padding-left: 10px;
-	}
-
-	.category {
-		order: 3;
-		width: 49%;
-		border-right: 1px solid #ccc;
-	}
-
-	.quick-link,
-	.category {
-		margin-top: 20px;
-	}
-
-	.quick-link ul,
-	.category ul {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	.quick-link ul li,
-	.category ul li {
-		width: 33%;
-	}
-
-	.list-footer {
-		width: 40%;
-		flex-direction: row;
-	}
-
-	.last {
-		justify-content: space-around;
-		padding: 20px 0;
+		text-align: center;
 	}
 
 	.last ul {
 		flex-direction: column;
-	} */
+	}
+
+	.last ul a {
+		border: none !important;
+		padding: 0 !important;
+	}
 
 }
 
@@ -180,30 +139,6 @@
 		line-height: 30px !important;
 	}
 
-	/* 
-
-	.quick-link ul,
-	.category ul {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	.logo-footer {
-		margin-left: 20px;
-	}
-
-	.form-footer form i {
-		bottom: 85px;
-	}
-
-	.first {
-		justify-content: center;
-	}
-
-	.quick-link ul li,
-	.category ul li {
-		width: 48%;
-	} */
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -235,7 +170,6 @@
 		height: 37px !important;
 	}
 
-
 	.switch-toggle:checked {
 		background-color: var(--secondary-600);
 	}
@@ -264,7 +198,6 @@
 		line-height: 20px !important;
 		margin: 6px 0 7px 0 !important;
 	}
-
 
 	.form-introduce .time {
 		margin-left: 10px;
@@ -300,27 +233,23 @@
 		margin-left: 45px !important;
 	}
 
-
-	/* .form-footer form i {
-		bottom: 85px;
+	.form-footer {
+		padding: 20px !important;
 	}
 
-	.form-footer form p {
-		font-size: 14px;
+	.form-footer p {
+		font-size: 14px !important;
+		margin-bottom: 10px !important;
+	}
+
+	.form-footer form i {
+		bottom: 100px !important;
+		right: 45px !important;
 	}
 
 	.last ul {
-		flex-direction: column;
-		width: 100%;
+		flex-direction: column !important;
 	}
-
-	.last ul li {
-		margin-top: 10px;
-	}
-
-	.last ul li:first-child {
-		margin-top: 0;
-	} */
 
 }
 
@@ -380,7 +309,6 @@
 		border-top: 1px solid #ccc;
 		order: 4;
 		justify-content: space-between !important;
-
 	}
 
 	.nav-header div ul li {
@@ -420,8 +348,6 @@
 		background-color: #141414;
 	}
 
-
-
 	.form-introduce {
 		position: relative !important;
 		margin: -150px auto 0 auto !important;
@@ -445,9 +371,9 @@
 		justify-content: center;
 	}
 
-	.post {
+	/* .post {
 		padding: 0;
-	}
+	} */
 
 	article .user span {
 		font-size: 14px !important;
@@ -461,32 +387,31 @@
 		margin: 10px 0 !important;
 	}
 
-	/*
 	footer {
-		margin-top: 50px;
+		margin-top: 50px !important;
 	}
 
 	.first {
 		display: flex;
 		flex-wrap: wrap;
 		padding-left: 15px;
-		margin: 32px auto;
+		margin: 32px auto !important;
 	}
 
 	.about {
+		width: 100% !important;
 		order: 1;
-		width: 95%;
 	}
 
 	.about p {
-		margin-right: 0;
+		margin-right: 15px !important;
 	}
 
 	.form-footer {
-		order: 2;
 		padding: 20px;
 		margin: 24px 0;
-		width: 80%;
+		width: 100% !important;
+		order: 2;
 	}
 
 	.form-footer form p {
@@ -494,36 +419,38 @@
 	}
 
 	.quick-link {
-		order: 4;
 		padding-left: 0;
-		width: 50%;
+		width: 50% !important;
+		order: 4;
 	}
 
 	.category {
-		order: 3;
 		padding: 0;
-		width: 50%;
+		width: 50% !important;
+		order: 3;
 	}
 
-	.list-footer {
-		width: 40%;
-		flex-direction: row;
-	}
-
+	/*Last Footer*/
 	.last {
-		padding: 16px 0;
+		flex-wrap: wrap;
+		padding: 20px 0 20px 15px !important;
 	}
 
 	.logo-footer {
+		width: 100%;
 		order: 2;
-		margin: 10px 0 10px 10px;
 	}
 
 	.last ul {
-		order: 1;
-		justify-content: space-between;
 		width: 100%;
-		padding: 6px 0;
-	} */
+		flex-direction: row;
+		justify-content: space-between;
+		order: 1;
+	}
+
+	.last li a {
+		border: none !important;
+		padding: 0 2px !important;
+	}
 
 }
