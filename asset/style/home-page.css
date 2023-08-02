@@ -92,6 +92,11 @@ a {
     color: var(--secondary-600);
 }
 
+.custorm-row {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
 
 /*HEADER*/
 
@@ -375,12 +380,7 @@ footer ul {
 .first {
     display: flex;
     margin: 64px auto;
-}
-
-.about li,
-.about p,
-.about a {
-    color: var(--secondary-500)
+    flex-wrap: wrap;
 }
 
 .first h5 {
@@ -400,23 +400,37 @@ footer ul {
 }
 
 .about p {
-    margin: 12px 140px 24px 0;
+    margin: 12px 0 24px 0;
     font-size: 16px;
     line-height: 24px;
     font-family: var(--font-PlusJakartaSansRegular);
     font-weight: var(--font-w4);
+    color: var(--secondary-500)
 }
 
 .about ul li {
     display: flex;
+    color: var(--secondary-500)
+}
+
+.about a {
+    color: var(--secondary-500)
 }
 
 .quick-link {
     width: 14%;
 }
 
+.quick-link div {
+    padding-left: 80px;
+}
+
 .category {
     width: 19%;
+}
+
+.category div {
+    padding: 0 140px 0 80px;
 }
 
 
@@ -453,12 +467,15 @@ footer ul {
 
 .form-footer {
     width: 32%;
-    height: 30%;
     text-align: center;
     background-color: var(--var-color-white);
     border-radius: 12px;
     padding: 32px;
     position: relative;
+}
+
+.form-footer form label {
+    margin-right: 65px;
 }
 
 .form-footer form input::placeholder {
@@ -470,18 +487,17 @@ footer ul {
 }
 
 .form-footer form input {
+    width: 130% !important;
     border-radius: 6px;
     border: 1px solid var(--secondary-200);
     padding: 12px 14px;
     margin: 10px 0;
 }
 
-
-
 .form-footer form i {
     position: absolute;
-    bottom: 98px;
-    right: 68px;
+    bottom: 110px;
+    right: 55px;
 }
 
 /**/
@@ -528,8 +544,6 @@ footer ul {
 
 .logo-footer img {
     margin-right: 10px;
-    width: 48px;
-    height: 48px;
 }
 
 .logo-footer,
