@@ -92,11 +92,11 @@ a {
     color: var(--secondary-600);
 }
 
-.custorm-row,
-.custorm-col {
+.custorm-row {
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
+
 
 
 /*HEADER*/
@@ -325,6 +325,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
 }
+
 
 article .tag {
     display: inline-block;
