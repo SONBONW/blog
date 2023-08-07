@@ -51,6 +51,20 @@
 
 }
 
+/*Font Source Serif Pro */
+
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url(../font/source-serif-pro/SourceSerifPro-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url(../font/source-serif-pro/SourceSerifPro-Semibold.ttf);
+    font-weight: 600;
+}
+
 
 :root {
     --fz-24: 24px;
