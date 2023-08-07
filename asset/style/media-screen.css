@@ -285,6 +285,8 @@
 
 	.item-ipt:first-child button {
 		padding: 8px;
+		border-radius: 5px !important;
+		background-color: white;
 	}
 
 	/*Main*/
@@ -292,6 +294,8 @@
 	.title {
 		text-align: center;
 	}
+
+
 
 }
 

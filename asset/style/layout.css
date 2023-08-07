@@ -65,6 +65,8 @@
     --secondary-50: #F6F6F7;
     --secondary-900: #141624;
     --secondary-400: #97989f;
+    --secondary-300: #BABABF;
+    --secondary-700: #242535;
     --font-WorkSansBold: 'WorkSansBold';
     --font-WorkSansSemiBold: 'WorkSansSemiBold';
     --font-WorkSansMedium: 'WorkSansMedium';
@@ -206,7 +208,7 @@ nav ul li a:hover {
     left: 22px;
 }
 
-/*Main*/
+/*Main Home Page*/
 
 .form-introduce {
     bottom: -80px;
@@ -238,7 +240,7 @@ nav ul li a:hover {
     display: flex;
     padding: 0;
     line-height: var(--fz-24);
-    color: #97989f;
+    color: var(--secondary-400);
     margin-bottom: 8px;
 
 }
@@ -356,7 +358,17 @@ article h4 {
     font-family: var(--font-WorkSansMedium);
     font-weight: var(--font-w5);
     border: 1px solid rgba(105, 106, 117, 0.30);
+    background-color: var(--var-color-white);
 }
+
+/*Main Blog Listing*/
+
+
+
+/*Main Author Page*/
+
+
+/*Main Single Post*/
 
 /*Footer*/
 
@@ -598,11 +610,11 @@ strong {
 
 /*Background-Dark*/
 .changecolor {
-    background-color: #181A2A;
+    background-color: var(--secondary-800);
 }
 
 .changecolor nav ul li a {
-    color: white;
+    color: var(--var-color-white);
 }
 
 .changecolor nav img {
@@ -612,80 +624,80 @@ strong {
 
 .changecolor .item-ipt:first-child input,
 .changecolor .item-ipt:first-child button {
-    background-color: #242535;
+    background-color: var(--secondary-700);
 }
 
 .changecolor .form-introduce {
-    background-color: #181A2A !important;
-    border-color: #242535;
+    background-color: var(--secondary-800) !important;
+    border-color: var(--secondary-700);
 }
 
 .changecolor .form-introduce h2 {
-    color: white;
+    color: var(--var-color-white);
 }
 
 .changecolor .advertisement {
-    background-color: #242535;
+    background-color: var(--secondary-700);
 }
 
 .changecolor .view {
-    background-color: #181A2A;
+    background-color: var(--secondary-800);
 }
 
 .changecolor .title {
-    color: white;
+    color: var(--var-color-white);
 }
 
 .changecolor .post {
-    border-color: #242535;
+    border-color: var(--secondary-700);
 }
 
 .changecolor .post h4 {
-    color: white;
+    color: var(--var-color-white);
 }
 
 .changecolor footer {
-    background-color: #181A2A;
-    border-top-color: #242535;
+    background-color: var(--secondary-800);
+    border-top-color: var(--secondary-700);
 }
 
 .changecolor .first h5 {
-    color: white;
+    color: var(--var-color-white);
 }
 
 .changecolor .form-footer {
-    background-color: #242535;
+    background-color: var(--secondary-700);
 }
 
 .changecolor .form-footer form h4 {
-    color: white;
+    color: var(--var-color-white);
 }
 
 .changecolor .form-footer form p {
-    color: #97989F;
+    color: var(--secondary-400);
 }
 
 .changecolor .form-footer form input {
-    background-color: #181A2A;
-    border-color: #3B3C4A;
+    background-color: var(--secondary-800);
+    border-color: var(--secondary-600);
 }
 
 .changecolor .about p,
 .changecolor .quick-link ul li a,
 .changecolor .category ul li a,
 .changecolor .about ul li {
-    color: #696A75;
+    color: var(--secondary-500);
 }
 
 .changecolor .last {
-    border-top-color: #242535;
+    border-top-color: var(--secondary-700);
 }
 
 
 
 .changecolor .last li a {
-    border-right-color: #242535;
-    color: #bababf;
+    border-right-color: var(--secondary-700);
+    color: var(--secondary-300);
 }
 
 .changecolor .logo-footer img {
@@ -694,9 +706,9 @@ strong {
 }
 
 .changecolor .logo-footer p {
-    color: #BABABF;
+    color: var(--secondary-300);
 }
 
 .changecolor .logo-footer span {
-    color: white;
+    color: var(--var-color-white);
 }
