@@ -134,9 +134,7 @@ nav ul li a:hover {
 }
 
 .item-ipt:first-child {
-    background-color: var(--secondary-100-f);
     margin-right: 40px;
-    border-radius: 5px;
 
 }
 
@@ -144,7 +142,7 @@ nav ul li a:hover {
     width: 134px;
     background-color: var(--secondary-100-f);
     padding: 6px 26px 6px 10px;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
 }
 
 .item-ipt:first-child input::placeholder {
@@ -169,13 +167,10 @@ nav ul li a:hover {
 .item-ipt button {
     color: #52525b;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     background-color: var(--secondary-100-f);
 }
 
-.item-ipt:first-child input {
-    outline: none !important;
-}
 
 .switch-toggle {
     width: 48px;
@@ -219,6 +214,7 @@ nav ul li a:hover {
     left: 64px;
     padding: 40px;
     box-shadow: 0px 12px 24px -6px #181a2a1f;
+    border: 1px solid var(--secondary-100);
 }
 
 .form-introduce .tag {
@@ -551,11 +547,11 @@ footer ul {
 .logo-footer p {
     font-family: var(--font-PlusJakartaSansRegular);
     font-weight: var(--font-w4);
-    color: var(--secondary-900);
+    color: var(--secondary-600);
 }
 
 .logo-footer p span {
-    color: var(--secondary-600);
+    color: var(--secondary-900);
 }
 
 strong {
@@ -596,4 +592,111 @@ strong {
 
 .nav .item-menu {
     display: none;
+}
+
+
+
+/*Background-Dark*/
+.changecolor {
+    background-color: #181A2A;
+}
+
+.changecolor nav ul li a {
+    color: white;
+}
+
+.changecolor nav img {
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+
+.changecolor .item-ipt:first-child input,
+.changecolor .item-ipt:first-child button {
+    background-color: #242535;
+}
+
+.changecolor .form-introduce {
+    background-color: #181A2A !important;
+    border-color: #242535;
+}
+
+.changecolor .form-introduce h2 {
+    color: white;
+}
+
+.changecolor .advertisement {
+    background-color: #242535;
+}
+
+.changecolor .view {
+    background-color: #181A2A;
+}
+
+.changecolor .title {
+    color: white;
+}
+
+.changecolor .post {
+    border-color: #242535;
+}
+
+.changecolor .post h4 {
+    color: white;
+}
+
+.changecolor footer {
+    background-color: #181A2A;
+    border-top-color: #242535;
+}
+
+.changecolor .first h5 {
+    color: white;
+}
+
+.changecolor .form-footer {
+    background-color: #242535;
+}
+
+.changecolor .form-footer form h4 {
+    color: white;
+}
+
+.changecolor .form-footer form p {
+    color: #97989F;
+}
+
+.changecolor .form-footer form input {
+    background-color: #181A2A;
+    border-color: #3B3C4A;
+}
+
+.changecolor .about p,
+.changecolor .quick-link ul li a,
+.changecolor .category ul li a,
+.changecolor .about ul li {
+    color: #696A75;
+}
+
+.changecolor .last {
+    border-top-color: #242535;
+}
+
+
+
+.changecolor .last li a {
+    border-right-color: #242535;
+    color: #bababf;
+}
+
+.changecolor .logo-footer img {
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+
+.changecolor .logo-footer p {
+    color: #BABABF;
+}
+
+.changecolor .logo-footer span {
+    color: white;
 }

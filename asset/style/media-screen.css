@@ -139,6 +139,10 @@
 		line-height: 30px !important;
 	}
 
+	.last {
+		padding: 20px 0 20px 15px !important;
+	}
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -247,8 +251,20 @@
 		right: 45px !important;
 	}
 
+	.last {
+		padding: 20px 0 20px 0 !important;
+	}
+
 	.last ul {
 		flex-direction: column !important;
+	}
+
+	.logo-footer img {
+		margin-right: 5px !important;
+	}
+
+	.logo-footer p {
+		font-size: 14px !important;
 	}
 
 }
@@ -433,7 +449,7 @@
 	/*Last Footer*/
 	.last {
 		flex-wrap: wrap;
-		padding: 20px 0 20px 15px !important;
+
 	}
 
 	.logo-footer {

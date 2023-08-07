@@ -11,28 +11,15 @@
  }
 
 
- function clickIconNav() {
-    //  const element = document.getElementsByClassName("item-menu")[0];
-    //  const isNavbarOpen = element.classList.contains("displayFlex");
-    //  if (isNavbarOpen) {
-    //      element.classList.remove("displayFlex");
-    //      element.classList.add("displayNone");
-    //  } else {
-    //      element.classList.add("displayFlex");
-    //      element.classList.remove("displayNone");
-     //  }
-     click("item-menu", 0, "displayNone", "displayFlex");
- }
+var btnChangeColor = document.getElementById('light-dark');
 
- function showSearch() {
-    //  const search = document.getElementsByClassName("search")[0]
-    //  const checkSearch = search.classList.contains("playFlex");
-    //  if (checkSearch) {
-    //      element.classList.remove("playFlex");
-    //      element.classList.add("playNone");
-    //  } else {
-    //      element.classList.add("playFlex");
-    //      element.classList.remove("playNone");
-     //  }
-     click("search", 0, "playNone", "playFlex");
- }
+let mode = localStorage.getItem("ChangeColorPage");
+if (mode == 'true') {
+    document.body.classList.add('changecolor');
+    btnChangeColor.checked = true;
+}
+
+btnChangeColor.addEventListener('click', () => {
+    let mode = document.body.classList.toggle("changecolor");
+    localStorage.setItem("ChangeColorPage", mode);
+})
