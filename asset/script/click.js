@@ -11,6 +11,8 @@
  }
 
 
+ /*Click Change Color Background*/
+
 var btnChangeColor = document.getElementById('light-dark');
 
 let mode = localStorage.getItem("ChangeColorPage");
@@ -23,3 +25,5 @@ btnChangeColor.addEventListener('click', () => {
     let mode = document.body.classList.toggle("changecolor");
     localStorage.setItem("ChangeColorPage", mode);
 })
+
+

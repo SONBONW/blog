@@ -222,6 +222,21 @@ nav ul li a:hover {
     left: 22px;
 }
 
+
+/*Creact Post*/
+.creact-new-post {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary-200);
+    box-shadow: 0px 12px 24px -6px #181a2a1f;
+}
+
+
 /*Main Home Page*/
 
 .form-introduce {
@@ -383,6 +398,49 @@ article h4 {
 
 
 /*Main Single Post*/
+
+
+/*Main Creact Post*/
+
+
+.creact-post {
+    padding-top: 30px;
+}
+
+.creact-post button,
+.creact-post #content,
+.creact-post #title,
+.creact-post #name,
+.creact-post input {
+    width: 100%;
+}
+
+.creact-post #title,
+.creact-post #name {
+    height: 50px;
+}
+
+.creact-post h5,
+.creact-post h2 {
+    font-weight: var(--font-w5);
+    font-family: var(--font-WorkSansMedium);
+}
+
+
+.creact-post input::placeholder {
+    color: #A1A1AA;
+    font-family: var(--font-InterRegular);
+    font-weight: var(--font-w4);
+}
+
+
+.creact-post label {
+    padding: 20px 0;
+}
+
+.creact-post label:nth-child(2n) {
+    margin: 0 auto;
+}
 
 /*Footer*/
 
@@ -725,4 +783,16 @@ strong {
 
 .changecolor .logo-footer span {
     color: var(--var-color-white);
+}
+
+
+.changecolor .creact-post h5,
+.changecolor .creact-post h2 {
+    color: var(--var-color-white);
+}
+
+.changecolor .creact-post input,
+.changecolor .creact-post textarea {
+    background-color: var(--secondary-800);
+    border-color: var(--secondary-600);
 }
