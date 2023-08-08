@@ -476,13 +476,15 @@ article h4 {
 }
 
 .creact-post button,
-.creact-post #content,
+.creact-post #content-first,
+.creact-post #content-second,
 .creact-post #title,
 .creact-post #name,
 .creact-post input {
     width: 100%;
 }
 
+.creact-post #content-italics,
 .creact-post #title,
 .creact-post #name {
     height: 50px;
@@ -506,9 +508,6 @@ article h4 {
     padding: 20px 0;
 }
 
-.creact-post label:nth-child(2n) {
-    margin: 0 auto;
-}
 
 /*Footer*/
 
