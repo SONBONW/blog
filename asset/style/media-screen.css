@@ -8,6 +8,8 @@
 	.nav-header ul {
 		margin-right: 50px;
 	}
+
+
 }
 
 /* -------------------- Config Website -------------------- */
@@ -19,6 +21,8 @@
 	.nav-header ul {
 		margin-right: 105px;
 	}
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -44,6 +48,12 @@
 	article .infor-user .time {
 		font-size: 14px !important;
 		margin-left: 7px !important;
+	}
+
+
+	/*Main Single Post*/
+	.single-post .italics {
+		font-size: 14px !important;
 	}
 
 	.about {
@@ -142,6 +152,12 @@
 	/*Main Blog Listing*/
 	.form-introduce.blog-listing {
 		margin-top: -180px !important;
+	}
+
+	/*Main Single Post*/
+	.single-post .form-introduce {
+		margin: 0 !important;
+		width: 100%;
 	}
 
 	/*Footer*/
@@ -253,6 +269,19 @@
 		margin-top: -155px !important;
 	}
 
+	/*Main Single Post*/
+	.single-post .form-introduce {
+		margin: 0 !important;
+	}
+
+	.single-post section article {
+		padding-left: 8px;
+	}
+
+	.creact-new-post {
+		bottom: 20px !important;
+		right: 16px !important;
+	}
 
 	/*Footer*/
 
@@ -283,7 +312,7 @@
 	}
 
 	.logo-footer p {
-		font-size: 14px !important;
+		font-size: 13px !important;
 	}
 
 }
@@ -314,7 +343,10 @@
 		text-align: center;
 	}
 
-
+	/*Main Single Post*/
+	.single-post .italics {
+		font-size: 14px !important;
+	}
 
 }
 
@@ -329,6 +361,12 @@
 
 	.noPadding {
 		padding: 0;
+	}
+
+	/*Main Single Post*/
+
+	.single-post {
+		width: 65.75%;
 	}
 }
 
@@ -425,7 +463,6 @@
 	article h4 {
 		margin: 10px 0 !important;
 	}
-
 
 
 

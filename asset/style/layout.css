@@ -54,16 +54,15 @@
 /*Font Source Serif Pro */
 
 @font-face {
-    font-family: 'SourceSerifPro';
+    font-family: 'SourceSerifProRegular';
     src: url(../font/source-serif-pro/SourceSerifPro-Regular.ttf);
-    font-weight: 400;
 }
 
+/* 
 @font-face {
-    font-family: 'SourceSerifPro';
+    font-family: 'SourceSerifProSemibold';
     src: url(../font/source-serif-pro/SourceSerifPro-Semibold.ttf);
-    font-weight: 600;
-}
+} */
 
 
 :root {
@@ -89,6 +88,8 @@
     --font-PlusJakartaSansSemiBold: 'PlusJakartaSansSemiBold';
     --font-PlusJakartaSansExtraBold: 'PlusJakartaSansExtraBold';
     --font-InterRegular: 'InterRegular';
+    --font-SourceSerifProRegular: 'SourceSerifProRegular';
+    /* --font-SourceSerifProSemibold: 'SourceSerifProSemibold'; */
     --font-w4: 400;
     --font-w5: 500;
     --font-w6: 600;
@@ -416,6 +417,56 @@ article h4 {
 
 /*Main Single Post*/
 
+
+
+.single-post .form-introduce {
+    border: none;
+    box-shadow: none;
+    padding: 8px 0 32px 0 !important;
+
+}
+
+.single-post .form-introduce time {
+    margin-left: 24px;
+}
+
+.single-post article h4 {
+    font-weight: var(--font-w6);
+    font-family: var(--font-WorkSansSemiBold);
+    color: var(--secondary-800);
+    line-height: 28px;
+    font-size: var(--fz-24);
+}
+
+.single-post article p {
+    font-weight: var(--font-w4);
+    font-family: var(--font-SourceSerifProRegular);
+    color: var(--secondary-600);
+    font-size: 20px;
+}
+
+.single-post .italics {
+    font-style: italic !important;
+    font-weight: var(--font-w4);
+    line-height: 32px;
+    font-family: var(--font-SourceSerifProRegular);
+    padding: 32px;
+    font-size: 20px;
+    border-radius: 12px;
+    border-left: 4px solid var(--secondary-100);
+    background-color: var(--secondary-50);
+    color: var(--secondary-800);
+    margin: 32px 0;
+}
+
+.single-post .advertisement {
+    width: 93.75%;
+    margin: 32px auto;
+}
+
+.single-post section article {
+    margin: 32px auto;
+}
 
 /*Main Creact Post*/
 
@@ -803,6 +854,8 @@ strong {
 }
 
 
+/*Drak Creact Post*/
+
 .changecolor .creact-post h5,
 .changecolor .creact-post h2 {
     color: var(--var-color-white);
@@ -812,4 +865,20 @@ strong {
 .changecolor .creact-post textarea {
     background-color: var(--secondary-800);
     border-color: var(--secondary-600);
+}
+
+/*Drak Single Post*/
+
+.changecolor .single-post section h4 {
+    color: var(--var-color-white);
+}
+
+.changecolor .single-post section p {
+    color: var(--secondary-300)
+}
+
+.changecolor .single-post .italics {
+    color: var(--var-color-white);
+    background-color: var(--secondary-700);
+    border-left: 4px solid var(--secondary-100);
 }
