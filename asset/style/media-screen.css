@@ -125,7 +125,7 @@
 
 	/*BOOTSTRAP*/
 
-	/**/
+	/*Main*/
 
 
 	.form-introduce {
@@ -139,6 +139,13 @@
 		line-height: 30px !important;
 	}
 
+	/*Main Blog Listing*/
+	.form-introduce.blog-listing {
+		margin-top: -180px !important;
+	}
+
+	/*Footer*/
+
 	.last {
 		padding: 20px 0 20px 15px !important;
 	}
@@ -149,6 +156,8 @@
 @media (max-width: 575.98px) {
 
 	/*BOOTSTRAP*/
+
+	/*Header*/
 
 	.nav-header ul {
 		flex-direction: column !important;
@@ -193,6 +202,8 @@
 		left: 12px !important;
 	}
 
+	/*Main*/
+
 	.form-introduce {
 		padding: 10px !important;
 	}
@@ -236,6 +247,14 @@
 		font-size: 14px !important;
 		margin-left: 45px !important;
 	}
+
+	/*Main Blog Listing*/
+	.form-introduce.blog-listing {
+		margin-top: -155px !important;
+	}
+
+
+	/*Footer*/
 
 	.form-footer {
 		padding: 20px !important;
@@ -368,6 +387,9 @@
 		background-color: #141414;
 	}
 
+
+	/*Main*/
+
 	.form-introduce {
 		position: relative !important;
 		margin: -150px auto 0 auto !important;
@@ -391,9 +413,6 @@
 		justify-content: center;
 	}
 
-	/* .post {
-		padding: 0;
-	} */
 
 	article .user span {
 		font-size: 14px !important;
@@ -406,6 +425,11 @@
 	article h4 {
 		margin: 10px 0 !important;
 	}
+
+
+
+
+	/*Footer*/
 
 	footer {
 		margin-top: 50px !important;

@@ -391,7 +391,24 @@ article h4 {
 }
 
 /*Main Blog Listing*/
+.blog-listing {
+    box-shadow: none;
+    border: none;
+    margin-top: -265px;
+    margin-bottom: 38px;
+    color: var(--var-color-white);
+}
 
+.blog-listing h2 {
+    color: var(--var-color-white);
+}
+
+.blog-listing time {
+    display: flex;
+    align-items: center;
+    transform: translateY(-5%);
+    margin-left: 20px;
+}
 
 
 /*Main Author Page*/
