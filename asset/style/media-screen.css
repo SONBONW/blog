@@ -73,7 +73,7 @@
 
 	/*BOOTSTRAP*/
 
-
+	/*Main*/
 	.width-750 {
 		width: 80%;
 	}
@@ -96,6 +96,30 @@
 		font-size: 14px !important;
 		margin-left: 8px !important;
 	}
+
+	/*Main Create Post*/
+	.form-create form {
+		position: relative;
+		background-color: transparent !important;
+		width: 100% !important;
+		z-index: 1;
+		box-shadow: none !important;
+		border: none !important;
+	}
+
+	.form-create .img {
+		position: absolute;
+		width: 90% !important;
+		margin-top: 22%;
+	}
+
+	.form-create div img {
+		width: 700px !important;
+		filter: sepia(100%) hue-rotate(180deg) brightness(130%);
+		/*Not run filter*/
+	}
+
+	/*Footer*/
 
 	.about {
 		width: 50% !important;
@@ -474,6 +498,16 @@
 	/*Main Blog Listing*/
 	.pagetitle {
 		margin-bottom: 20px !important;
+	}
+
+	/*Main Create Post*/
+
+	.form-create .img {
+		display: none !important;
+	}
+
+	.form-create form {
+		width: 100% !important;
 	}
 
 	/*Footer*/

@@ -224,7 +224,7 @@ nav ul li a:hover {
 }
 
 
-/*Creact Post*/
+/*Creact Post Link*/
 .creact-new-post {
     position: fixed;
     bottom: 30px;
@@ -501,41 +501,34 @@ article h4 {
 /*Main Creact Post*/
 
 
-.creact-post {
-    padding-top: 30px;
+.form-create {
+    display: flex;
 }
 
-.creact-post button,
-.creact-post #content-first,
-.creact-post #content-second,
-.creact-post #title,
-.creact-post #name,
-.creact-post input {
-    width: 100%;
+.form-create .img {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    transform: rotateZ(-22deg);
 }
 
-.creact-post #content-italics,
-.creact-post #title,
-.creact-post #name {
-    height: 50px;
+.form-create div img {
+    width: 550px;
+    image-rendering: pixelated;
 }
 
-.creact-post h5,
-.creact-post h2 {
-    font-weight: var(--font-w5);
-    font-family: var(--font-WorkSansMedium);
+.form-create form {
+    width: 50%;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 12px;
+    background-color: var(--secondary-50);
+    border: 1px solid var(--secondary-100);
+    box-shadow: 14px 20px 12px 5px #181a2a1f;
 }
 
-
-.creact-post input::placeholder {
-    color: #A1A1AA;
-    font-family: var(--font-InterRegular);
-    font-weight: var(--font-w4);
-}
-
-
-.creact-post label {
-    padding: 20px 0;
+.form-create form button {
+    margin-top: 20px;
 }
 
 
@@ -884,8 +877,9 @@ strong {
 
 
 /*Dark Creact Post*/
-
+.changecolor .creact-post h6,
 .changecolor .creact-post h5,
+.changecolor .creact-post h3,
 .changecolor .creact-post h2 {
     color: var(--var-color-white);
 }
@@ -894,6 +888,16 @@ strong {
 .changecolor .creact-post textarea {
     background-color: var(--secondary-800);
     border-color: var(--secondary-600);
+}
+
+.changecolor .form-create form {
+    background-color: var(--secondary-800);
+    border-color: var(--secondary-700);
+}
+
+.changecolor .form-create div img {
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
 }
 
 /*Dark Single Post*/

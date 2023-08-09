@@ -91,42 +91,52 @@
         </nav>
     </header>
     <main class="container custorm-container px-0 creact-post">
-        <h2 class="text-center">Creact New Post</h2>
-        <form action="#" class="d-flex flex-column">
-            <label for="title">
-                <h5>Title Post</h5>
-                <input type="text" id="title" placeholder="Enter Title Post">
-            </label>
-            <label for="main-img" class="m-auto">
-                <h5>Choose Main Image</h5>
-                <input type="file" name="" id="main-img">
-            </label>
-            <label for="name">
-                <h5>Creactor Name</h5>
-                <input type="text" id="name" placeholder="Enter Creactor Name">
-            </label>
-            <label for="img-first" class="m-auto">
-                <h5>Creactor Image First</h5>
-                <input type="file" name="" id="img-first">
-            </label>
-            <label for="content-first">
-                <h5>Content First</h5>
-                <textarea name="" id="content-first" cols="" rows="15" placeholder="Enter Content"></textarea>
-            </label>
-            <label for="content-italics">
-                <h5>Content Italics</h5>
-                <input type="text" id="content-italics" placeholder="Enter Content Italics">
-            </label>
-            <label for="img-second" class="m-auto">
-                <h5>Creactor Image Second</h5>
-                <input type="file" name="" id="img-second">
-            </label>
-            <label for="content-second">
-                <h5>Content Second</h5>
-                <textarea name="" id="content-second" cols="" rows="15" placeholder="Enter Content"></textarea>
-            </label>
-            <button class="btn btn-primary text-center border-0">Creact Post</button>
-        </form>
+        <h2 class="text-center m-4">Create New Post</h2>
+        <div class="form-create">
+            <div class="img">
+                <img class="img-fluid" src="./asset/img/logo-header.png" alt="">
+            </div>
+            <form action="#" class="d-flex flex-column">
+                <h3>Form Create Post</h3>
+                <div>
+                    <h5>Creactor Title</h5>
+                    <label class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Title</span>
+                        <input type="text" class="form-control" placeholder="Enter Title Post" aria-label="Title"
+                            aria-describedby="basic-addon1">
+                    </label>
+                </div>
+                <div>
+                    <h5>Creactor Name</h5>
+                    <label class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon2">Name</span>
+                        <input type="text" class="form-control" placeholder="Enter Creactor Name" aria-label="Username"
+                            aria-describedby="basic-addon2">
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="main-img" class="form-label">
+                        <h5>Creactor Image</h5>
+                    </label>
+                    <input class="form-control" type="file" id="creactor-img" multiple>
+                </div>
+                <div class="mb-3">
+                    <label for="img-post" class="form-label">
+                        <h5>Post Image</h5>
+                    </label>
+                    <input class="form-control" type="file" id="post-img" multiple>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Enter Content" id="floatingTextarea"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">
+                        <h6>Enter Content</h6>
+                    </label>
+                </div>
+                <button class="btn btn-primary text-center border-0">Creact Post</button>
+            </form>
+        </div>
+
     </main>
     <footer>
         <div class="container custorm-container d-flex flex-wrap first">
