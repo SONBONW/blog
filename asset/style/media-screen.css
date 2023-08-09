@@ -266,7 +266,8 @@
 
 	/*Main Blog Listing*/
 	.form-introduce.blog-listing {
-		margin-top: -155px !important;
+		margin: -135px 0 25px 0 !important;
+		padding: 0 !important;
 	}
 
 	/*Main Single Post*/
@@ -346,6 +347,12 @@
 	/*Main Single Post*/
 	.single-post .italics {
 		font-size: 14px !important;
+	}
+
+	/*Dark Main Home*/
+
+	.changecolor .item-ipt:first-child button {
+		background-color: white !important;
 	}
 
 }
@@ -464,7 +471,10 @@
 		margin: 10px 0 !important;
 	}
 
-
+	/*Main Blog Listing*/
+	.pagetitle {
+		margin-bottom: 20px !important;
+	}
 
 	/*Footer*/
 

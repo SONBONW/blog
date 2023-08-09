@@ -392,6 +392,36 @@ article h4 {
 }
 
 /*Main Blog Listing*/
+.pagetitle {
+    padding-top: 8px;
+    margin-bottom: 64px;
+}
+
+.pagetitle h4 {
+    font-size: 30px;
+    font-weight: var(--font-w4);
+    font-family: var(--font-WorkSansSemiBold);
+    line-height: 36px;
+}
+
+.pagetitle a {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-600);
+    font-family: var(--font-WorkSansRegular);
+}
+
+.pagetitle span:first-child a {
+    padding-right: 12px;
+    border-right: 1px solid var(--secondary-100);
+
+}
+
+.pagetitle span:last-child a {
+    color: var(--secondary-500);
+    padding-left: 12px;
+}
+
 .blog-listing {
     box-shadow: none;
     border: none;
@@ -853,7 +883,7 @@ strong {
 }
 
 
-/*Drak Creact Post*/
+/*Dark Creact Post*/
 
 .changecolor .creact-post h5,
 .changecolor .creact-post h2 {
@@ -866,7 +896,7 @@ strong {
     border-color: var(--secondary-600);
 }
 
-/*Drak Single Post*/
+/*Dark Single Post*/
 
 .changecolor .single-post section h4 {
     color: var(--var-color-white);
@@ -880,4 +910,16 @@ strong {
     color: var(--var-color-white);
     background-color: var(--secondary-700);
     border-left: 4px solid var(--secondary-100);
+}
+
+
+/*Dark Blog Listing*/
+
+.changecolor .blog-listing {
+    background-color: transparent !important;
+    border: none;
+}
+
+.changecolor .pagetitle h4 {
+    color: var(--var-color-white);
 }
