@@ -291,6 +291,7 @@ nav ul li a:hover {
     align-items: center;
     display: flex;
     font-family: var(--font-WorkSansRegular);
+    margin-bottom: 2px;
 }
 
 /*Advertisement*/
@@ -443,6 +444,28 @@ article h4 {
 
 
 /*Main Author Page*/
+
+main section:first-child {
+    background-color: var(--secondary-50);
+    border-radius: 12px;
+    padding: 48px;
+}
+
+
+
+.person-infor img {
+    margin-top: 20px;
+}
+
+.person-infor span {
+    padding-left: 16px;
+}
+
+.person-infor .note {
+    margin-left: 118px;
+    display: block;
+    margin-top: -30px;
+}
 
 
 /*Main Single Post*/
