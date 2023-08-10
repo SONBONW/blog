@@ -30,13 +30,57 @@ btnChangeColor.addEventListener('click', () => {
 /*Get Value In Input*/
 
 var Title = document.getElementById("title");
-var Name = document.getElementById("name");
 var Content = document.getElementById("content");
+var Img = document.getElementById("post-img")
 var submit = document.getElementById("submit");
 
+
+function Check(val) {
+    if (val.value === "") {
+        return false;
+    }
+    return true;
+}
+
+function showError(val, error) {
+    if (!Check(val)) {
+        error.innerHTML = "Input has not content";
+    } else {
+        error.innerHTML = "";
+    }
+}
+
+function eventChange(e, error) {
+    e.addEventListener("change", () => {
+        error.innerHTML = "";
+    })
+}
+
+eventChange(Title, errortitle);
+eventChange(Img, errorimg);
+eventChange(Content, errorcontent);
+
 submit.addEventListener("click", () => {
-    alert(Title.value);
-    alert(Name.value);
-    alert(Content.value);
+    if (Check(Title) && Check(Img) && Check(Content)) {
+        alert("Submit");
+    } else {
+        showError(Title, errortitle);
+        showError(Img, errorimg);
+        showError(Content, errorcontent);
+    }
 });
 
+
+/*Limit number of characters in textarea*/
+function countCharacters() {
+  var charCount = document.getElementById("charCount");
+
+  var numCharacters = Content.value.length;
+
+  charCount.textContent = numCharacters + " /10000";
+
+  if (numCharacters >= 10000) {
+    Content.value = Content.value.slice(0, 10000);
+    Content.blur(); // Loại bỏ focus khỏi textarea để dừng lại nhận ký tự từ bàn phím
+  }
+}
