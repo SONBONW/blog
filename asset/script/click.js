@@ -70,8 +70,18 @@ submit.addEventListener("click", () => {
     }
 });
 
+/*Limit number of characters in input title*/
 
-/*Limit number of characters in textarea*/
+function inputCharacters() {
+  var numCharacters = Title.value.length;
+
+  if (numCharacters >= 70) {
+    Title.value = Title.value.slice(0, 70);
+    Title.blur(); // Loại bỏ focus khỏi textarea để dừng lại nhận ký tự từ bàn phím
+  }
+}
+
+/*Limit number of characters in textarea content*/
 function countCharacters() {
   var charCount = document.getElementById("charCount");
 
