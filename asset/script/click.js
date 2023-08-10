@@ -27,3 +27,16 @@ btnChangeColor.addEventListener('click', () => {
 })
 
 
+/*Get Value In Input*/
+
+var Title = document.getElementById("title");
+var Name = document.getElementById("name");
+var Content = document.getElementById("content");
+var submit = document.getElementById("submit");
+
+submit.addEventListener("click", () => {
+    alert(Title.value);
+    alert(Name.value);
+    alert(Content.value);
+});
+
