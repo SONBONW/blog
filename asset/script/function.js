@@ -13,15 +13,15 @@
 
  /*Click Change Color Background*/
 
-var btnChangeColor = document.getElementById('light-dark');
+let changeColor = document.getElementById('light-dark');
 
 let mode = localStorage.getItem("ChangeColorPage");
 if (mode == 'true') {
     document.body.classList.add('changecolor');
-    btnChangeColor.checked = true;
+    changeColor.checked = true;
 }
 
-btnChangeColor.addEventListener('click', () => {
+changeColor.addEventListener('click', () => {
     let mode = document.body.classList.toggle("changecolor");
     localStorage.setItem("ChangeColorPage", mode);
 })
@@ -29,10 +29,10 @@ btnChangeColor.addEventListener('click', () => {
 
 /*Get Value In Input*/
 
-var Title = document.getElementById("title");
-var Content = document.getElementById("content");
-var Img = document.getElementById("post-img")
-var submit = document.getElementById("submit");
+let Title = document.getElementById("title");
+let Content = document.getElementById("content");
+let Img = document.getElementById("post-img")
+let submit = document.getElementById("submit");
 
 
 function Check(val) {
@@ -73,7 +73,7 @@ submit.addEventListener("click", () => {
 /*Limit number of characters in input title*/
 
 function inputCharacters() {
-  var numCharacters = Title.value.length;
+  let numCharacters = Title.value.length;
 
   if (numCharacters >= 70) {
     Title.value = Title.value.slice(0, 70);
@@ -83,9 +83,9 @@ function inputCharacters() {
 
 /*Limit number of characters in textarea content*/
 function countCharacters() {
-  var charCount = document.getElementById("charCount");
+  let charCount = document.getElementById("charCount");
 
-  var numCharacters = Content.value.length;
+  let numCharacters = Content.value.length;
 
   charCount.textContent = numCharacters + " /10000";
 
