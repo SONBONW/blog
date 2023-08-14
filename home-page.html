@@ -24,7 +24,8 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <ul id="navbarSupportedContent" class="navbar-nav mb-lg-0 text-center">
+                <ul id="navbarSupportedContent"
+                    class="navbar-nav mb-lg-0 text-center collapse navbar-collapse d-md-flex">
                     <li class="nav-item d-sm-none d-flex">
                         <input type="text" name="search" placeholder="Search" class="border-0">
                         <button class="border-0">
@@ -123,7 +124,7 @@
         <section class="list-post">
             <h4 class="title">Latest Post</h4>
             <div class="posts row gx-md-4 custorm-row">
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12">
+                <!-- <div class="col-lg-4 col-md-6 col-sm-8 col-12">
                     <article class="post">
                         <img class="img-fluid" src="./asset/img/img-post1.png" alt="">
                         <span class="tag rounded">Technology</span>
@@ -249,7 +250,7 @@
                             <span class="time">August 20, 2022</span>
                         </div>
                     </article>
-                </div>
+                </div> -->
             </div>
             <button class=" view rounded d-flex justify-content-center align-items-center">
                 View All Post
@@ -354,8 +355,27 @@
             </ul>
         </div>
     </footer>
+    <!-- <script type="text/javascript">
+        function renderPost() {
+            const container = document.getElementsByClassName("list-post")[0];
+            const listUsername = ["Minh", "Nam", "Hung"];
+            const node = document.createElement("li");
+
+            for (let index = 0; index < listUsername.length; index++) {
+                const node = document.createElement("li");
+                const textnode = document.createTextNode("Water");
+                node.appendChild(textnode);
+                container.appendChild(node);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+            console.log("DOM fully loaded and parsed");
+            renderPost();
+        });
+    </script> -->
     <script src="./asset/script/vendor.min.js"></script>
-    <script src="./asset/script/function.js"></script>
+    <script src="./asset/script/scripts.js"></script>
 </body>
 
 </html>

@@ -445,13 +445,11 @@ article h4 {
 
 /*Main Author Page*/
 
-main section:first-child {
+.section-first {
     background-color: var(--secondary-50);
     border-radius: 12px;
     padding: 48px;
 }
-
-
 
 .person-infor img {
     margin-top: 20px;
@@ -541,18 +539,21 @@ main section:first-child {
 }
 
 .form-create form {
-    width: 50%;
+    margin: 0 auto;
+    width: 90%;
     text-align: center;
     padding: 20px 10px;
     border-radius: 12px;
     background-color: var(--secondary-50);
     border: 1px solid var(--secondary-100);
-    box-shadow: 14px 20px 12px 5px #181a2a1f;
+    box-shadow: 6px 16px 17px 10px #181a2a1f;
 }
 
 .form-create form button {
     margin-top: 20px;
 }
+
+
 
 .form-create form #errortitle,
 .form-create form #errorimg,
@@ -915,15 +916,15 @@ strong {
 
 
 /*Dark Creact Post*/
-.changecolor .creact-post h6,
-.changecolor .creact-post h5,
-.changecolor .creact-post h3,
-.changecolor .creact-post h2 {
+.changecolor .create-post h6,
+.changecolor .create-post h5,
+.changecolor .create-post h3,
+.changecolor .create-post h2 {
     color: var(--var-color-white);
 }
 
-.changecolor .creact-post input,
-.changecolor .creact-post textarea {
+.changecolor .create-post input,
+.changecolor .create-post textarea {
     background-color: var(--secondary-800);
     border-color: var(--secondary-600);
 }

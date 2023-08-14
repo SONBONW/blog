@@ -9,8 +9,11 @@
 		margin-right: 50px;
 	}
 
+	/*Clean Br*/
 
 }
+
+
 
 /* -------------------- Config Website -------------------- */
 @media (min-width: 1400px) {
@@ -25,6 +28,14 @@
 
 }
 
+@media (max-width: 1400px) {
+
+	/*Clean Br*/
+	br {
+		content: "";
+	}
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 	.nav-header ul li {
@@ -34,6 +45,7 @@
 	.item-ipt:first-child {
 		margin-right: 20px !important;
 	}
+
 
 
 	/*Posts*/
@@ -103,9 +115,6 @@
 		position: relative;
 		background-color: transparent !important;
 		width: 100% !important;
-		z-index: 1;
-		box-shadow: none !important;
-		border: none !important;
 	}
 
 	.form-create .img {
@@ -363,6 +372,7 @@
 		background-color: white;
 	}
 
+
 	/*Main*/
 
 	.title {
@@ -422,6 +432,7 @@
 
 	.nav-header div ul li {
 		margin-right: 0 !important;
+		width: 100%;
 	}
 
 	.nav-header form {
@@ -499,6 +510,7 @@
 	/*Main Blog Listing*/
 	.pagetitle {
 		margin-bottom: 20px !important;
+		padding: 0 !important;
 	}
 
 	/*Main Create Post*/
