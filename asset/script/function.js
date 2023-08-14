@@ -16,12 +16,13 @@ changeColor.addEventListener('click', () => {
 })
 
 
-/*Get Value In Input*/
 
-// let Title = document.getElementById("title");
-// let Content = document.getElementById("content");
+
+
+
+
 let img = document.getElementById("post-img");
-// let submit = document.getElementById("submit");
+
 
 
 function checkValue(val) {
@@ -46,11 +47,14 @@ function eventChangeError(e, error) {
 }
 
 eventChangeError(title, errortitle);
-eventChangeError(Img, errorimg);
+eventChangeError(img, errorimg);
 eventChangeError(content, errorcontent);
 
 submit.addEventListener("click", () => {
-    if (checkValue(title) && checkValue(Img) && checkValue(content)) {
+    if (checkValue(title) && checkValue(img) && checkValue(content)) {
+        alert(getValueInput(title));
+        alert(getValueInput(img));
+        alert(getValueInput(content));
         alert("Submit");
     } else {
         showError(title, errortitle);
@@ -58,6 +62,12 @@ submit.addEventListener("click", () => {
         showError(content, errorcontent);
     }
 });
+
+
+/*Get Value In Input*/
+function getValueInput(e) {
+    return e.value;
+}
 
 /*Limit number of characters in input title*/
 
