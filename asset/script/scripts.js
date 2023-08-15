@@ -1,4 +1,3 @@
-
 /**/
 
 let title = document.getElementById("title");
@@ -108,42 +107,105 @@ const posts = [{
   }
 ];
 
-function RenderListPost(inforPost) {
-  const postContent = inforPost.map((post) => {
-   return `<div class="col-lg-4 col-md-6 col-sm-8 col-12">
+const dbPosts = [...posts];
+
+// function RenderListPost(inforPost) {
+//   const postContent = inforPost.map((post) => {
+//    return `<div class="col-lg-4 col-md-6 col-sm-8 col-12">
+//                     <article class="post">
+//                         <img class="img-fluid" src="${post.img}" alt="">
+//                         <span class="tag rounded">${post.tag}</span>
+//                         <h4>${post.title}</h4>
+//                         <div class="infor-user">
+//                             <div class="user">
+//                                 <img class="img-fluid" src="${post.user.avatar}" alt="">
+//                                 <span>${post.user.username}</span>
+//                             </div>
+//                             <span class="time">${post.time}</span>
+//                         </div>
+//                     </article>
+//                 </div>`
+//   }).join('');
+//   post.innerHTML = postContent;
+// }
+
+
+// /*Click View Post*/
+
+// function createPost(newInfor) {
+//   RenderListPost(newInfor);
+
+// }
+// let newInfor = posts.slice().concat(posts);
+// viewBtn.addEventListener('click', () => {
+//   newInfor = posts.slice().concat(newInfor);
+//   let newPost = createPost(newInfor);
+// });
+
+
+
+let quantityRender = 9;
+let currrenPost = 1;
+
+// const handleButtonStatus = () => {
+//   if (pageCount === currrenPost) {
+//     viewBtn.setAttribute("disabled", true);
+//   }
+// };
+let createPost = (posts) => {
+  let cardPost = document.createElement('div');
+  cardPost.classList.add("col-lg-4", "col-md-6", "col-sm-8", "col-12");
+  const postContent = `
                     <article class="post">
-                        <img class="img-fluid" src="${post.img}" alt="">
-                        <span class="tag rounded">${post.tag}</span>
-                        <h4>${post.title}</h4>
+                        <img class="img-fluid" src="${posts.img}" alt="">
+                        <span class="tag rounded">${posts.tag}</span>
+                        <h4>${posts.title}</h4>
                         <div class="infor-user">
                             <div class="user">
-                                <img class="img-fluid" src="${post.user.avatar}" alt="">
-                                <span>${post.user.username}</span>
+                                <img class="img-fluid" src="${posts.user.avatar}" alt="">
+                                <span>${posts.user.username}</span>
                             </div>
-                            <span class="time">${post.time}</span>
+                            <span class="time">${posts.time}</span>
                         </div>
                     </article>
-                </div>`
-  }).join('');
-  post.innerHTML = postContent;
+                `;
+  cardPost.innerHTML = postContent;
+  post.appendChild(cardPost);
 }
 
 
-/*Click View Post*/
 
-function createPost(newInfor) {
-  RenderListPost(newInfor);
+const addPost = () => {
+  // handleButtonStatus();
 
+  // const startRange = (index - 1) * quantityRender;
+  // const endRange = index * quantityRender > quantityPost ? quantityPost : index * quantityRender;
+  const startRange = (currrenPost - 1) * quantityRender;
+  const endRange = startRange + quantityRender;
+  for (let i = startRange ; i < endRange; i++) {
+     if (i >= posts.length) {
+      break;
+    }
+    createPost(posts[i]);
+  }
+
+  currrenPost++;
+
+  if (startRange + quantityRender >= posts.length) {
+    currrenPost = 1; // Reset the current page to 1 when all posts are shown
+  }
 }
-let newInfor = posts.slice().concat(posts);
+
+
 viewBtn.addEventListener('click', () => {
-  newInfor = posts.slice().concat(newInfor);
-  let newPost = createPost(newInfor);
+  addPost();
 });
-
 
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
-  
-  RenderListPost(posts);
+  addPost();
+  // viewBtn.addEventListener('click', () => {
+  //   addPost(currrenPost + 1);
+  // })
+  // RenderListPost(posts);
 });
