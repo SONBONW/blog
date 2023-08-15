@@ -92,7 +92,7 @@ function countCharacters() {
 
 
 /*Render Post Data*/
-
+let viewClick = document.getElementsByClassName('view')[0];
 let post = document.getElementsByClassName('posts')[0];
 const posts = [{
     img: "./asset/img/img-post1.png",
@@ -208,19 +208,42 @@ const listPost = {
     post.innerHTML = html.join('');
   },
 
+  //  loadMore: function () {
+  //   const start = this.posts.length;
+  //   const end = start + 3;
+
+  //   if (end <= this.posts.length) {
+  //     this.render(start, end);
+  //   } else {
+  //     viewClick.style.display = 'none';
+  //   }
+  // },
+
   start: function () {
     this.render();
+    //  viewClick.addEventListener('click', () => this.loadMore());
   },
 
 }
 
 
-/*Click View Post*/
+/*Click View Add List Post New*/
 
-let viewClick = document.getElementsByClassName('view')[0];
-viewClick.addEventListener("click", () => {
-  
-})
+
+// viewClick.addEventListener("click", () => {
+//   post.append(listPost);
+// })
+
+
+/*Get Time Now*/
+function formatDate(dateString) {
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  return new Date(dateString).toLocaleDateString('en-US', options);
+}
+
+// const currentDate = new Date();  // Lấy thời gian hiện tại
+// const formattedDate = formatDate(currentDate);
+
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -234,4 +257,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
     localStorage.setItem("ChangeColorPage", mode);
   });
   listPost.start();
+
 });
