@@ -147,10 +147,12 @@ const dbPosts = [...posts];
 let quantityRender = 9;
 let currrenPost = 1;
 
+// const countPost = 18;
 // const handleButtonStatus = () => {
-//   if (pageCount === currrenPost) {
+//   if (countPost == startRange) {
 //     viewBtn.setAttribute("disabled", true);
 //   }
+
 // };
 let createPost = (posts) => {
   let cardPost = document.createElement('div');
@@ -180,25 +182,33 @@ const addPost = () => {
 
   // const startRange = (index - 1) * quantityRender;
   // const endRange = index * quantityRender > quantityPost ? quantityPost : index * quantityRender;
+
   const startRange = (currrenPost - 1) * quantityRender;
   const endRange = startRange + quantityRender;
-  for (let i = startRange ; i < endRange; i++) {
-     if (i >= posts.length) {
+  for (let i = startRange; i < endRange; i++) {
+    if (i >= dbPosts.length) {
       break;
     }
-    createPost(posts[i]);
+    createPost(dbPosts[i]);
   }
 
   currrenPost++;
-
-  if (startRange + quantityRender >= posts.length) {
+  if (startRange + quantityRender >= dbPosts.length) {
     currrenPost = 1; // Reset the current page to 1 when all posts are shown
+
   }
 }
-
+let countClick = 1;
 
 viewBtn.addEventListener('click', () => {
-  addPost();
+  if (countClick < 5) {
+    countClick++;
+    addPost();
+    if (countClick == 5) {
+      viewBtn.classList.add('d-none');
+    }
+  }
+
 });
 
 document.addEventListener("DOMContentLoaded", (event) => {
