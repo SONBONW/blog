@@ -191,7 +191,6 @@ const addPost = () => {
     }
     createPost(dbPosts[i]);
   }
-
   currrenPost++;
   if (startRange + quantityRender >= dbPosts.length) {
     currrenPost = 1; // Reset the current page to 1 when all posts are shown
