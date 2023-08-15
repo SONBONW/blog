@@ -204,7 +204,7 @@ function RenderListPost(inforPost) {
                     </article>
                 </div>`
   }).join('');
-  post.innerHTML = postContent
+  post.innerHTML = postContent;
 }
 
 
@@ -218,7 +218,7 @@ let newInfor = posts.slice().concat(posts);
 viewBtn.addEventListener('click', () => {
   newInfor = posts.slice().concat(newInfor);
   let newPost = createPost(newInfor);
-})
+});
 
 
 /*Add Post New Infor From Form */
