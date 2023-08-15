@@ -7,3 +7,8 @@ if (mode == 'true') {
   document.body.classList.add('changecolor');
   changeColor.checked = true;
 }
+
+changeColor.addEventListener('click', () => {
+    let mode = document.body.classList.toggle("changecolor");
+    localStorage.setItem("ChangeColorPage", mode);
+});

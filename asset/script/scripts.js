@@ -144,13 +144,6 @@ viewBtn.addEventListener('click', () => {
 
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
-  eventChangeError(title, errortitle);
-  eventChangeError(img, errorimg);
-  eventChangeError(content, errorcontent);
-
-  changeColor.addEventListener('click', () => {
-    let mode = document.body.classList.toggle("changecolor");
-    localStorage.setItem("ChangeColorPage", mode);
-  });
+  
   RenderListPost(posts);
 });
