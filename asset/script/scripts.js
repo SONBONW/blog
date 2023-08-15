@@ -92,7 +92,8 @@ function countCharacters() {
 
 
 /*Render Post Data*/
-let viewClick = document.getElementsByClassName('view')[0];
+
+let viewBtn = document.getElementsByClassName("view")[0];
 let post = document.getElementsByClassName('posts')[0];
 const posts = [{
     img: "./asset/img/img-post1.png",
@@ -185,65 +186,79 @@ const posts = [{
     }
   }
 ];
-const listPost = {
 
-  posts,
-  render: function () {
-    const html = this.posts.map((infor) => {
-      return `<div class="col-lg-4 col-md-6 col-sm-8 col-12">
+function RenderListPost(inforPost) {
+  const postContent = inforPost.map((post) => {
+   return `<div class="col-lg-4 col-md-6 col-sm-8 col-12">
                     <article class="post">
-                        <img class="img-fluid" src="${infor.img}" alt="">
-                        <span class="tag rounded">${infor.tag}</span>
-                        <h4>${infor.title}</h4>
+                        <img class="img-fluid" src="${post.img}" alt="">
+                        <span class="tag rounded">${post.tag}</span>
+                        <h4>${post.title}</h4>
                         <div class="infor-user">
                             <div class="user">
-                                <img class="img-fluid" src="${infor.user.avatar}" alt="">
-                                <span>${infor.user.username}</span>
+                                <img class="img-fluid" src="${post.user.avatar}" alt="">
+                                <span>${post.user.username}</span>
                             </div>
-                            <span class="time">${infor.time}</span>
+                            <span class="time">${post.time}</span>
                         </div>
                     </article>
                 </div>`
-    })
-    post.innerHTML = html.join('');
-  },
-
-  //  loadMore: function () {
-  //   const start = this.posts.length;
-  //   const end = start + 3;
-
-  //   if (end <= this.posts.length) {
-  //     this.render(start, end);
-  //   } else {
-  //     viewClick.style.display = 'none';
-  //   }
-  // },
-
-  start: function () {
-    this.render();
-    //  viewClick.addEventListener('click', () => this.loadMore());
-  },
-
+  }).join('');
+  post.innerHTML = postContent
 }
 
 
-/*Click View Add List Post New*/
+/*Click View Post*/
+
+function createPost(newInfor) {
+  RenderListPost(newInfor);
+
+}
+let newInfor = posts.slice().concat(posts);
+viewBtn.addEventListener('click', () => {
+  newInfor = posts.slice().concat(newInfor);
+  let newPost = createPost(newInfor);
+})
 
 
-// viewClick.addEventListener("click", () => {
-//   post.append(listPost);
-// })
+/*Add Post New Infor From Form */
 
+// postForm.addEventListener('submit', function (event) {
+//   event.preventDefault();
+
+//   const newPost = {
+//     title: titleInput.value,
+//     tag: tagInput.value,
+//     time: formatDate(timeInput.value),
+//     user: {
+//       username: usernameInput.value,
+//       avatar: avatarInput.value,
+//     },
+//   };
+
+//   posts.push(newPost);
+//   console.log('New post added:', newPost);
+
+//   // Reset form inputs
+//   titleInput.value = '';
+//   tagInput.value = '';
+//   timeInput.value = '';
+//   usernameInput.value = '';
+//   avatarInput.value = '';
+// });
 
 /*Get Time Now*/
 function formatDate(dateString) {
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const options = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  };
   return new Date(dateString).toLocaleDateString('en-US', options);
 }
 
-// const currentDate = new Date();  // Lấy thời gian hiện tại
-// const formattedDate = formatDate(currentDate);
-
+const currentDate = new Date();  // Lấy thời gian hiện tại
+const formattedDate = formatDate(currentDate);
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -256,6 +271,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let mode = document.body.classList.toggle("changecolor");
     localStorage.setItem("ChangeColorPage", mode);
   });
-  listPost.start();
-
+  RenderListPost(posts);
 });
