@@ -1,12 +1,3 @@
-/*Click Change Color Background*/
-
-let changeColor = document.getElementById('light-dark');
-
-let mode = localStorage.getItem("ChangeColorPage");
-if (mode == 'true') {
-  document.body.classList.add('changecolor');
-  changeColor.checked = true;
-}
 
 /**/
 
@@ -19,76 +10,6 @@ let errorcontent = document.getElementById('errorcontent');
 let submit = document.getElementById('submit');
 
 
-
-function checkValue(val) {
-  if (val.value === "") {
-    return false;
-  }
-  return true;
-}
-
-function showError(val, error) {
-  if (!checkValue(val)) {
-    error.innerHTML = "Input has not content";
-  } else {
-    error.innerHTML = "";
-  }
-}
-
-function eventChangeError(e, error) {
-  if (e) {
-    e.addEventListener("change", () => {
-      error.innerHTML = "";
-    })
-  }
-
-}
-
-if (submit) {
-  submit.addEventListener("click", () => {
-    if (checkValue(title) && checkValue(img) && checkValue(content)) {
-      alert(getValueInput(title));
-      alert(getValueInput(img));
-      alert(getValueInput(content));
-      alert("Submit");
-    } else {
-      showError(title, errortitle);
-      showError(img, errorimg);
-      showError(content, errorcontent);
-    }
-  });
-}
-
-
-/*Get Value In Input*/
-function getValueInput(e) {
-  return e.value;
-}
-
-/*Limit number of characters in input title*/
-
-function inputCharacters() {
-  let numCharacters = title.value.length;
-
-  if (numCharacters >= 70) {
-    title.value = title.value.slice(0, 70);
-    title.blur(); // Loại bỏ focus khỏi textarea để dừng lại nhận ký tự từ bàn phím
-  }
-}
-
-/*Limit number of characters in textarea content*/
-function countCharacters() {
-  let charCount = document.getElementById("charCount");
-
-  let numCharacters = content.value.length;
-
-  charCount.textContent = numCharacters + " /10000";
-
-  if (numCharacters >= 10000) {
-    content.value = content.value.slice(0, 10000);
-    content.blur(); // Loại bỏ focus khỏi textarea để dừng lại nhận ký tự từ bàn phím
-  }
-}
 
 
 /*Render Post Data*/
@@ -219,46 +140,6 @@ viewBtn.addEventListener('click', () => {
   newInfor = posts.slice().concat(newInfor);
   let newPost = createPost(newInfor);
 });
-
-
-/*Add Post New Infor From Form */
-
-// postForm.addEventListener('submit', function (event) {
-//   event.preventDefault();
-
-//   const newPost = {
-//     title: titleInput.value,
-//     tag: tagInput.value,
-//     time: formatDate(timeInput.value),
-//     user: {
-//       username: usernameInput.value,
-//       avatar: avatarInput.value,
-//     },
-//   };
-
-//   posts.push(newPost);
-//   console.log('New post added:', newPost);
-
-//   // Reset form inputs
-//   titleInput.value = '';
-//   tagInput.value = '';
-//   timeInput.value = '';
-//   usernameInput.value = '';
-//   avatarInput.value = '';
-// });
-
-/*Get Time Now*/
-function formatDate(dateString) {
-  const options = {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  };
-  return new Date(dateString).toLocaleDateString('en-US', options);
-}
-
-const currentDate = new Date();  // Lấy thời gian hiện tại
-const formattedDate = formatDate(currentDate);
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
