@@ -198,13 +198,13 @@ const addPost = () => {
   }
 }
 let countClick = 1;
-let Max_Count_Click = 5;
+const MAX_COUNT_CLICK = 5;
 
 viewBtn.addEventListener('click', () => {
-  if (countClick < Max_Count_Click ) {
+  if (countClick < MAX_COUNT_CLICK ) {
     countClick++;
     addPost();
-    if (countClick == Max_Count_Click ) {
+    if (countClick == MAX_COUNT_CLICK ) {
       viewBtn.classList.add('d-none');
     }
   }
