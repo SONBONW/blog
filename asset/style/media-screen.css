@@ -9,8 +9,6 @@
 		margin-right: 50px;
 	}
 
-	/*Clean Br*/
-
 }
 
 
@@ -24,8 +22,6 @@
 	.nav-header ul {
 		margin-right: 105px;
 	}
-
-
 }
 
 @media (max-width: 1400px) {
@@ -46,8 +42,6 @@
 		margin-right: 20px !important;
 	}
 
-
-
 	/*Posts*/
 	article h4 {
 		font-size: 20px !important;
@@ -63,8 +57,8 @@
 		margin-left: 7px !important;
 	}
 
-
 	/*Main Single Post*/
+
 	.single-post .italics {
 		font-size: 14px !important;
 	}
@@ -76,8 +70,6 @@
 	.form-footer {
 		width: 35% !important;
 	}
-
-
 
 }
 
@@ -161,7 +153,6 @@
 		border: none !important;
 		padding: 0 !important;
 	}
-
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -170,8 +161,6 @@
 	/*BOOTSTRAP*/
 
 	/*Main*/
-
-
 	.form-introduce {
 		left: 30px;
 		width: 65%;
@@ -213,7 +202,6 @@
 		flex-direction: column !important;
 		padding-top: 10px;
 	}
-
 
 	.nav-header ul input {
 		height: 50px;
@@ -372,7 +360,6 @@
 		background-color: white;
 	}
 
-
 	/*Main*/
 
 	.title {
@@ -413,7 +400,6 @@
 }
 
 @media (max-width: 767px) {
-
 
 	/*BOOTSTRAP*/
 
@@ -467,7 +453,6 @@
 	header {
 		background-color: #141414;
 	}
-
 
 	/*Main*/
 
@@ -569,9 +554,9 @@
 	}
 
 	/*Last Footer*/
+
 	.last {
 		flex-wrap: wrap;
-
 	}
 
 	.logo-footer {

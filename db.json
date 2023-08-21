@@ -1,4 +1,5 @@
-[{
+{
+   "posts": [{
     "img": "./asset/img/img-post1.png",
     "tag": "Technology",
     "title": "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -89,3 +90,4 @@
     }
   }
 ]
+}

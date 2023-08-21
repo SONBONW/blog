@@ -23,24 +23,21 @@
 
 }
 
-
 /*Font Plus Jakarta Sans*/
+
 @font-face {
     font-family: 'PlusJakartaSansRegular';
     src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-Regular.ttf);
-
 }
 
 @font-face {
     font-family: 'PlusJakartaSansSemiBold';
     src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-SemiBold.ttf);
-
 }
 
 @font-face {
     font-family: 'PlusJakartaSansExtraBold';
     src: url(../font/Plus-Jakarta-Sans/PlusJakartaSans-ExtraBold.ttf);
-
 }
 
 /*Font Inter*/
@@ -48,7 +45,6 @@
 @font-face {
     font-family: 'InterRegular';
     src: url(../font/Inter/Inter-Regular.ttf);
-
 }
 
 /*Font Source Serif Pro */
@@ -57,12 +53,6 @@
     font-family: 'SourceSerifProRegular';
     src: url(../font/source-serif-pro/SourceSerifPro-Regular.ttf);
 }
-
-/* 
-@font-face {
-    font-family: 'SourceSerifProSemibold';
-    src: url(../font/source-serif-pro/SourceSerifPro-Semibold.ttf);
-} */
 
 
 :root {
@@ -97,7 +87,6 @@
     --font-w8: 800;
 }
 
-
 .width-750 {
     width: 62.5%;
 }
@@ -114,10 +103,7 @@ a {
     padding-left: 0 !important;
 }
 
-
-
 /*HEADER*/
-
 
 .nav-header {
     color: var(--secondary-600);
@@ -134,8 +120,6 @@ a {
     margin-right: 24px;
 }
 
-
-
 /*Hover*/
 
 nav ul li a {
@@ -143,7 +127,7 @@ nav ul li a {
     background-size: 0 3px, 100% 3px;
     background-position: 0 100%, 100% 100%;
     background-repeat: no-repeat;
-    transition: background-size 200ms;
+    transition: background-size 200ms !important;
 }
 
 nav ul li a:hover {
@@ -152,7 +136,6 @@ nav ul li a:hover {
 
 .item-ipt:first-child {
     margin-right: 40px;
-
 }
 
 .item-ipt:first-child input {
@@ -188,7 +171,6 @@ nav ul li a:hover {
     background-color: var(--secondary-100-f);
 }
 
-
 .switch-toggle {
     width: 48px;
     height: 28px;
@@ -223,7 +205,6 @@ nav ul li a:hover {
     left: 22px;
 }
 
-
 /*Creact Post Link*/
 .create-new-post {
     position: fixed;
@@ -240,7 +221,6 @@ nav ul li a:hover {
 .create-new-post a {
     font-size: 25px;
 }
-
 
 /*Main Home Page*/
 
@@ -276,7 +256,6 @@ nav ul li a:hover {
     line-height: var(--fz-24);
     color: var(--secondary-400);
     margin-bottom: 8px;
-
 }
 
 .user span {
@@ -299,7 +278,6 @@ nav ul li a:hover {
 }
 
 /*Advertisement*/
-
 
 .advertisement {
     background-color: var(--secondary-100);
@@ -353,12 +331,6 @@ nav ul li a:hover {
     border: 1px solid var(--secondary-100);
     margin: 10px auto;
 }
-
-.posts {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 
 article .tag {
     display: inline-block;
@@ -446,7 +418,6 @@ article h4 {
     margin-left: 20px;
 }
 
-
 /*Main Author Page*/
 
 .section-first {
@@ -469,16 +440,12 @@ article h4 {
     margin-top: -30px;
 }
 
-
 /*Main Single Post*/
-
-
 
 .single-post .form-introduce {
     border: none;
     box-shadow: none;
     padding: 8px 0 32px 0 !important;
-
 }
 
 .single-post .form-introduce time {
@@ -525,7 +492,6 @@ article h4 {
 
 /*Main Creact Post*/
 
-
 .form-create {
     display: flex;
 }
@@ -557,8 +523,6 @@ article h4 {
     margin-top: 20px;
 }
 
-
-
 .form-create form #errortitle,
 .form-create form #errorimg,
 .form-create form #errorcontent {
@@ -573,7 +537,6 @@ article h4 {
     bottom: 10px;
     color: #A1A1AA;
 }
-
 
 /*Footer*/
 
@@ -679,8 +642,6 @@ footer ul {
     position: relative;
 }
 
-
-
 .form-footer form input::placeholder {
     color: #97989F;
     font-size: 16px;
@@ -718,7 +679,6 @@ footer ul {
     color: var(--secondary-500);
     font-size: 16px;
 }
-
 
 .form-footer form button {
     width: 100%;
@@ -789,7 +749,6 @@ strong {
     padding-right: 0;
 }
 
-
 /*Responsive*/
 
 .nav {
@@ -811,14 +770,14 @@ strong {
     display: none;
 }
 
-
-
 /*Background-Dark*/
+
 .changecolor {
     background-color: var(--secondary-800);
 }
 
-.changecolor nav ul li a {
+.changecolor nav ul li a,
+.changecolor nav ul li a:hover {
     color: var(--var-color-white);
 }
 
@@ -898,8 +857,6 @@ strong {
     border-top-color: var(--secondary-700);
 }
 
-
-
 .changecolor .last li a {
     border-right-color: var(--secondary-700);
     color: var(--secondary-300);
@@ -918,7 +875,6 @@ strong {
     color: var(--var-color-white);
 }
 
-
 /*Dark Creact Post*/
 .changecolor .create-post h6,
 .changecolor .create-post h5,
@@ -931,6 +887,7 @@ strong {
 .changecolor .create-post textarea {
     background-color: var(--secondary-800);
     border-color: var(--secondary-600);
+    color: var(--var-color-white);
 }
 
 .changecolor .form-create form {
@@ -958,7 +915,6 @@ strong {
     background-color: var(--secondary-700);
     border-left: 4px solid var(--secondary-100);
 }
-
 
 /*Dark Blog Listing*/
 

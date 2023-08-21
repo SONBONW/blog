@@ -57,16 +57,12 @@ function getValueInput(e) {
     return e.value;
 }
 
-
-
 /**/
 
 
 eventChangeError(title, errortitle);
 eventChangeError(img, errorimg);
 eventChangeError(content, errorcontent);
-
-
 
 /*Limit number of characters in input title*/
 
