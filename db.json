@@ -1,4 +1,7 @@
 {
+  "total": {
+    "count": 9
+  },
   "posts": [{
       "img": "./asset/img/img-post1.png",
       "tag": "Technology",

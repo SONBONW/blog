@@ -56,7 +56,6 @@ let viewBtn = document.getElementsByClassName("view")[0];
 let xhr = new XMLHttpRequest();
 const LIMIT_REQUESTS = 3;
 let current = 1;
-let total;
 
 let createPost = (post) => {
     let cardPost = document.createElement('div');
@@ -90,31 +89,65 @@ let addPost = (data) => {
 
 
 function getData(url) {
-    xhr.open('GET', url, true);
+    const urls = `http://localhost:3000${url}`;
+    xhr.open('GET', urls, true);
     xhr.send();
 }
 
 /*Lấy độ dài của dữ liệu chính*/
-function pageSize() {
-    const url = "http://localhost:3000/posts";
+// function pageSize() {
+//     const url = "";
+//     getData(url);
+//     xhr.onreadystatechange = function () {
+//         if (xhr.readyState == 4 && xhr.status == 200) {
+//             let data = JSON.parse(xhr.responseText);
+//             total = data.length;
+//             /*Sau khi lấy được độ dài của dữ liệu chính thì render dữ liệu theo mong muốn*/
+//             loadListPosts();
+//         }
+
+//     };
+// }
+
+// function getTotal() {
+//     const url = '/total';
+//     getData(url);
+//      xhr.onreadystatechange = function () {
+//         if (xhr.readyState == 4) {
+//             if (xhr.status != 200) {
+//                 alert("Lỗi");
+//                 console.log(xhr.status);
+//             } else {
+//                 let count = JSON.parse(xhr.responseText);
+//                 console.log(count.count);
+//                 return count.count;
+//             }
+//         }
+//     };
+// }
+function getTotal(callback) {
+    const url = '/total';
     getData(url);
     xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            let data = JSON.parse(xhr.responseText);
-            total = data.length;
-            /*Sau khi lấy được độ dài của dữ liệu chính thì render dữ liệu theo mong muốn*/
-            loadData();
+        if (xhr.readyState == 4) {
+            if (xhr.status != 200) {
+                alert("Lỗi");
+                console.log(xhr.status);
+                console.log(xhr.onerror);
+            } else {
+                let count = JSON.parse(xhr.responseText);
+                // console.log(count.count);
+                callback(count.count); // Gọi callback với giá trị total
+            }
         }
-
     };
 }
+let displayedPosts = []; 
 
-let displayedPosts = []; // Mảng lưu trữ các bài post đã hiển thị
-
-function loadData() {
+function loadListPosts() {
     const startRange = (current - 1) * LIMIT_REQUESTS;
     const endRange = startRange + LIMIT_REQUESTS;
-    const url = `http://localhost:3000/posts?_start=${startRange}&_end=${endRange}`;
+    const url = `/posts?_start=${startRange}&_end=${endRange}`;
     // const url = `http://localhost:3000/posts?_page=0&_limit=${LIMIT_REQUESTS * current}`;
     getData(url);
 
@@ -123,15 +156,16 @@ function loadData() {
             if (xhr.status != 200) {
                 alert("Lỗi");
                 console.log(xhr.status);
+                console.log(xhr.onerror);
             } else {
                 let data = JSON.parse(xhr.responseText);
-                UpdateViewBtn();
-                console.log(data);
-                 // Nối thêm dữ liệu mới vào mảng displayedPosts
-                displayedPosts = [...data]; 
-
-                // Render lại toàn bộ danh sách
-                renderPosts(displayedPosts);
+                displayedPosts = displayedPosts.concat(data);
+                getTotal(function(total) {
+                    updateViewBtn(total);
+                });
+                // console.log(data);
+                addPost(displayedPosts);
+                console.log(displayedPosts); //Render lai tat ca
                 current++;
             }
         }
@@ -139,28 +173,23 @@ function loadData() {
 
 };
 
-function renderPosts(data) {
-    /*Render ra các bài viết trong displayedPosts*/
-    for (let i = 0; i < data.length; i++) {
-        createPost(data[i]);
-    }
-}
+
 
 /*Kiểm tra số lượng hiện ra đã hiển thị hết trong data chưa. Hết thì ẩn nút View*/
-function UpdateViewBtn() {
-    if (current * LIMIT_REQUESTS >= total) {
+function updateViewBtn(total) {
+    if ((current - 1) * LIMIT_REQUESTS >= total) {
         viewBtn.classList.add('d-none');
-    } else {
-        viewBtn.classList.remove('d-none');
     }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     // console.log(total);
     viewBtn.addEventListener("click", () => {
-        loadData();
+        loadListPosts();
 
     });
     /*Render dữ liệu ra màn hình*/
-    pageSize();
+    // pageSize();
+    loadListPosts();
+
 });

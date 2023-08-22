@@ -434,6 +434,11 @@ article h4 {
     padding-left: 16px;
 }
 
+.text {
+    text-align: center;
+    margin-top: 24px;
+}
+
 .person-infor .note {
     margin-left: 118px;
     display: block;
