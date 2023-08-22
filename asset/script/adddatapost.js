@@ -1,76 +1,95 @@
  // let title = document.getElementById("title");
-// let content = document.getElementById("content");
-// let img = document.getElementById("post-img");
-// let submit = document.getElementById('submit');
+ // let content = document.getElementById("content");
+ // let img = document.getElementById("post-img");
+ // let submit = document.getElementById('submit');
 
-/*Add Post New Infor From Form */
+ /*Add Post New Infor From Form */
 
-const testPost = [{
-    tag: "Technology",
-    title: "The Impact of Technology on the Workplace: How Technology is Changing",
-    time: "August 20, 2022",
-    user: {
-        avatar: "./asset/img/img-user2.png",
-        username: "Tracey Wilson",
-    }
-}];
+ function getValueInput(e) {
+     return e.value;
+ }
 
-function addPost() {
-    const newPost = {
-        title: getValueInput(title),
-        tag: 'Technology',
-        time: formatDate(currentDate),
-        user: {
-            username: 'This is User Name',
-            avatar: 'This is Avater',
-        },
-    };
-    testPost.push(newPost);
-    console.log('New post added:', newPost);
+ function updateTotal(data) {
+     /* Fetch the current total count */
+     fetch('http://localhost:3000/total')
+         .then(response => response.json())
+         .then(total => {
+             const newCount = total.count + 1;
 
+             /* Update the count value */
+             fetch('http://localhost:3000/total', {
+                     method: 'PUT',
+                     headers: {
+                         'Content-Type': 'application/json',
+                     },
+                     body: JSON.stringify({
+                         count: newCount
+                     }),
+                 })
+                 .then(response => response.json())
+                 .then(updatedTotalData => {
+                    //  console.log('Total count updated:', updatedTotalData);
+
+                     /* Reset Input */
+                    //  title.value = '';
+                    //  content.value = '';
+                    //  img.value = '';
+                 })
+                 .catch(error => {
+                     console.error('Error updating total count:', error);
+                 });
+         })
+ }
+
+ function addPost(data) {
 
      /* AJAX request using Fetch API */
-    fetch('/path/to/your/server/endpoint', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(newPost),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('New post added:', data);
-        
-        /* Reset Input */
-        title.value = '';
-        content.value = '';
-        img.value = '';
-    })
-    .catch(error => {
-        console.error('Error adding post:', error);
-    });
+     fetch('http://localhost:3000/posts', {
+             method: 'POST',
+             headers: {
+                 'Content-Type': 'application/json',
+             },
+             body: JSON.stringify(data),
+         })
+         .then(response => response.json())
+         .then(data => {
+            //  console.log('New post added:', data);
+             updateTotal(data);
+             /* Reset Input */
+            //  title.value = '';
+            //  content.value = '';
+            //  img.value = '';
+         })
+         .catch(error => {
+             console.error('Error adding post:', error);
+         });
+
+ }
+
+ /*Get Time Now*/
+ function formatDate(dateString) {
+     const options = {
+         year: 'numeric',
+         month: 'long',
+         day: 'numeric'
+     };
+     return new Date(dateString).toLocaleDateString('en-US', options);
+ }
+
+ const currentDate = new Date(); // Lấy thời gian hiện tại
+ // const formattedDate = formatDate(currentDate);
 
 
-    /*Reset Input*/
-    title.value = '';
-    content.value = '';
-    img.value = '';
-}
+ submit.addEventListener('click', () => {
+     const newPost = {
+         title: getValueInput(title),
+         tag: 'Technology',
+         time: formatDate(currentDate),
+         user: {
+             username: 'This is User Name',
+             avatar: 'This is Avater',
+         },
+     };
 
-/*Get Time Now*/
-function formatDate(dateString) {
-    const options = {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    };
-    return new Date(dateString).toLocaleDateString('en-US', options);
-}
-
-const currentDate = new Date(); // Lấy thời gian hiện tại
-// const formattedDate = formatDate(currentDate);
-
-
-submit.addEventListener('click', () => {
-    addPost();
-})
+     addPost(newPost);
+ })

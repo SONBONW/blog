@@ -426,23 +426,27 @@ article h4 {
     padding: 48px;
 }
 
-.person-infor img {
-    margin-top: 20px;
-}
 
 .person-infor span {
     padding-left: 16px;
 }
 
-.text {
-    text-align: center;
-    margin-top: 24px;
-}
-
 .person-infor .note {
     margin-left: 118px;
     display: block;
-    margin-top: -30px;
+    margin-top: -27px;
+}
+
+.text {
+    text-align: center;
+    margin: 24px 0;
+}
+
+.list-icon a {
+    border-radius: 6px;
+    padding: 8px;
+    margin-right: 8px;
+    background-color: var(--secondary-500);
 }
 
 /*Main Single Post*/

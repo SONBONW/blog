@@ -2,7 +2,9 @@
   "total": {
     "count": 9
   },
-  "posts": [{
+  "posts": [
+    {
+      "id": 1,
       "img": "./asset/img/img-post1.png",
       "tag": "Technology",
       "title": "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -13,6 +15,7 @@
       }
     },
     {
+      "id": 2,
       "img": "./asset/img/img-post2.png",
       "tag": "Technology",
       "title": "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -23,6 +26,7 @@
       }
     },
     {
+      "id": 3,
       "img": "./asset/img/img-post3.png",
       "tag": "Technology",
       "title": "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -33,6 +37,7 @@
       }
     },
     {
+      "id": 4,
       "img": "./asset/img/img-post4.png",
       "tag": "Technology",
       "title": "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -43,6 +48,7 @@
       }
     },
     {
+      "id": 5,
       "img": "./asset/img/img-post5.png",
       "tag": "Technology",
       "title": "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -53,6 +59,7 @@
       }
     },
     {
+      "id": 6,
       "img": "./asset/img/img-post6.png",
       "tag": "Technology",
       "title": "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -63,6 +70,7 @@
       }
     },
     {
+      "id": 7,
       "img": "./asset/img/img-post7.png",
       "tag": "Technology",
       "title": "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -73,6 +81,7 @@
       }
     },
     {
+      "id": 8,
       "img": "./asset/img/img-post8.png",
       "tag": "Technology",
       "title": "The Impact of Technology on the Workplace: How Technology is Changing",
@@ -83,6 +92,7 @@
       }
     },
     {
+      "id": 9,
       "img": "./asset/img/img-post9.png",
       "tag": "Technology",
       "title": "The Impact of Technology on the Workplace: How Technology is Changing",
