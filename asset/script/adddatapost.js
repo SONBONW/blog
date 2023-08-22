@@ -1,3 +1,8 @@
+ // let title = document.getElementById("title");
+// let content = document.getElementById("content");
+// let img = document.getElementById("post-img");
+// let submit = document.getElementById('submit');
+
 /*Add Post New Infor From Form */
 
 const testPost = [{
@@ -25,9 +30,8 @@ function addPost() {
 
     /*Reset Input*/
     title.value = '';
-    // tagInput.value = '';
-    // timeInput.value = '';
-    // usernameInput.value = '';
+    content.value = '';
+    img.value = '';
 }
 
 /*Get Time Now*/
@@ -42,3 +46,8 @@ function formatDate(dateString) {
 
 const currentDate = new Date(); // Lấy thời gian hiện tại
 // const formattedDate = formatDate(currentDate);
+
+
+submit.addEventListener('click', () => {
+    addPost();
+})

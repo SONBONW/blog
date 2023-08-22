@@ -189,7 +189,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
     /*Render dữ liệu ra màn hình*/
-    // pageSize();
     loadListPosts();
 
 });

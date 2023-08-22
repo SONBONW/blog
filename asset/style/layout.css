@@ -883,8 +883,7 @@ strong {
 /*Dark Creact Post*/
 .changecolor .create-post h6,
 .changecolor .create-post h5,
-.changecolor .create-post h3,
-.changecolor .create-post h2 {
+.changecolor .create-post h3 {
     color: var(--var-color-white);
 }
 
