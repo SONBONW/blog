@@ -28,6 +28,29 @@ function addPost() {
     testPost.push(newPost);
     console.log('New post added:', newPost);
 
+
+     /* AJAX request using Fetch API */
+    fetch('/path/to/your/server/endpoint', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newPost),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('New post added:', data);
+        
+        /* Reset Input */
+        title.value = '';
+        content.value = '';
+        img.value = '';
+    })
+    .catch(error => {
+        console.error('Error adding post:', error);
+    });
+
+
     /*Reset Input*/
     title.value = '';
     content.value = '';

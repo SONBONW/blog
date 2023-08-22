@@ -136,13 +136,18 @@ function getTotal(callback) {
                 console.log(xhr.onerror);
             } else {
                 let count = JSON.parse(xhr.responseText);
-                // console.log(count.count);
-                callback(count.count); // Gọi callback với giá trị total
+                if (count == []) {
+                    console.log('Object Null!');
+                } else {
+                    // console.log(count.count);
+                    callback(count.count); // Gọi callback với giá trị total
+                }
+
             }
         }
     };
 }
-let displayedPosts = []; 
+let displayedPosts = [];
 
 function loadListPosts() {
     const startRange = (current - 1) * LIMIT_REQUESTS;
@@ -159,14 +164,19 @@ function loadListPosts() {
                 console.log(xhr.onerror);
             } else {
                 let data = JSON.parse(xhr.responseText);
-                displayedPosts = displayedPosts.concat(data);
-                getTotal(function(total) {
-                    updateViewBtn(total);
-                });
-                // console.log(data);
-                addPost(displayedPosts);
-                console.log(displayedPosts); //Render lai tat ca
-                current++;
+                if (data == []) {
+                    console.log('Object Null!');
+                } else {
+                    displayedPosts = displayedPosts.concat(data);
+                    getTotal(function (total) {
+                        updateViewBtn(total);
+                    });
+                    // console.log(data);
+                    addPost(displayedPosts);
+                    console.log(displayedPosts); //Render lai tat ca
+                    current++;
+                }
+
             }
         }
     };
