@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Listing</title>
+    <title>Fix Post</title>
     <link rel="stylesheet" href="./asset/style/vendor.min.css">
     <link rel="stylesheet" href="./asset/style/media-screen.css">
     <link rel="stylesheet" href="./asset/style/layout.css">
@@ -41,7 +41,7 @@
                         <a class="nav-link" href="./home-page.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Blog</a>
+                        <a class="nav-link" href="./blog-listing.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./single-post.html">Single Post</a>
@@ -86,7 +86,6 @@
                         </svg>
                     </label>
                 </form>
-
             </div>
             <button class="create-new-post">
                 <a href="./create-post.html">
@@ -98,167 +97,40 @@
             </button>
         </nav>
     </header>
-    <main class="container custorm-container px-0">
-        <section class="pagetitle text-center">
-            <h4>Page TItle</h4>
-            <p>
-                <span><a href="">Home</a></span>
-                <span><a href="">Link One</a></span>
-            </p>
-        </section>
-        <section>
-            <img class="img-fluid" src="./asset/img/img.png" alt="">
-            <div class="form-introduce blog-listing">
-                <span class="tag rounded">Technology</span>
-                <h2>The Impact of Technology on the <br> Workplace: How Technology is Changing</h2>
-                <div class="infor-user">
-                    <div class="user">
-                        <img src="./asset/img/img-user6.png" alt="">
-                        <span>Jason Francisco</span>
-                    </div>
-                    <time>August 20, 2022</time>
+    <main class="container custorm-container px-0 create-post">
+        <div class="form-create">
+            <form action="#" class="d-flex flex-column">
+                <h3>Form Fix Post</h3>
+                <div>
+                    <h5>Creactor Title</h5>
+                    <label class="input-group mb-3" for="title">
+                        <span class="input-group-text" id="basic-addon1">Title</span>
+                        <input type="text" class="form-control" id="title" placeholder="Enter Title Post"
+                            aria-label="Title" aria-describedby="basic-addon1" oninput="inputCharacters()">
+                    </label>
+                    <span id="errortitle"></span>
                 </div>
-            </div>
-        </section>
-        <section class="list-post">
-            <div class="posts row gx-md-4 custorm-row">
-                <!-- <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                    <article class="post">
-                        <img class="img-fluid" src="./asset/img/img-post1.png" alt="">
-                        <span class="tag rounded">Technology</span>
-                        <h4>The Impact of Technology on the Workplace: How Technology is Changing</h4>
-                        <div class="infor-user">
-                            <div class="user">
-                                <img class="img-fluid" src="./asset/img/img-user2.png" alt="">
-                                <span>Tracey Wilson</span>
-                            </div>
-                            <span class="time">August 20, 2022</span>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                    <article class="post">
-                        <img class="img-fluid" src="./asset/img/img-post2.png" alt="">
-                        <span class="tag rounded">Technology</span>
-                        <h4>The Impact of Technology on the Workplace: How Technology is Changing</h4>
-                        <div class="infor-user">
-                            <div class="user">
-                                <img class="img-fluid" src="./asset/img/img-user1.png" alt="">
-                                <span>Json Francisco</span>
-                            </div>
-                            <span class="time">August 20, 2022</span>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                    <article class="post">
-                        <img class="img-fluid" src="./asset/img/img-post3.png" alt="">
-                        <span class="tag rounded">Technology</span>
-                        <h4>The Impact of Technology on the Workplace: How Technology is Changing</h4>
-                        <div class="infor-user">
-                            <div class="user">
-                                <img class="img-fluid" src="./asset/img/img-user3.png" alt="">
-                                <span>Elizabeth Slavin</span>
-                            </div>
-                            <span class="time">August 20, 2022</span>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                    <article class="post">
-                        <img class="img-fluid" src="./asset/img/img-post4.png" alt="">
-                        <span class="tag rounded">Technology</span>
-                        <h4>The Impact of Technology on the Workplace: How Technology is Changing</h4>
-                        <div class="infor-user">
-                            <div class="user">
-                                <img class="img-fluid" src="./asset/img/img-user4.png" alt="">
-                                <span>Ernie Smith</span>
-                            </div>
-                            <span class="time">August 20, 2022</span>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                    <article class="post">
-                        <img class="img-fluid" src="./asset/img/img-post5.png" alt="">
-                        <span class="tag rounded">Technology</span>
-                        <h4>The Impact of Technology on the Workplace: How Technology is Changing</h4>
-                        <div class="infor-user">
-                            <div class="user">
-                                <img class="img-fluid" src="./asset/img/img-user5.png" alt="">
-                                <span>Eric Smith</span>
-                            </div>
-                            <span class="time">August 20, 2022</span>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                    <article class="post">
-                        <img class="img-fluid" src="./asset/img/img-post6.png" alt="">
-                        <span class="tag rounded">Technology</span>
-                        <h4>The Impact of Technology on the Workplace: How Technology is Changing</h4>
-                        <div class="infor-user">
-                            <div class="user">
-                                <img class="img-fluid" src="./asset/img/img-user2.png" alt="">
-                                <span>Tracey Wilson</span>
-                            </div>
-                            <span class="time">August 20, 2022</span>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                    <article class="post">
-                        <img class="img-fluid" src="./asset/img/img-post7.png" alt="">
-                        <span class="tag rounded">Technology</span>
-                        <h4>The Impact of Technology on the Workplace: How Technology is Changing</h4>
-                        <div class="infor-user">
-                            <div class="user">
-                                <img class="img-fluid" src="./asset/img/img-user1.png" alt="">
-                                <span>Jason Francisco</span>
-                            </div>
+                <div class="mb-3">
+                    <label for="img-post" class="form-label w-100">
+                        <h5>Post Image</h5>
+                        <input class="form-control" type="file" id="post-img" multiple>
+                    </label>
 
-                            <span class="time">August 20, 2022</span>
-                        </div>
-                    </article>
+                    <span id="errorimg"></span>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                    <article class="post">
-                        <img class="img-fluid" src="./asset/img/img-post8.png" alt="">
-                        <span class="tag rounded">Technology</span>
-                        <h4>The Impact of Technology on the Workplace: How Technology is Changing</h4>
-                        <div class="infor-user">
-                            <div class="user">
-                                <img class="img-fluid" src="./asset/img/img-user3.png" alt="">
-                                <span>Elizabeth Slavin</span>
-                            </div>
-                            <span class="time">August 20, 2022</span>
-                        </div>
-                    </article>
+                <div class="form-floating">
+                    <textarea class="form-control" oninput="countCharacters()" placeholder="Enter Content" id="content"
+                        style="height: 350px"></textarea>
+                    <label for="content">
+                        <h6>Enter Content</h6>
+                    </label>
+                    <span id="errorcontent"></span>
+                    <span id="charCount">0/10000</span>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12">
-                    <article class="post">
-                        <img class="img-fluid" src="./asset/img/img-post9.png" alt="">
-                        <span class="tag rounded">Technology</span>
-                        <h4>The Impact of Technology on the Workplace: How Technology is Changing</h4>
-                        <div class="infor-user">
-                            <div class="user">
-                                <img class="img-fluid" src="./asset/img/img-user4.png" alt="">
-                                <span>Ernie Smith</span>
-                            </div>
-                            <span class="time">August 20, 2022</span>
-                        </div>
-                    </article>
-                </div> -->
-            </div>
-            <button class=" view rounded d-flex justify-content-center align-items-center">
-                Load More
-            </button>
-        </section>
-        <section class="advertisement text-center width-750">
-            <p>Advertisement</p>
-            <h4>You can place ads</h4>
-            <p>750x100</p>
-        </section>
+                <button id="submit" class="btn btn-primary text-center border-0">Add Fix Post</button>
+            </form>
+        </div>
+
     </main>
     <footer>
         <div class="container custorm-container d-flex flex-wrap first">
@@ -355,7 +227,6 @@
     </footer>
     <script src="./asset/script/vendor.min.js"></script>
     <script src="./asset/script/changecolorbg.js"></script>
-    <script src="./asset/script/rendeajax.js"></script>
+    <script src="./asset/script/checkdata.js"></script>
+    <script src="./asset/script/fixpost.js"></script>
 </body>
-
-</html>

@@ -239,6 +239,7 @@ nav ul li a:hover {
     font-size: 14px;
     font-family: var(--font-WorkSansMedium);
     font-weight: var(--font-w5);
+
 }
 
 .form-introduce h2 {
@@ -354,6 +355,39 @@ article h4 {
     padding: 4px 10px;
     margin-top: var(--fz-24);
 }
+
+/*Button edit*/
+
+.edit {
+    border: none;
+    background-color: #4b6bfb0d;
+    float: right;
+    margin-top: 24px;
+}
+
+.edit a {
+    color: red;
+    font-family: var(--font-WorkSansMedium);
+    font-weight: var(--font-w5);
+}
+
+/*Button delete post*/
+.post {
+    position: relative;
+}
+
+.btn-delete {
+    top: -5px;
+    right: 5px;
+    /* display: none; */
+    position: absolute;
+    background-color: var(--secondary-500);
+    z-index: 1;
+}
+
+/* .post:hover .btn-delete {
+    display: block;
+} */
 
 /*View Post*/
 

@@ -62,8 +62,10 @@ let createPost = (post) => {
     cardPost.classList.add("col-lg-4", "col-md-6", "col-sm-8", "col-12");
     const postContent = `
                     <article class="post">
+                        <button type="button" class="btn-close btn-delete" aria-label="Close"></button>
                         <img class="img-fluid" src="${post.img}" alt="">
                         <span class="tag rounded">${post.tag}</span>
+                        <button class="edit rounded" values="${post.id}"> <a href="./fix-post.html?id=${post.id}">Edit</a> </button>
                         <h4>${post.title}</h4>
                         <div class="infor-user">
                             <div class="user">
@@ -76,6 +78,11 @@ let createPost = (post) => {
                 `;
     cardPost.innerHTML = postContent;
     posts.appendChild(cardPost);
+
+   let btnDelete = cardPost.querySelector('.btn-delete');
+    btnDelete.addEventListener('click', () => {
+        deletePost(cardPost);
+    })
 };
 
 let addPost = (data) => {
@@ -173,7 +180,7 @@ function loadListPosts() {
                     });
                     // console.log(data);
                     addPost(displayedPosts);
-                    console.log(displayedPosts); //Render lai tat ca
+                    // console.log(displayedPosts); //Render lai tat ca
                     current++;
                 }
 
@@ -184,7 +191,6 @@ function loadListPosts() {
 };
 
 
-
 /*Kiểm tra số lượng hiện ra đã hiển thị hết trong data chưa. Hết thì ẩn nút View*/
 function updateViewBtn(total) {
     if ((current - 1) * LIMIT_REQUESTS >= total) {
@@ -192,13 +198,66 @@ function updateViewBtn(total) {
     }
 }
 
+
+
+/*Delete Post*/
+
+
+function reduceTotal(data) {
+    fetch('http://localhost:3000/total')
+        .then(response => response.json())
+        .then(total => {
+            const newTotal = total.count - 1;
+            fetch('http://localhost:3000/total', {
+                    method: "PUT",
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        count: newTotal
+                    }),
+                })
+                .then(response => response.json())
+                .then(data => {
+
+                })
+                .catch(error => {
+                    console.error('Error updating total count:', error);
+                })
+        })
+}
+
+function deletePost(cardPost) {
+    const postId = cardPost.querySelector('.edit').getAttribute('values');
+   fetch(`http://localhost:3000/posts/${postId}`)
+        .then(response => response.json())
+        .then(postData => {
+            // Nếu tài nguyên tồn tại, thực hiện yêu cầu DELETE
+            fetch(`http://localhost:3000/posts/${postId}`, {
+                method: 'DELETE',
+            })
+            .then(response => response.json())
+            .then(req => {
+                reduceTotal(req);
+                loadListPosts(); // Load lại danh sách bài viết
+            })
+            .catch(error => {
+                console.error('Error deleting post:', error);
+            });
+        })
+        .catch(error => {
+            console.error('Error checking post existence:', error);
+        });
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
-    // console.log(total);
     viewBtn.addEventListener("click", () => {
         loadListPosts();
-
     });
     /*Render dữ liệu ra màn hình*/
     loadListPosts();
+    const urlParams = new URLSearchParams(window.location.search);
+    const postIdurl = urlParams.get('id');
 
 });

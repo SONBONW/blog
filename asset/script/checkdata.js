@@ -34,23 +34,6 @@ function eventChangeError(e, error) {
 
 }
 
-if (submit) {
-    submit.addEventListener("click", () => {
-        if (checkValue(title) && checkValue(img) && checkValue(content)) {
-            //   alert(getValueInput(title));
-            //   alert(getValueInput(img));
-            //   alert(getValueInput(content));
-            
-            alert("Submit");
-
-        } else {
-            showError(title, errortitle);
-            showError(img, errorimg);
-            showError(content, errorcontent);
-        }
-    });
-}
-
 
 /*Get Value In Input*/
 function getValueInput(e) {
