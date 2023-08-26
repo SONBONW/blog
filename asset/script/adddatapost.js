@@ -1,5 +1,20 @@
 /*Add Post New Infor From Form */
 
+function convertFilePath(filePath) {
+  // Kiểm tra xem đường dẫn đã được chuyển đổi trước đó hay chưa
+  if (filePath.startsWith("./asset/img/")) {
+    // Nếu đã chuyển đổi rồi, trả về nguyên đường dẫn
+    return filePath;
+  } else {
+    // Thực hiện chuyển đổi
+    var fileName = filePath.split("\\").pop();
+    var newFilePath = "./asset/img/" + fileName;
+    return newFilePath;
+  }
+}
+
+
+
 function getValue(e) {
     return e.value;
 }
@@ -61,10 +76,14 @@ function formatDate(dateString) {
 
 const currentDate = new Date(); // Lấy thời gian hiện tại
 
+img.addEventListener('change', () => {
+    document.getElementById('show-img').src = convertFilePath(img.value);
+})
 submit.addEventListener('click', () => {
+    
     const newPost = {
         title: getValue(title),
-        img: getValue(img),
+        img: convertFilePath(img.value),
         tag: 'Technology',
         time: formatDate(currentDate),
         user: {

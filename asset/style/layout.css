@@ -583,9 +583,9 @@ article h4 {
     transform: rotateZ(-22deg);
 }
 
-#show-img {
+/* #show-img {
     margin-left: 100px;
-}
+} */
 
 #post-img[type='file'] {
     display: none;

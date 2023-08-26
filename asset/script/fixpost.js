@@ -1,6 +1,17 @@
 
 
-
+function convertFilePath(filePath) {
+  // Kiểm tra xem đường dẫn đã được chuyển đổi trước đó hay chưa
+  if (filePath.startsWith("./asset/img/")) {
+    // Nếu đã chuyển đổi rồi, trả về nguyên đường dẫn
+    return filePath;
+  } else {
+    // Thực hiện chuyển đổi
+    var fileName = filePath.split("\\").pop();
+    var newFilePath = "./asset/img/" + fileName;
+    return newFilePath;
+  }
+}
 
 
 
@@ -37,7 +48,7 @@ function getData(id) {
         .then(res => res.json())
         .then(data => {
             document.getElementById('title').value = data.title;
-            // document.getElementById('post-img').value = `${data.img}`;
+            document.getElementById('show-img').src = data.img;
             document.getElementById('content').value = data.content;
 
         })
@@ -91,15 +102,14 @@ const currentDate = new Date(); // Lấy thời gian hiện tại
 document.addEventListener('DOMContentLoaded', () => {
     let img = document.getElementById('post-img');
     img.addEventListener('change', () => {
-        // console.log(img.value);
-        document.getElementById('show-img').src = './asset/img/img-post1.png';
+        document.getElementById('show-img').src = convertFilePath(img.value);
     })
     getData(id);
     submit.addEventListener('click', (e) => {
         e.preventDefault();
         const fixData = {
             title: title.value,
-            img: document.getElementById('post-img').value,
+            img: document.getElementById('show-img').src,
             time: formatDate(currentDate),
             content: content.value
         };
