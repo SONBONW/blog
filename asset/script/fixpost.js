@@ -1,3 +1,9 @@
+
+
+
+
+
+
 let url = new URL(window.location.href);
 let id = url.searchParams.get("id");
 
@@ -25,14 +31,12 @@ function countCharacters() {
     }
 }
 
-// document.getElementById('post-img').value = "12";
 
 function getData(id) {
     fetch(`http://localhost:3000/posts/${id}`)
         .then(res => res.json())
         .then(data => {
             document.getElementById('title').value = data.title;
-
             // document.getElementById('post-img').value = `${data.img}`;
             document.getElementById('content').value = data.content;
 
@@ -83,7 +87,13 @@ function formatDate(dateString) {
 const currentDate = new Date(); // Lấy thời gian hiện tại
 
 
+
 document.addEventListener('DOMContentLoaded', () => {
+    let img = document.getElementById('post-img');
+    img.addEventListener('change', () => {
+        // console.log(img.value);
+        document.getElementById('show-img').src = './asset/img/img-post1.png';
+    })
     getData(id);
     submit.addEventListener('click', (e) => {
         e.preventDefault();
@@ -93,6 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
             time: formatDate(currentDate),
             content: content.value
         };
+        alert(fixData.img);
+        console.log(fixData.img)
         fixPost(id, fixData);
     })
 

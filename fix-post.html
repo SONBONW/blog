@@ -110,10 +110,12 @@
                     </label>
                 </div>
                 <div class="mb-3">
-                    <label for="post-img" class="form-label w-100">
-                        <h5>Post Image</h5>
-                        <input class="form-control" type="file" id="post-img" multiple>
+                    <h5>Post Image</h5>
+                    <label for="post-img" class="form-label form-chosen-file">
+                        Update File
                     </label>
+                    <input class="form-control" type="file" id="post-img" multiple>
+                    <img src="" alt="" id="show-img">
                 </div>
                 <div class="form-floating">
                     <textarea class="form-control" oninput="countCharacters()" placeholder="Enter Content" id="content"

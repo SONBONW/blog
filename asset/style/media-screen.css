@@ -115,11 +115,6 @@
 		margin-top: 18%;
 	}
 
-	.form-create div img {
-		width: 700px !important;
-		filter: sepia(100%) hue-rotate(180deg) brightness(130%);
-		/*Not run filter*/
-	}
 
 	/*Footer*/
 

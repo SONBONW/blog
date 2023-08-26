@@ -583,9 +583,22 @@ article h4 {
     transform: rotateZ(-22deg);
 }
 
-.form-create div img {
-    width: 550px;
-    image-rendering: pixelated;
+#show-img {
+    margin-left: 100px;
+}
+
+#post-img[type='file'] {
+    display: none;
+}
+
+.form-chosen-file {
+    background-color: var(--btn-primary);
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--var-color-white);
+    cursor: pointer;
 }
 
 .form-create form {
@@ -974,10 +987,6 @@ strong {
     border-color: var(--secondary-700);
 }
 
-.changecolor .form-create div img {
-    filter: brightness(0) invert(1);
-    -webkit-filter: brightness(0) invert(1);
-}
 
 /*Dark Single Post*/
 
