@@ -1014,3 +1014,15 @@ strong {
 .changecolor .pagetitle h4 {
     color: var(--var-color-white);
 }
+
+.changecolor .section-first {
+    background-color: var(--secondary-700);
+}
+
+.changecolor .section-first p {
+    color: var(--secondary-300);
+}
+
+.changecolor .section-first .person-infor div p:first-child {
+    color: var(--var-color-white);
+}
