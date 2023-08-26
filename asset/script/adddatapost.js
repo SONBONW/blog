@@ -33,7 +33,7 @@ function updateTotal() {
             const newCount = count.count + 1;
             /* Update the count value */
             fetch('http://localhost:3000/total', {
-                    method: 'PATCH',
+                    method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
                     },
