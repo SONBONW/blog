@@ -51,7 +51,6 @@ eventChangeError(content, errorcontent);
 
 function inputCharacters() {
     let numCharacters = title.value.length;
-
     if (numCharacters >= 70) {
         title.value = title.value.slice(0, 70);
         title.blur(); // Loại bỏ focus khỏi textarea để dừng lại nhận ký tự từ bàn phím
