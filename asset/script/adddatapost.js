@@ -33,7 +33,7 @@ function updateTotal() {
             const newCount = count.count + 1;
             /* Update the count value */
             fetch('http://localhost:3000/total', {
-                    method: 'PUT',
+                    method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json',
                     },
@@ -43,14 +43,13 @@ function updateTotal() {
                 })
                 .then((response) => {
                     if (!response.ok) {
-                        alert("Loi");
-                        // throw Error(response.statusText);
-                        return;
+                        throw Error(response.statusText);
                     } else {
-                       return response.json()
+                        return response.json()
                     }
                 })
                 .then(updatedTotalData => {
+                     alert('Submit');
                 })
                 .catch(error => {
                     console.error('Error updating total count:', error);
@@ -109,7 +108,7 @@ submit.addEventListener('click', () => {
     };
     if (checkValue(title) && checkValue(img) && checkValue(content)) {
         addPost(newPost);
-        alert('Submit');
+       
     } else {
         showError(title, errortitle);
         showError(img, errorimg);
