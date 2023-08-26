@@ -43,6 +43,5 @@ let btnDelete = document.getElementsByClassName('btn-delete')[0];
 
 btnDelete.addEventListener('click', () => {
     deletePost();
-    // updateTotal();
     alert("Delete");
 })
