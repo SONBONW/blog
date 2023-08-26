@@ -30,7 +30,7 @@ function getData(id) {
         .then(res => res.json())
         .then(data => {
             document.getElementById('title').value = data.title;
-            document.getElementById('post-img').value = data.img;
+            document.getElementById('post-img').src = data.img;
             document.getElementById('content').value = data.content;
 
         })
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const fixData = {
             title: title.value,
-            img: document.getElementById('post-img').src,
+            img: document.getElementById('post-img').value,
             time: formatDate(currentDate),
             content: content.value
         };
