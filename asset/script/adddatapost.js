@@ -55,7 +55,8 @@ function addPost(data) {
             body: JSON.stringify(data),
         })
         .then(response => response.json())
-        .then(data => {})
+        .then(data => {
+        })
         .catch(error => {
             console.error('Error adding post:', error);
         });
