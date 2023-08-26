@@ -1,16 +1,16 @@
 /*Add Post New Infor From Form */
 
 function convertFilePath(filePath) {
-  // Kiểm tra xem đường dẫn đã được chuyển đổi trước đó hay chưa
-  if (filePath.startsWith("./asset/img/")) {
-    // Nếu đã chuyển đổi rồi, trả về nguyên đường dẫn
-    return filePath;
-  } else {
-    // Thực hiện chuyển đổi
-    let fileName = filePath.split("\\").pop();
-    let newFilePath = "./asset/img/" + fileName;
-    return newFilePath;
-  }
+    // Kiểm tra xem đường dẫn đã được chuyển đổi trước đó hay chưa
+    if (filePath.startsWith("./asset/img/")) {
+        // Nếu đã chuyển đổi rồi, trả về nguyên đường dẫn
+        return filePath;
+    } else {
+        // Thực hiện chuyển đổi
+        let fileName = filePath.split("\\").pop();
+        let newFilePath = "./asset/img/" + fileName;
+        return newFilePath;
+    }
 }
 
 
@@ -22,10 +22,15 @@ function getValue(e) {
 function updateTotal() {
     /* Fetch the current total count */
     fetch('http://localhost:3000/total')
-        .then(response => response.json())
-        .then(total => {
-            const newCount = total.count + 1;
-
+        .then((response) => {
+            if (!response.ok) {
+                throw Error(response.statusText);
+            } else {
+               return response.json();
+            }
+        })
+        .then(count => {
+            const newCount = count.count + 1;
             /* Update the count value */
             fetch('http://localhost:3000/total', {
                     method: 'PUT',
@@ -36,13 +41,25 @@ function updateTotal() {
                         count: newCount
                     }),
                 })
-                .then(response => response.json())
-                .then(updatedTotalData => {})
+                .then((response) => {
+                    if (!response.ok) {
+                        alert("Loi");
+                        // throw Error(response.statusText);
+                        return;
+                    } else {
+                       return response.json()
+                    }
+                })
+                .then(updatedTotalData => {
+                    alert("Submit");
+                })
                 .catch(error => {
                     console.error('Error updating total count:', error);
                 });
         })
 }
+
+
 
 function addPost(data) {
 
@@ -56,6 +73,7 @@ function addPost(data) {
         })
         .then(response => response.json())
         .then(data => {
+            alert(data + "Add Post");
             updateTotal();
         })
         .catch(error => {
@@ -80,7 +98,6 @@ img.addEventListener('change', () => {
     document.getElementById('show-img').src = convertFilePath(img.value);
 })
 submit.addEventListener('click', () => {
-    
     const newPost = {
         title: getValue(title),
         img: convertFilePath(img.value),
@@ -94,8 +111,8 @@ submit.addEventListener('click', () => {
     };
     if (checkValue(title) && checkValue(img) && checkValue(content)) {
         addPost(newPost);
-        updateTotal();
-        alert("Submit");
+        // updateTotal();
+
     } else {
         showError(title, errortitle);
         showError(img, errorimg);
@@ -103,5 +120,3 @@ submit.addEventListener('click', () => {
     }
 
 })
-
-
