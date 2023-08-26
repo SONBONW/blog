@@ -7,8 +7,8 @@ function convertFilePath(filePath) {
     return filePath;
   } else {
     // Thực hiện chuyển đổi
-    var fileName = filePath.split("\\").pop();
-    var newFilePath = "./asset/img/" + fileName;
+    let fileName = filePath.split("\\").pop();
+    let newFilePath = "./asset/img/" + fileName;
     return newFilePath;
   }
 }
@@ -56,6 +56,7 @@ function addPost(data) {
         })
         .then(response => response.json())
         .then(data => {
+            updateTotal();
         })
         .catch(error => {
             console.error('Error adding post:', error);

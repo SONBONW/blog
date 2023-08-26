@@ -7,8 +7,8 @@ function convertFilePath(filePath) {
     return filePath;
   } else {
     // Thực hiện chuyển đổi
-    var fileName = filePath.split("\\").pop();
-    var newFilePath = "./asset/img/" + fileName;
+    let fileName = filePath.split("\\").pop();
+    let newFilePath = "./asset/img/" + fileName;
     return newFilePath;
   }
 }
