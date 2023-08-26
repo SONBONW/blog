@@ -51,7 +51,6 @@ function updateTotal() {
                     }
                 })
                 .then(updatedTotalData => {
-                    alert("Submit");
                 })
                 .catch(error => {
                     console.error('Error updating total count:', error);
@@ -73,7 +72,6 @@ function addPost(data) {
         })
         .then(response => response.json())
         .then(data => {
-            alert(data + "Add Post");
             updateTotal();
         })
         .catch(error => {
@@ -111,8 +109,7 @@ submit.addEventListener('click', () => {
     };
     if (checkValue(title) && checkValue(img) && checkValue(content)) {
         addPost(newPost);
-        // updateTotal();
-
+        alert('Submit');
     } else {
         showError(title, errortitle);
         showError(img, errorimg);
