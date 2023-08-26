@@ -25,12 +25,15 @@ function countCharacters() {
     }
 }
 
+// document.getElementById('post-img').value = "12";
+
 function getData(id) {
     fetch(`http://localhost:3000/posts/${id}`)
         .then(res => res.json())
         .then(data => {
             document.getElementById('title').value = data.title;
-            document.getElementById('post-img').src = data.img;
+
+            // document.getElementById('post-img').value = `${data.img}`;
             document.getElementById('content').value = data.content;
 
         })
