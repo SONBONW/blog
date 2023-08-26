@@ -62,7 +62,7 @@ function fixPost(id, newdata) {
         .then(response => response.json())
         .then(data => {
             const updateData = {
-                ...data,
+                // ...data,
                 title: newdata.title,
                 img: newdata.img,
                 time: newdata.time,
@@ -71,7 +71,7 @@ function fixPost(id, newdata) {
 
             /* Update the count value */
             fetch(`http://localhost:3000/posts/${id}`, {
-                    method: 'PUT',
+                    method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json',
                     },
@@ -113,8 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
             time: formatDate(currentDate),
             content: content.value
         };
-        alert(fixData.img);
-        console.log(fixData.img)
+        // alert(fixData.img);
+        // console.log(fixData.img)
         fixPost(id, fixData);
     })
 
