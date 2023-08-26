@@ -369,6 +369,7 @@ article h4 {
     color: red;
     font-family: var(--font-WorkSansMedium);
     font-weight: var(--font-w5);
+    font-size: 14px;
 }
 
 /*Button delete post*/
@@ -379,15 +380,15 @@ article h4 {
 .btn-delete {
     top: -5px;
     right: 5px;
-    /* display: none; */
+    display: none;
     position: absolute;
     background-color: var(--secondary-500);
     z-index: 1;
 }
 
-/* .post:hover .btn-delete {
+.post:hover .btn-delete {
     display: block;
-} */
+}
 
 /*View Post*/
 
