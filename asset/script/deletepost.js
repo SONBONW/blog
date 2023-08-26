@@ -1,6 +1,6 @@
 
 
- function updateTotal(data) {
+ function updateTotal() {
      fetch('http://localhost:3000/total')
          .then(response => response.json())
          .then(total => {
@@ -32,7 +32,7 @@
          })
          .then(response => response.json())
          .then(req => {
-             updateTotal(req);
+             updateTotal();
          })
          .catch(error => {
          console.error('Error adding post:', error);
@@ -43,4 +43,6 @@ let btnDelete = document.getElementsByClassName('btn-delete')[0];
 
 btnDelete.addEventListener('click', () => {
     deletePost();
+    // updateTotal();
+    alert("Delete");
 })

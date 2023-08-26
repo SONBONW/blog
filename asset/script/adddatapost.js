@@ -19,7 +19,7 @@ function getValue(e) {
     return e.value;
 }
 
-function updateTotal(data) {
+function updateTotal() {
     /* Fetch the current total count */
     fetch('http://localhost:3000/total')
         .then(response => response.json())
@@ -55,9 +55,7 @@ function addPost(data) {
             body: JSON.stringify(data),
         })
         .then(response => response.json())
-        .then(data => {
-            updateTotal(data);
-        })
+        .then(data => {})
         .catch(error => {
             console.error('Error adding post:', error);
         });
@@ -94,6 +92,7 @@ submit.addEventListener('click', () => {
     };
     if (checkValue(title) && checkValue(img) && checkValue(content)) {
         addPost(newPost);
+        updateTotal();
         alert("Submit");
     } else {
         showError(title, errortitle);
