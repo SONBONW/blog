@@ -257,7 +257,7 @@
 	}
 
 	.post {
-		width: 70%;
+		width: 72%;
 	}
 
 	.user span {
@@ -369,6 +369,11 @@
 	/*Main Single Post*/
 	.single-post .italics {
 		font-size: 14px !important;
+	}
+
+	/*Main Author Page*/
+	.text br {
+		content: "";
 	}
 
 	/*Dark Main Home*/
@@ -509,13 +514,10 @@
 	}
 
 	/*Main Author Page*/
-	.text br {
-		content: "";
-	}
 
 	.section-first {
 		padding: 20px !important;
-		margin-bottom: 20px;
+		margin-bottom: 20px !important;
 	}
 
 	/*Footer*/

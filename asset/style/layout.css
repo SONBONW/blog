@@ -459,6 +459,7 @@ article h4 {
     background-color: var(--secondary-50);
     border-radius: 12px;
     padding: 48px;
+    margin-bottom: 48px;
 }
 
 .person-infor {
@@ -497,6 +498,11 @@ article h4 {
 .text p {
     text-align: center;
     margin: 24px 0;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--secondary-600);
+    font-weight: var(--font-w4);
+    font-family: var(--font-WorkSansRegular);
 }
 
 .list-icon {
