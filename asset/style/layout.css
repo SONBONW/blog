@@ -460,27 +460,57 @@ article h4 {
     padding: 48px;
 }
 
-
-.person-infor span {
-    padding-left: 16px;
+.person-infor {
+    display: flex;
+    justify-content: center;
 }
 
-.person-infor .note {
-    margin-left: 118px;
+.person-infor div {
+    margin-left: 16px;
+    align-items: center;
+}
+
+.person-infor p {
+    margin-bottom: 0;
+    color: var(--secondary-500);
+}
+
+.person-infor p:first-child {
+    color: var(--secondary-800);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: var(--font-w5);
+    font-family: var(--font-WorkSansMedium);
+    margin-top: 8px;
+}
+
+.person-infor p:last-child {
+    margin-bottom: 8px;
     display: block;
-    margin-top: -27px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: var(--font-w4);
+    font-family: var(--font-WorkSansRegular);
 }
 
-.text {
+.text p {
     text-align: center;
     margin: 24px 0;
 }
 
+.list-icon {
+    padding-bottom: 5px;
+}
+
 .list-icon a {
     border-radius: 6px;
-    padding: 8px;
+    padding: 4px 4px 8px 8px;
     margin-right: 8px;
     background-color: var(--secondary-500);
+}
+
+.list-icon a:last-child {
+    padding-right: 8px;
 }
 
 /*Main Single Post*/
