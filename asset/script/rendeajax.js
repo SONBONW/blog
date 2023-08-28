@@ -160,7 +160,6 @@ function loadListPosts() {
     const startRange = (current - 1) * LIMIT_REQUESTS;
     const endRange = startRange + LIMIT_REQUESTS;
     const url = `/posts?_start=${startRange}&_end=${endRange}`;
-    // const url = `http://localhost:3000/posts?_page=0&_limit=${LIMIT_REQUESTS * current}`;
     getData(url);
 
     xhr.onreadystatechange = function () {
